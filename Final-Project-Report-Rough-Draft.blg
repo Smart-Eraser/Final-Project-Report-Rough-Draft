@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Final-Project-Report-Rough-Draft.aux
+The style file: IEEEtran.bst
+Database file #1: reference.bib
+I was expecting a `,' or a `}'---line 186 of file reference.bib
+ :  
+ :  @misc{rec709,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 191 of file reference.bib
+ :  
+ :  @misc{arducam,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 196 of file reference.bib
+ :  
+ :  @misc{rgb565,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 201 of file reference.bib
+ :  
+ :  @misc{sobel,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 206 of file reference.bib
+ :  
+ :  @misc{socket,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 211 of file reference.bib
+ :  
+ :  @misc{arducamcam,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 216 of file reference.bib
+ :  
+ :  @misc{huzzah,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 221 of file reference.bib
+ :  
+ :  @misc{bracket,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+(There were 8 error messages)

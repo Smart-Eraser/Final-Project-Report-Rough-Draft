@@ -1,0 +1,62 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Work Distribution}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{Project Objectives and Success Criteria}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{Main Objectives}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Simple success criteria}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Completed}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Not Completed}{subsection.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Ambitious success criteria}{section.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Completed}{subsection.2.3}% 9
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Not Completed}{subsection.2.3}% 10
+\BOOKMARK [1][-]{section.3}{High-Level Requirements}{}% 11
+\BOOKMARK [1][-]{section.4}{Assumptions, Constraints, and Standards}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Assumptions}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{Constraints}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.3}{Relevant Information Learned from Past Courses}{section.4}% 15
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Data Storage}{subsection.4.3}% 16
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Translate Detected Markings into Coordinate System \(Stepper Motor Rotations\)}{subsection.4.3}% 17
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Stepper Motor System Design}{subsection.4.3}% 18
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Microcontroller Involvement}{subsection.4.3}% 19
+\BOOKMARK [3][-]{subsubsection.4.3.5}{Shortest Path Algorithm}{subsection.4.3}% 20
+\BOOKMARK [3][-]{subsubsection.4.3.6}{Image Processing}{subsection.4.3}% 21
+\BOOKMARK [3][-]{subsubsection.4.3.7}{Wireless Connectivity}{subsection.4.3}% 22
+\BOOKMARK [2][-]{subsection.4.4}{Standards}{section.4}% 23
+\BOOKMARK [1][-]{section.5}{Project Description and Boundaries}{}% 24
+\BOOKMARK [2][-]{subsection.5.1}{Major Components}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.2}{Minor Components}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.3}{Software Components}{section.5}% 27
+\BOOKMARK [3][-]{subsubsection.5.3.1}{SPI Communication}{subsection.5.3}% 28
+\BOOKMARK [3][-]{subsubsection.5.3.2}{I2C Communication}{subsection.5.3}% 29
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Grayscale Conversion from RGB565}{subsection.5.3}% 30
+\BOOKMARK [3][-]{subsubsection.5.3.4}{Sobel Edge Detection}{subsection.5.3}% 31
+\BOOKMARK [3][-]{subsubsection.5.3.5}{Socket Programming for Wireless Communication}{subsection.5.3}% 32
+\BOOKMARK [3][-]{subsubsection.5.3.6}{Stepper Motor Operations}{subsection.5.3}% 33
+\BOOKMARK [3][-]{subsubsection.5.3.7}{Moving the Eraser to the Markings}{subsection.5.3}% 34
+\BOOKMARK [2][-]{subsection.5.4}{Physical Technological Components}{section.5}% 35
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Arducam}{subsection.5.4}% 36
+\BOOKMARK [3][-]{subsubsection.5.4.2}{PSoC 6 Microcontroller}{subsection.5.4}% 37
+\BOOKMARK [3][-]{subsubsection.5.4.3}{Stepper Motors}{subsection.5.4}% 38
+\BOOKMARK [3][-]{subsubsection.5.4.4}{Stepper Motor Drivers}{subsection.5.4}% 39
+\BOOKMARK [3][-]{subsubsection.5.4.5}{HUZZAH32 for Stepper Motor Wireless Communication}{subsection.5.4}% 40
+\BOOKMARK [3][-]{subsubsection.5.4.6}{PCBs}{subsection.5.4}% 41
+\BOOKMARK [3][-]{subsubsection.5.4.7}{Additional Power}{subsection.5.4}% 42
+\BOOKMARK [2][-]{subsection.5.5}{Physical Mechanical Components}{section.5}% 43
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Linear Motion Track System}{subsection.5.5}% 44
+\BOOKMARK [3][-]{subsubsection.5.5.2}{Stepper Motor Mounts}{subsection.5.5}% 45
+\BOOKMARK [3][-]{subsubsection.5.5.3}{Pulley System}{subsection.5.5}% 46
+\BOOKMARK [2][-]{subsection.5.6}{Prototype Mounting Components}{section.5}% 47
+\BOOKMARK [2][-]{subsection.5.7}{Boundaries}{section.5}% 48
+\BOOKMARK [2][-]{subsection.5.8}{Technical Advisor Backgrounds}{section.5}% 49
+\BOOKMARK [1][-]{section.6}{High-Level Risks}{}% 50
+\BOOKMARK [1][-]{section.7}{Milestone Schedule}{}% 51
+\BOOKMARK [1][-]{section.8}{Test Plan}{}% 52
+\BOOKMARK [1][-]{section.9}{Gantt Charts}{}% 53
+\BOOKMARK [1][-]{section.10}{Equipment and Budget}{}% 54
+\BOOKMARK [1][-]{section.11}{Roles of Team Members}{}% 55
+\BOOKMARK [2][-]{subsection.11.1}{Heather Libecki}{section.11}% 56
+\BOOKMARK [2][-]{subsection.11.2}{Chris Quesada}{section.11}% 57
+\BOOKMARK [2][-]{subsection.11.3}{Juan Colin}{section.11}% 58
+\BOOKMARK [1][-]{section.12}{Stakeholder List}{}% 59
+\BOOKMARK [1][-]{section.13}{Project Approval Requirements}{}% 60
+\BOOKMARK [1][-]{section.14}{Approvals}{}% 61
+\BOOKMARK [1][-]{section*.40}{References}{}% 62
