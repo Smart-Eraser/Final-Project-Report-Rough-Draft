@@ -190,45 +190,65 @@
 	title			={{Raspberry Pi 3 B and B+ - How to Configure Wi-Fi and Bluetooth}},
 	note			=	{\url{https://www.digikey.com/en/maker/blogs/raspberry-pi-3---how-to-connect-wi-fi-and-bluetooth}
 	}
+}
 	@misc{rec709,
 	author			={Wikipedia contributors},
 	title			={{Rec. 709}},
 	note			=	{\url{https://en.wikipedia.org/wiki/Rec._709}
 	}
+}
 	@misc{arducam,
 	author			={ArduCAM.com},
 	title			={{ArduCAM-Mini-5MP-Plus OV5642 Camera Module}},
 	note			=	{\url{http://www.arducam.com/downloads/shields/ArduCAM_Mini_5MP_Plus_OV5642_Camera_Module_Hardware_Application_Note.pdf}
 	}
+}
 	@misc{rgb565,
 	author			={gnovice},
 	title			={{How can I convert between RGB565 and RGB24 image formats in MATLAB?}},
 	note			=	{\url{https://stackoverflow.com/questions/3578265/how-can-i-convert-between-rgb565-and-rgb24-image-formats-in-matlab}
 	}
+}
 	@misc{sobel,
 	author			={Sean Sodha},
 	title			={{An Implementation of Sobel Edge Detection}},
 	note			={\url{https://www.projectrhea.org/rhea/index.php/An_Implementation_of_Sobel_Edge_Detection}
 	}
+}
 	@misc{socket,
 	author			={Astik Anand},
 	title			={{Client and Server Chatting Application in Python}},
 	note			={\url{https://www.kodefork.com/articles/client-and-server-chatting-application-in-python/}
 	}
+}
 	@misc{arducamcam,
 	author			={Amazon.com},
 	title			={{Arducam Mini Module Camera Shield 5MP Plus OV5642 Camera Module for Arduino UNO Mega2560 Board}},
 	note			={\url{https://www.amazon.com/Arducam-Module-Camera-Arduino-Mega2560/dp/B013JUKZ48}
 	}
+}
 	@misc{huzzah,
 	author			={Adafruit.com},
 	title			={{Assembled Adafruit HUZZAH32 – ESP32 Feather Board - with Stacking Headers}},
 	note			={\url{https://www.adafruit.com/product/3619}
 	}
+}
 	@misc{bracket,
 	author			={Amazon.com},
 	title			={{4pcs Nema 23 Stepper Motor Steel Mounting Bracket with Mounting Screws}},
 	note			={\url{https://www.amazon.com/dp/B073V77VLD/?coliid=I3S0XHJ6LUPARP&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}
+	}
+}
+	@misc{Helland,
+	author			={Tanner Helland},
+	title			={{Seven grayscale conversion algorithms (with pseudocode and VB6 source code)}},
+	note			={\url{http://www.tannerhelland.com/3643/grayscale-image-algorithm-vb6/}
+	}
+}
+	@misc{SPI,
+	author			={SURF VHDL},
+	title			={{How to Design SPI Controller in VHDL)}},
+	note			={\url{https://surf-vhdl.com/how-to-design-spi-controller-in-vhdl/}
 	}
 }
 \end{filecontents*}
@@ -240,6 +260,8 @@
 \usepackage{caption} 
 \usepackage[export]{adjustbox}
 \usepackage{hyperref}
+\usepackage{placeins}
+
 \hypersetup{
 	colorlinks=true,
 	linkcolor=black,
@@ -296,12 +318,12 @@ Electrical and Computer Engineering Department \\
 		\multicolumn{1}{|c|}{\textbf{Name of Editor}} & 
 		\multicolumn{1}{|c|}{\textbf{Changes Made}} \\
 		\hline
-		1 & 10/25/18 & Heather Libecki & The initial rough draft of the Project Charter was \\ 
-		  &			 & Chris Quesada   & created, included proper sections and figures \\ 
-		  &			 & Juan Colin      & specified by Dr. Stillmaker.\\
+	  1 & 10/25/18 	 & Heather Libecki                 & The initial rough draft of the Project Charter was \\ 
+	     &			 & Chris Quesada   		   & created, included proper sections and figures \\ 
+	     &			 & Juan Colin     		   & specified by Dr. Stillmaker.\\
 		\hline
-	    2 & 12/9/18 & Heather Libecki  & Revisions were made regarding system components:\\ 
-	      &			 & Chris Quesada   & Ethernet and most of the planned wired connections\\
+	   2 & 12/9/18 	 & Heather Libecki  		   & Revisions were made regarding system components:\\ 
+	      &			 & Chris Quesada  		   & Ethernet and most of the planned wired connections\\
 	      &			 &				   & were removed and replaced with wireless solutions. \\ 
 	      &			 &				   & 	\\
 	      &			 &				   & References were included in necessary figures and \\
@@ -311,9 +333,9 @@ Electrical and Computer Engineering Department \\
 	      &			 &				   & more appropriate location.\\
 	      &			 &				   & Figures and tables were added and updated;\\
 	      &			 &				   & Figure 2: not skipped anymore\\
-	      &          &                 & Figure 3: updated\\
+	      &         		 &                			   & Figure 3: updated\\
 	      &			 &				   & Figure 4: referenced correctly\\
-	      &          &                 & Figure 5: removed\\
+	      &          		 &                			   & Figure 5: removed\\
 	      &			 &				   & Figure 7: removed\\
 	      &			 &				   & Figure 8: removed\\
 	      &			 &				   &	\\
@@ -325,26 +347,26 @@ Electrical and Computer Engineering Department \\
 	      &			 &				   &	\\
 	      &			 &				   & Test plan was added.\\
  	      &			 &				   & Added links to items in budget and hyperlinks \\
- 	      &          &                 & throughout document in LaTeX.\\
- 	      \hline
- 	    3 & 4/12/19  & Heather Libecki & Updated Final Budget \\ 
- 	      &          & Chris Quesada   & 	\\
- 	      &			 & Juan Colin      & Revisions were made regarding system components: \\ 
- 	      &			 &                 & Camera and main microcontroller were replaced with \\
+ 	      &          		 &                 			   & throughout document in LaTeX.\\
+ 	     	 \hline
+ 	   3 & 4/12/19  	 & Heather Libecki & Updated Final Budget \\ 
+ 	      &          		 & Chris Quesada  	 	   & 	\\
+ 	      &			 & Juan Colin     		   & Revisions were made regarding system components: \\ 
+ 	      &			 &                 			   & Camera and main microcontroller were replaced with \\
  	      &			 &				   & better options. 	\\
- 	      &          &                 & 	\\
- 	      &          &                 & Removed Raspberry Pi from design considerations. \\
- 	      &          &                 & 	\\
- 	      &          &                 & Removed wireless dongle from design considerations. \\
- 	      &          &                 & \\
- 	      &          &                 & Added Arduino Uno 3 microcontrollers to control \\
- 	      &          &                 & stepper motor units \\
- 	      &          &                 & \\
- 	      &          &                 & Added sections pertaining to SPI and I2C \\
- 	      &          &                 & communications, updated information on image \\
- 	      &          &                 &  processing implementation. \\
- 	      &          &                 & \\
- 	      &          &                 & Modified components used to build prototype stand. \\
+ 	      &          		 &               			   & 	\\
+ 	      &          		 &              			   & Removed Raspberry Pi from design considerations. \\
+ 	      &         		 &               			   & 	\\
+ 	      &         		 &             			   & Removed wireless dongle from design considerations. \\
+ 	      &        		 &              			   & \\
+ 	      &         		 &            		              & Added Arduino Uno 3 microcontrollers to control \\
+ 	      &        		 &                			   & stepper motor units \\
+ 	      &         		 &              			   & \\
+ 	      &         		 &               			   & Added sections pertaining to SPI and I2C \\
+ 	      &         		 &              			   & communications, updated information on image \\
+ 	      &        		 &                 			   &  processing implementation. \\
+ 	      &         		 &               			   & \\
+ 	      &         		 &              			   & Modified components used to build prototype stand. \\
 		\hline
 \end{tabular} 
 \end{table} 	      
@@ -358,16 +380,16 @@ Electrical and Computer Engineering Department \\
 		\multicolumn{1}{|c|}{\textbf{Name of Editor}} & 
 		\multicolumn{1}{|c|}{\textbf{Changes Made}} \\
 		\hline
- 	      &          &                 & Removed movement detection while eraser in motion to \\
- 	      &          &                 & stay in scope of final product.\\
+ 	    &          		 &                			   & Removed movement detection while eraser in motion to \\
+ 	    &          		 &                			   & stay in scope of final product.\\
  	      \hline
-		4 & 4/12/19  & Heather Libecki & Changed the Arduino Uno 3 microcontrollers and the \\ 
-		  &          & Chris Quesada   & Kuman nRF24 wireless transceivers to 3 HUZZAH23 \\
-		  &          &                 & Feather Board microcontrollers for the wireless \\ 	
-		  &          &                 & communications.	\\      
+	 4 & 4/12/19  	 & Heather Libecki 		   & Changed the Arduino Uno 3 microcontrollers and the \\ 
+	    &          		 & Chris Quesada   		   & Kuman nRF24 wireless transceivers to 3 HUZZAH23 \\
+	    &        		 &                 			   & Feather Board microcontrollers for the wireless \\ 	
+	    &         		 &                			   & communications.	\\      
  	      \hline
- 	    5 & 4/21/19  & Heather Libecki & Updated Milestone Schedule, GANTT Charts, and Test\\ 
- 	      &          & Chris Quesada   & Plan.	\\ 	
+ 	 5 & 4/21/19  	 & Heather Libecki		   & Updated Milestone Schedule, GANTT Charts, and Test\\ 
+ 	    &         		 & Chris Quesada  		   & Plan.	\\ 	
 	      
 		\hline
 	\end{tabular} 
@@ -742,7 +764,7 @@ The purpose of including I2C communication is both to initialize and configure t
  
  \subsection{Physical Technological Components}
  \subsubsection{Arducam}
- The camera is the input that drives the functionality of the rest of the system. It provides high enough quality for future improvement, but for the purposes of this project, only a 320x240 resolution is needed. The current design has the camera directly connected to the PSoC 6 microcontroller through SPI and I2C communication to both configure the image sensor (I2C) and initiate data transfer (SPI).
+ The camera is the input that drives the functionality of the rest of the system. It provides high enough quality for future improvement, but for the purposes of this project, only a 320x240 resolution is needed. The current design has the camera directly connected to the PSoC 6 microcontroller through SPI and I2C communication to both configure the image sensor (I2C) and initiate data transfer (SPI). Although it is referred to as a camera it is more accurately defined as a module which has an I2C interface to configure the image sensor and a SPI interface to handle data transfer.
     \begin{figure}[H]
  	\centering
  	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.15]{Images/arducam.jpg}}
@@ -1184,11 +1206,11 @@ She will take on the responsibility of being the project manager for the Smart E
 	\item Weaknesses: circuitry design, coding algorithms, power systems, PCB design 
 \end{itemize} 
  \subsection{Chris Quesada}
-Has experience in working with embedded systems and developing code for different applications. This project will be heavy on the software side, using the C programming language to take in data, analyze it, and then send an output. So, someone versed in both programming and interfacing with microcontrollers will be needed. A solid understanding  of arrays, pointers, and how information is stored in memory will be needed in order to implement image processing to find pixels that represent markings in the digital image. His work in ECE 70, as well as concepts and experience gained in CSCI 41, will allow for implementation of this image processing. Working with the shortest path algorithm in the 118 lab (Microcontrollers) will allow him to implement the concepts of Dijkstra's algorithm in order to determine the shortest path between all ``TRUE'' values (nodes) in a 2D array (graph).
+Has experience in working with embedded systems and developing code for different applications. This project will be heavy on the software side, using both \textit{C} and \textit{Python} to take in data, analyze it, and then send an output.  He also developed the UART, SPI, and I2C communications needed for the SMART ERASER system. A solid understanding  of arrays, pointers, and how information is stored in memory was applied towards implementing the  image processing techniques used to find pixels that represent markings in the digital image. His work in ECE 70, concepts and experience gained in CSCI 41, and research into image processing allowed for the succesful completion of the SMART ERASER  image processing capabilities. Researching SPI and I2C in Embedded systems along with further research into theses communications along with UART during the SMART ERASER developement led to successful implementations of all three. He also assisted Heather with the developement of the wireless communicaions between the HUZZAH32 microcontrollers.
 \begin{itemize}
-	\item Strengths: programming (assembly, verilog),  programming concepts (arrays, pointers, structures), embedded systems, developing algorithms
+	\item Strengths: programming (C, C++, Python),  programming concepts (arrays, pointers, structures, data types), embedded systems, developing algorithms, communications(SPI, 		UART, I2C).
 	
-	\item Weaknesses:  circuitry design, mathematics, public speaking 
+	\item Weaknesses:  circuitry design, mathematics, public speaking, power
 \end{itemize} \par
  \subsection{Juan Colin}
   Has experience in working with electrical systems and physical circuit design. He is proficient in the use of problem solving techniques to create a functioning system with given design specifications. His part of the project will be dependent on learning the physical mechanical aspects of the design, and how the connected parts will be powered. Therefore, he will need to further his understanding of how the parts should be connected in order to ensure the most spatial efficiency, as well as the connection of the power system that will allow all parts of the system to work properly and move the way they need to.
@@ -1197,7 +1219,187 @@ Has experience in working with embedded systems and developing code for differen
 	\item Strengths: electrical systems, circuitry design, problem solving, power systems, public speaking/relations
 	\item Weaknesses: programming (assembly, verilog), technical writing and spelling \\
 \end{itemize}
- 
+
+\section{Analysis and Design}
+\subsection{SPI communication}
+Serial Peripheral Communication(SPI) is a common form of wired communication between different systems. It is distastefully referred to as a master - slave relationship where there is one master and one or more slaves. There is no official standard for SPI however it is so widely used that it can be referred to as a De facto standard due to everyone operating along the same assumptions. These assumptions include the 4 modes SPI operate in and each mode is a different combination of the clock phase, when data is evaluated, and clock polarity, whether the clock is high or low when not in use. Once the mode has been decided, the slave clock dictates the rate of transaction between master and slave and therefore, the master must be configured accordingly. A Master - Out - Slave - In (MOSI) line feeds data, either MSB or LSB first, to the shift register in the SPI interface of the slave device. For every bit received, the slave will send a bit back to the master along the Master - In - Slave - Out (MISO) line. During a SPI exchange, every bit sent is a bit received and depending if you want to read data or write, the bits received are sometimes irrelevant (writing to slave).  
+
+ \begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.5]{Images/SPIdiagram.png}}
+	\caption{Simple overview of SPI communication \cite{SPI}}
+	\label{fig:SPIdiagram}
+\end{figure}
+
+\setlength{\parindent}{2.5ex} 
+For the SMART ERASER system, the PSoC 6 is the master and the Arducam module is the slave. According to Arducam's datasheet, the Arducam operates in SPI mode 0, meaning CPHA = 0 and CPOL = 0. Therefore the PSoC 6 is configured to operate in that mode as well. Also according the Arducam's datasheet the max frequency of its SPI interface is 8 MHz therefore the PSoC 6 was configured to send 
+
+\subsection{Results of Sobel Edge Detection}
+
+\subsection{Image Processing}
+\subsubsection{Resolution}
+The original idea was to use a HD image to process because it would be able to capture more information, and therefore more accurately detect objects in a picture. This was assumed without taking into account the capabilities of the microcontroller. As it has been stated, attempts to add more physical memory to the system proved to more difficult than expected, leaving the program to only operate with a limited amount of memory. Due to this limitation, as well as matching the resolution of the TFT screen, a resolution of 320x240 was chosen to implement the image processing aspects of the system. It should be stated that the program was structured in a way that allows for easy changing of resolutions. Another impact of memory limitation is that only 80 rows of the image can be evaluated at a time.
+
+\subsubsection{Output Format}
+ There are a multitude of image formats than can be used and each one has its own specific way to read pixel information. JPEG was immediately decided against due to its lossy nature and high level of complexity to read pixel data. That left RGB, raw RGB, and YUV formats. Going a level down, each of the three formats have different arrangements and sizes in which they can be formed. For example, RGB can be either 888, 565, 555, 444, and even still further the ordering of the R,G, and B can vary.\par
+\setlength{\parindent}{2.5ex} 
+Cypress provides an example project that interacts with the TFT display and uses an example image with a format of RGB565 and resolution of 320x240. Since the Arducam can, if configured correctly (a whole project in itself), output this format with that resolution, pre loaded images with this formatting were used to test and develop the image processing aspects of the system. Without being able to see the results on the TFT display of what was being applied to the pixel data, the image processing program would have never worked correctly.\par
+\setlength{\parindent}{2.5ex}
+For the Smart Eraser system, as mentioned above, a format of RGB565 was chosen. Not only would images captured be able to be displayed on the TFT display, but the way in which the image data would be received from SPI communication would be relatively straightforward. Pixel information is broken up between 2 consecutive bytes, a high and low byte. Knowing how RGB565 is arranged, every two bytes of information received over SPI would be used to constructed one pixel of information and due to the nature of the SPI hardware configuration of the PSoC 6, each SPI transfer is 2 bytes. Therefore each SPI transfer consists of one complete pixel.
+
+ \begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=1]{Images/outputFormat.png}}
+	\caption{Pixel Information being received through SPI from Arducam}
+	\label{fig:outputFormat}
+\end{figure}
+
+\subsubsection{Resolution}
+here are many different ways to do grayscale conversion from RGB. All are capable of achieving what was needed for Smart Eraser System, and the only difference between the methods are how true to gray the image looks and whether it has a darker or lighter tone to it. Because it is more accurate to the human eye, the Luminance method was chosen for the Smart Eraser system to convert to grayscale, mainly for the fact that the images would be viewed and not just processed behind the scenes.\par
+Here is quick description of some different methods, including Luminance:
+
+\begin{itemize}
+\item Averaging Method
+	\begin{itemize}
+		\item  $ Gray = (Red + Green + Blue) $ 	\cite{Helland}
+	\end{itemize}
+\item Luminance Method
+	\begin{itemize}
+		\item $ Gray = (Red \times 0.2126 + Green \times 0.7152 + Blue \times 0.0722) $ \cite{Helland}
+	\end{itemize}
+\item Desaturation
+	\begin{itemize}
+		\item $ Gray = (Max(Red, Green, Blue) + Min(Red, Green, Blue)) / 2 $ \cite{Helland}
+	\end{itemize}
+\item Decomposition (Max or Min)
+	\begin{itemize}
+		\item $ Gray = Max(Red, Green, Blue) $ \cite{Helland}
+		\item $ Gray = Max(Red, Green, Blue) $ \cite{Helland}
+	\end{itemize}
+\item Single Color Channel
+	\begin{itemize}
+		\item $ Gray = Red $ \cite{Helland}
+		\item $ Gray = Green $ \cite{Helland}
+		\item $ Gray = Blue $ \cite{Helland}
+	\end{itemize}	
+\end{itemize}\par
+
+Once again, which method that is used isn’t important, it is seperating the intensities from each other and then comparing them on an equivalent scale. An output format of RGB565 uses 16 bits to represent a single pixel, as shown in (figure with rgb565 output in previous section). In order to separate these intensities, the variable that contains the pixel information (type uint16\_t) is masked accordingly to pull out the R,G, and B intensities, storing them into new variables (type uint8). Masking is the process of performing a logical AND operation on a variable to isolate bit values contained in that variable. As demonstrated in figure (the one right below) if the pixel data variable is ANDed with the Red Mask variable, only bits[15:11] will be retained.
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.8]{Images/Seperate_Intensities.png}}
+	\caption{How red, green, and blue intensities are seperated from one another}
+	\label{fig:Seperate_Intensities}
+\end{figure}
+
+With the newly separated values as is, R and B represent shades of gray on a scale of 0 to 32 whereas G represents shades of gray on a scale of 0 to 64. If these values were to be tossed into one of the grayscale conversion algorithms, an image in shades of purple would be generated. This is known because it isn’t clearly stated anywhere that when using these conversion formulas, the intensities have to be represented by the same number of bits and therefore initial trials did not take this into account. Therefore some simple shifting is required before the formulas can be used. All intensities were upscaled to 8 bits so that values are compared on the complete range of grays (0 - 255) rather than descaling the green intensity down to 5 bits so that values are compared on a smaller, incomplete range of grays (0 - 32). 
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.9]{Images/scaling.png}}
+	\caption{Scaling seperated red green and blue intensities up to 8 bit numbers}
+	\label{fig:scaling}
+\end{figure}
+
+At this point the RGB values are ready to be run through the conversion formula to generate a gray pixel value, in 8 bits. This gray value will then be used as the new R, G and B intensities of the original pixel, creating a shade of gray in the RGB565 format.  To build this new RGB565 pixel, the process up until now is done in reverse. New variables are created to hold “processed” values of RGB that are of type uint16\_t, to match the original pixel data length. 
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.6]{Images/gray_equation.png}}
+	\caption{Luminance method for converting RGB to grayscale}
+	\label{fig:gray_equation}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=1]{Images/reverse.png}}
+	\caption{Process in reverse: In order to create gray RGB pixel}
+	\label{fig:reverse}
+\end{figure}
+
+\subsubsection{Grayscale Results}
+\FloatBarrier
+\begin{figure}[!htb]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.65]{Images/gray1.jpg}}
+	\caption{Reuslts of grayscale algorithm from PSoC 6 (1)}
+	\label{fig:results1}
+\end{figure}
+\FloatBarrier
+\FloatBarrier
+\begin{figure}[!htb]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.65]{Images/gray2.jpg}}
+	\caption{Reuslts of grayscale algorithm from PSoC 6 (2)}
+	\label{fig:results2}
+\end{figure}
+\FloatBarrier
+
+\subsubsection{Sobel Edge Detection}
+Sobel edge detection is an edge detection algorithm that uses a sobel kernel to detect differences in intensities at each pixel location. This is done by convolving a sobel kernel through each pixel in an image array. The pixel information must be grayscale in order for changes in intensity to be seen. A sobel kernel is a 3x3 array containing specific values to determine changes in values (gradients) from one edge to another. This has to be done for both vertical and horizontal edges, so there will be a kernel for each. The values inside the kernel are what make it a Sobel kernel. Using different values would classify it as a different type such as, Sobel–Feldman or Scharr. 
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=1]{Images/sobelKernel.png}}
+	\caption{Sobel Kernels}
+	\label{fig:sobelKernel}
+\end{figure}
+
+When moving through the image array, the center of the 3x3 kernel must never reach a border pixel otherwise a segmentation fault will prompt. This is because the pixel being evaluated (at the center of the kernel) relies on information from the surrounding pixels. If you were to attempt to pass the kernel through any part of the border, there will be some portion of the kernel that is out of bounds of the defined memory region. This is shown in figure ~\ref{fig:outofBounds}.
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=1]{Images/outofBounds.png}}
+	\caption{Visual of what happens if the the sobel kernel is convolved along a boundary}
+	\label{fig:outofBounds}
+\end{figure}
+
+Once boundaries are accounted for in the program, the kernel can be convolved through the image array. At each pixel location (inside of boundary pixels) the operation shown in figure (right below) is carried out, both for the X and Y gradient.  
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=.75]{Images/sobelConV.png}}
+	\caption{Operation of the vertical kernel}
+	\label{fig:sobelConV}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=.75]{Images/sobelConH.png}}
+	\caption{Operation of the Horizontal kerne}
+	\label{fig:sobelConH}
+\end{figure}
+
+Finding the gradient in both the X and Y direction at any given pixel location (aside from boundary pixels) allows the total magnitude to be found at that location. This is done by taking the Gx and Gy values and using the Pythagorean Theorem. 
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=.55]{Images/Pythag.png}}
+	\caption{Using Pythagorean theorom to determin the magnitude of the gradient}
+	\label{fig:Pythag}
+\end{figure}
+
+The total magnitude G is now compared against a threshold value, which can be manipulated to adjust the strength of edge detection. If only sharp changes in intensity are desired, to be recognized as an edge then you would set the threshold value very high and if any change of intensity is desired then the threshold will be set very low. It’s a trial and error to see if the image turns out correctly or not and is easily adjustable. Conditional statements are used to then compare against this threshold to set a pixel value to either white (detected edge, G is above threshold) or black (nothing detected, G is below threshold). 
+
+\subsubsection{Results of Sobel Edge Detection}
+
+\FloatBarrier
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=.65]{Images/sobelResult.jpg}}
+	\caption{Using Pythagorean theorom to determin the magnitude of the gradient}
+	\label{fig:sobelResults}
+\end{figure}
+\FloatBarrier
+
+\subsubsection{Results of Sobel Edge Detection}
+\subsubsection{Results of Sobel Edge Detection}
+
+
+
+
+
  \section{Stakeholder List}
  \begin{enumerate}
  	\item	Aaron Stillmaker, Ph.D.: He is the professor of the Senior Design course, therefore wants to guide the students working on the Smart Eraser toward success through the completion of this project. He is also the manager of the project deliverable deadlines.\\ 
