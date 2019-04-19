@@ -56,7 +56,19 @@
 \contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XI-A}}Heather Libecki}{28}{subsection.11.1}
 \contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XI-B}}Chris Quesada}{28}{subsection.11.2}
 \contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XI-C}}Juan Colin}{28}{subsection.11.3}
-\contentsline {section}{\numberline {XII}Stakeholder List}{29}{section.12}
-\contentsline {section}{\numberline {XIII}Project Approval Requirements}{29}{section.13}
-\contentsline {section}{\numberline {XIV}Approvals}{30}{section.14}
-\contentsline {section}{References}{31}{section*.40}
+\contentsline {section}{\numberline {XII}Analysis and Design}{29}{section.12}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-A}}SPI communication}{29}{subsection.12.1}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-B}}I2C Communication}{31}{subsection.12.2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}}Image Processing}{31}{subsection.12.3}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}1}Resolution}{31}{subsubsection.12.3.1}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}2}Output Format}{31}{subsubsection.12.3.2}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}3}Resolution}{32}{subsubsection.12.3.3}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}4}Grayscale Results}{34}{figure.caption.48}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}5}Sobel Edge Detection}{35}{subsubsection.12.3.5}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}6}Results of Sobel Edge Detection}{38}{figure.caption.55}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}7}Results of Sobel Edge Detection}{38}{subsubsection.12.3.7}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}8}Results of Sobel Edge Detection}{38}{subsubsection.12.3.8}
+\contentsline {section}{\numberline {XIII}Stakeholder List}{38}{section.13}
+\contentsline {section}{\numberline {XIV}Project Approval Requirements}{39}{section.14}
+\contentsline {section}{\numberline {XV}Approvals}{40}{section.15}
+\contentsline {section}{References}{41}{section*.56}

@@ -56,7 +56,19 @@
 \BOOKMARK [2][-]{subsection.11.1}{Heather Libecki}{section.11}% 56
 \BOOKMARK [2][-]{subsection.11.2}{Chris Quesada}{section.11}% 57
 \BOOKMARK [2][-]{subsection.11.3}{Juan Colin}{section.11}% 58
-\BOOKMARK [1][-]{section.12}{Stakeholder List}{}% 59
-\BOOKMARK [1][-]{section.13}{Project Approval Requirements}{}% 60
-\BOOKMARK [1][-]{section.14}{Approvals}{}% 61
-\BOOKMARK [1][-]{section*.40}{References}{}% 62
+\BOOKMARK [1][-]{section.12}{Analysis and Design}{}% 59
+\BOOKMARK [2][-]{subsection.12.1}{SPI communication}{section.12}% 60
+\BOOKMARK [2][-]{subsection.12.2}{I2C Communication}{section.12}% 61
+\BOOKMARK [2][-]{subsection.12.3}{Image Processing}{section.12}% 62
+\BOOKMARK [3][-]{subsubsection.12.3.1}{Resolution}{subsection.12.3}% 63
+\BOOKMARK [3][-]{subsubsection.12.3.2}{Output Format}{subsection.12.3}% 64
+\BOOKMARK [3][-]{subsubsection.12.3.3}{Resolution}{subsection.12.3}% 65
+\BOOKMARK [3][-]{figure.caption.48}{Grayscale Results}{subsection.12.3}% 66
+\BOOKMARK [3][-]{subsubsection.12.3.5}{Sobel Edge Detection}{subsection.12.3}% 67
+\BOOKMARK [3][-]{figure.caption.55}{Results of Sobel Edge Detection}{subsection.12.3}% 68
+\BOOKMARK [3][-]{subsubsection.12.3.7}{Results of Sobel Edge Detection}{subsection.12.3}% 69
+\BOOKMARK [3][-]{subsubsection.12.3.8}{Results of Sobel Edge Detection}{subsection.12.3}% 70
+\BOOKMARK [1][-]{section.13}{Stakeholder List}{}% 71
+\BOOKMARK [1][-]{section.14}{Project Approval Requirements}{}% 72
+\BOOKMARK [1][-]{section.15}{Approvals}{}% 73
+\BOOKMARK [1][-]{section*.56}{References}{}% 74

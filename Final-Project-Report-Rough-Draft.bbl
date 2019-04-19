@@ -79,6 +79,10 @@ Mercury, ``{Mercurry 5 Meters GT2 timing belt width 6mm Fit for RepRap Mendel
   Rostock Prusa GT2-6mm Belt },''
   \url{https://www.amazon.com/dp/B071K8HYB4/?coliid=I3KCLVNOTYFU5Y\&colid=22YAOKWOJAKA9\&psc=0\&ref\_=lv\_ov\_lig\_dp\_it}.
 
+\bibitem{SPI}
+S.~VHDL, ``{How to Design SPI Controller in VHDL)},''
+  \url{https://surf-vhdl.com/how-to-design-spi-controller-in-vhdl/}.
+
 \bibitem{wifiStandards}
 I.~S. Association, ``{IEEE 802.15.3e-2017 - IEEE Standard for High Data Rate
   Wireless Multi-Media Networks--Amendment 1: High-Rate Close Proximity
@@ -96,5 +100,10 @@ N.~E.~M. Association, ``{NEMA Standards Publication ICS 16 Motion/Position
 
 \bibitem{rec709}
 W.~contributors, ``{Rec. 709},'' \url{https://en.wikipedia.org/wiki/Rec._709}.
+
+\bibitem{Helland}
+T.~Helland, ``{Seven grayscale conversion algorithms (with pseudocode and VB6
+  source code)},''
+  \url{http://www.tannerhelland.com/3643/grayscale-image-algorithm-vb6/}.
 
 \end{thebibliography}

@@ -1222,7 +1222,7 @@ Has experience in working with embedded systems and developing code for differen
 
 \section{Analysis and Design}
 \subsection{SPI communication}
-Serial Peripheral Communication(SPI) is a common form of wired communication between different systems. It is distastefully referred to as a master - slave relationship where there is one master and one or more slaves. There is no official standard for SPI however it is so widely used that it can be referred to as a De facto standard due to everyone operating along the same assumptions. These assumptions include the 4 modes SPI operate in and each mode is a different combination of the clock phase, when data is evaluated, and clock polarity, whether the clock is high or low when not in use. Once the mode has been decided, the slave clock dictates the rate of transaction between master and slave and therefore, the master must be configured accordingly. A Master - Out - Slave - In (MOSI) line feeds data, either MSB or LSB first, to the shift register in the SPI interface of the slave device. For every bit received, the slave will send a bit back to the master along the Master - In - Slave - Out (MISO) line. During a SPI exchange, every bit sent is a bit received and depending if you want to read data or write, the bits received are sometimes irrelevant (writing to slave).  
+Serial Peripheral Communication(SPI) is a common form of wired communication between different systems. It is distastefully referred to as a master - slave relationship where there is one master and one or more slaves. There is no official standard for SPI however it is so widely used that it can be referred to as a De facto standard due to everyone operating along the same assumptions. These assumptions include the 4 modes SPI operate in and each mode is a different combination of the clock phase, when data is evaluated, and clock polarity, whether the clock is high or low when not in use. Once the mode has been decided, the slave clock dictates the rate of transaction between master and slave and therefore, the master must be configured accordingly. A Master-Out-Slave-In (MOSI) line feeds data, either MSB or LSB first, to the shift register in the SPI interface of the slave device. For every bit received, the slave will send a bit back to the master along the Master-In-Slave-Out (MISO) line. During a SPI exchange, every bit sent is a bit received and depending if you want to read or write data, the bits received are sometimes irrelevant (writing to slave).  
 
  \begin{figure}[H]
 	\centering
@@ -1232,10 +1232,26 @@ Serial Peripheral Communication(SPI) is a common form of wired communication bet
 \end{figure}
 
 \setlength{\parindent}{2.5ex} 
-For the SMART ERASER system, the PSoC 6 is the master and the Arducam module is the slave. According to Arducam's datasheet, the Arducam operates in SPI mode 0, meaning CPHA = 0 and CPOL = 0. Therefore the PSoC 6 is configured to operate in that mode as well. Also according the Arducam's datasheet the max frequency of its SPI interface is 8 MHz therefore the PSoC 6 was configured to send 
+For the SMART ERASER system, the PSoC 6 is the master and the Arducam module is the slave. According to Arducam's data sheet, the Arducam SPI interface operates in SPI mode 0, meaning CPHA = 0 and CPOL = 0. Therefore the PSoC 6 is configured to operate in that mode as well. Also according the Arducam's data sheet the max frequency of its SPI interface is 8 MHz and therefore the PSoC 6 was configured to send a 7.142857 MHz signal to meet the requirement. Both the RX and TX of the PSoC 6 was set to be 16 bits wide in order to properly communicate with the Arducam SPI interface. An example of what the Arducam needs in order for proper communication can be found in figures ~\ref{fig:spiread} and  ~\ref{fig:spiwrite}. The command byte, sent first, is structured so that the MSB is designated as the read/write byte, leaving the other 6 bits to represent an address in the Arducam SPI interface. The following byte is the data byte which contains specific data if the action is a write. If it is a read SPI transaction then this byte is known as a dummy byte because its just sent to push what needs to be read to master. The reason the TX and RX were set to 16 bits instead of 8 is because when this command and data byte is sent to the Arducam, the CS line needs to be asserted while both bytes are sent. When the PSoC 6 was configured with and 8-bit TX and RX, it would de-assert the CS line between each byte. This caused improper communication between the devices because from the point of view of the Arducam, it was only receiving command bytes.\par
+\setlength{\parindent}{2.5ex}
+This can be observed in the Arducam.C file, in any of the functions that use the write\_SPI() function. A packet of 2 bytes is built and then placed into the TX of the PSoC 6 for transfer. There is a test function that tests whether or not the SPI is working correctly, a MyCam\_Trigger() function that initiates a capture and a MyCam\_Check\_Capture\_Status() function that polls the capture ready flag in register 0x41 of the Arducam module. The Write\_I2C() function itself uses a combination of the APIs provided by Cypress in order to interact with the Serial Control Block(SCB) that has been configured as an SPI master.
 
-\subsection{Results of Sobel Edge Detection}
+ \begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=1]{Images/SPIconfig1.png}}
+	\caption{Hardware configuration of SPI (1)}
+	\label{fig:SPIconfig1}
+\end{figure}
 
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=.85]{Images/SPIconfig2.png}}
+	\caption{Hardware configuration of SPI (2)}
+	\label{fig:SPIconfig2}
+\end{figure}
+
+\subsection{I2C Communication}
+Some confusion may arise when it is stated that in order to communicate with the Arducam module both I2C and SPI are needed to do so. This is because the Arducam is just that, a module, that has different components.
 \subsection{Image Processing}
 \subsubsection{Resolution}
 The original idea was to use a HD image to process because it would be able to capture more information, and therefore more accurately detect objects in a picture. This was assumed without taking into account the capabilities of the microcontroller. As it has been stated, attempts to add more physical memory to the system proved to more difficult than expected, leaving the program to only operate with a limited amount of memory. Due to this limitation, as well as matching the resolution of the TFT screen, a resolution of 320x240 was chosen to implement the image processing aspects of the system. It should be stated that the program was structured in a way that allows for easy changing of resolutions. Another impact of memory limitation is that only 80 rows of the image can be evaluated at a time.
@@ -1388,7 +1404,7 @@ The total magnitude G is now compared against a threshold value, which can be ma
 \begin{figure}[H]
 	\centering
 	{\includegraphics[max size={\textwidth}{\textheight}, scale=.65]{Images/sobelResult.jpg}}
-	\caption{Using Pythagorean theorom to determin the magnitude of the gradient}
+	\caption{Results of Sobel edge detection}
 	\label{fig:sobelResults}
 \end{figure}
 \FloatBarrier
