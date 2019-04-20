@@ -1,7 +1,7 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Design overview of the final product\relax }}{1}{figure.caption.8}
 \contentsline {figure}{\numberline {2}{\ignorespaces Bits corresponding to a system SPI read \cite {arducam}\relax }}{9}{figure.caption.9}
 \contentsline {figure}{\numberline {3}{\ignorespaces Bits corresponding to a system SPI write \cite {arducam}\relax }}{9}{figure.caption.10}
-\contentsline {figure}{\numberline {4}{\ignorespaces Bits corresponding to a system I2C write \cite {arducam}\relax }}{10}{figure.caption.11}
+\contentsline {figure}{\numberline {4}{\ignorespaces Bits corresponding to a system I\textsuperscript {2}C write \cite {arducam}\relax }}{10}{figure.caption.11}
 \contentsline {figure}{\numberline {5}{\ignorespaces How an RGB565 pixel value is stored in memory \cite {rgb565}\relax }}{10}{figure.caption.12}
 \contentsline {figure}{\numberline {6}{\ignorespaces Kernel convolution used in sobel edge detection \cite {sobel}\relax }}{10}{figure.caption.13}
 \contentsline {figure}{\numberline {7}{\ignorespaces Socket communication protocol between server and client \cite {socket}\relax }}{11}{figure.caption.14}
@@ -26,19 +26,22 @@
 \contentsline {figure}{\numberline {26}{\ignorespaces Test Plan for the Smart Eraser - Part 2\relax }}{26}{figure.caption.36}
 \contentsline {figure}{\numberline {27}{\ignorespaces GANTT chart for Senior Design Semester 1 - Research Phase\relax }}{27}{figure.caption.37}
 \contentsline {figure}{\numberline {28}{\ignorespaces GANTT chart for Senior Design Semester 2 - Implementation Phase\relax }}{27}{figure.caption.38}
-\contentsline {figure}{\numberline {29}{\ignorespaces Simple overview of SPI communication \cite {SPI}\relax }}{30}{figure.caption.41}
-\contentsline {figure}{\numberline {30}{\ignorespaces Hardware configuration of SPI (1)\relax }}{31}{figure.caption.42}
-\contentsline {figure}{\numberline {31}{\ignorespaces Hardware configuration of SPI (2)\relax }}{32}{figure.caption.43}
-\contentsline {figure}{\numberline {32}{\ignorespaces Pixel Information being received through SPI from Arducam\relax }}{33}{figure.caption.44}
-\contentsline {figure}{\numberline {33}{\ignorespaces How red, green, and blue intensities are seperated from one another\relax }}{34}{figure.caption.45}
-\contentsline {figure}{\numberline {34}{\ignorespaces Scaling seperated red green and blue intensities up to 8 bit numbers\relax }}{34}{figure.caption.46}
-\contentsline {figure}{\numberline {35}{\ignorespaces Luminance method for converting RGB to grayscale\relax }}{35}{figure.caption.47}
-\contentsline {figure}{\numberline {36}{\ignorespaces Process in reverse: In order to create gray RGB pixel\relax }}{35}{figure.caption.48}
-\contentsline {figure}{\numberline {37}{\ignorespaces Reuslts of grayscale algorithm from PSoC 6 (1)\relax }}{36}{figure.caption.49}
-\contentsline {figure}{\numberline {38}{\ignorespaces Reuslts of grayscale algorithm from PSoC 6 (2)\relax }}{36}{figure.caption.50}
-\contentsline {figure}{\numberline {39}{\ignorespaces Sobel Kernels\relax }}{37}{figure.caption.51}
-\contentsline {figure}{\numberline {40}{\ignorespaces Visual of what happens if the the sobel kernel is convolved along a boundary\relax }}{37}{figure.caption.52}
-\contentsline {figure}{\numberline {41}{\ignorespaces Operation of the vertical kernel\relax }}{38}{figure.caption.53}
-\contentsline {figure}{\numberline {42}{\ignorespaces Operation of the Horizontal kerne\relax }}{38}{figure.caption.54}
-\contentsline {figure}{\numberline {43}{\ignorespaces Using Pythagorean theorom to determin the magnitude of the gradient\relax }}{39}{figure.caption.55}
-\contentsline {figure}{\numberline {44}{\ignorespaces Results of Sobel edge detection\relax }}{39}{figure.caption.56}
+\contentsline {figure}{\numberline {29}{\ignorespaces Simple overview of an I2C message \cite {I2C}\relax }}{30}{figure.caption.41}
+\contentsline {figure}{\numberline {30}{\ignorespaces Arducam module block diagram \cite {arducam}\relax }}{31}{figure.caption.42}
+\contentsline {figure}{\numberline {31}{\ignorespaces Hardware Configuration of I2C\relax }}{32}{figure.caption.43}
+\contentsline {figure}{\numberline {32}{\ignorespaces Simple overview of SPI communication \cite {SPI}\relax }}{33}{figure.caption.44}
+\contentsline {figure}{\numberline {33}{\ignorespaces Hardware configuration of SPI (1)\relax }}{34}{figure.caption.45}
+\contentsline {figure}{\numberline {34}{\ignorespaces Hardware configuration of SPI (2)\relax }}{34}{figure.caption.46}
+\contentsline {figure}{\numberline {35}{\ignorespaces Pixel Information being received through SPI from Arducam\relax }}{35}{figure.caption.47}
+\contentsline {figure}{\numberline {36}{\ignorespaces How red, green, and blue intensities are seperated from one another\relax }}{36}{figure.caption.48}
+\contentsline {figure}{\numberline {37}{\ignorespaces Scaling seperated red green and blue intensities up to 8 bit numbers\relax }}{37}{figure.caption.49}
+\contentsline {figure}{\numberline {38}{\ignorespaces Luminance method for converting RGB to grayscale\relax }}{37}{figure.caption.50}
+\contentsline {figure}{\numberline {39}{\ignorespaces Process in reverse: In order to create gray RGB pixel\relax }}{38}{figure.caption.51}
+\contentsline {figure}{\numberline {40}{\ignorespaces Reuslts of grayscale algorithm from PSoC 6 (1)\relax }}{39}{figure.caption.52}
+\contentsline {figure}{\numberline {41}{\ignorespaces Reuslts of grayscale algorithm from PSoC 6 (2)\relax }}{40}{figure.caption.53}
+\contentsline {figure}{\numberline {42}{\ignorespaces Sobel Kernels\relax }}{40}{figure.caption.54}
+\contentsline {figure}{\numberline {43}{\ignorespaces Visual of what happens if the the sobel kernel is convolved along a boundary\relax }}{41}{figure.caption.55}
+\contentsline {figure}{\numberline {44}{\ignorespaces Operation of the vertical kernel\relax }}{42}{figure.caption.56}
+\contentsline {figure}{\numberline {45}{\ignorespaces Operation of the Horizontal kernel\relax }}{42}{figure.caption.57}
+\contentsline {figure}{\numberline {46}{\ignorespaces Using Pythagorean theorom to determin the magnitude of the gradient\relax }}{43}{figure.caption.58}
+\contentsline {figure}{\numberline {47}{\ignorespaces Results of Sobel edge detection\relax }}{43}{figure.caption.59}

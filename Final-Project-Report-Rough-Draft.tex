@@ -251,10 +251,22 @@
 	note			={\url{https://surf-vhdl.com/how-to-design-spi-controller-in-vhdl/}
 	}
 }
+	@misc{I2C,
+	author			={Circuit Basics},
+	title			={{Basics of the I2C Communication Protocol}},
+	note			={\url{http://www.circuitbasics.com/basics-of-the-i2c-communication-protocol/}
+	}
+}
+	@misc{Arducam,
+	author			={Arducam},
+	title			={{ArduCAM-Mini-5MP-Plus OV5642 Camera Module5MP SPI Camera User Guide}},
+	note			={\url{http://www.arducam.com/downloads/shields/ArduCAM_Mini_5MP_Plus_OV5642_Camera_Module_DS.pdf}
+	}
+}
 \end{filecontents*}
 
-\documentclass[12pt,onecolumn]{IEEEtran}			%Everything is default, except  which is journal, 10pt font, and final draft
-\usepackage{dtk-logos}						%This let me do the cool BibTeX logo, you shouldn't need this line. Add additional packages here:
+\documentclass[12pt,onecolumn]{IEEEtran}			
+\usepackage{dtk-logos}						
 \usepackage{graphics}
 \usepackage{float}
 \usepackage{caption} 
@@ -271,11 +283,8 @@
 	citecolor=black,
 }
 
-%add packages here:
-
 \title{ \hfill  \vspace{2in} \\ Smart Eraser \vspace{0.05in} }	
 
-%the \vspace is moving the title down from the top of the page
 \author{Final Project Report \\ \vspace{0.6in}
 \vspace{12pt} 
 
@@ -283,22 +292,21 @@ Project Manager: Heather Libecki\\
 \vspace{5pt}
 Team Members: Chris Quesada, Juan Colin \\
 \vspace{5pt}
-Technical Advisors: Dr. Hovannes Kulhandjian, Mr. Roger Moore	\\				%Note the \\ line returns to make sure to put each one on a new line
-\vspace{12pt} 								%I put in some space to get the due date listed a little lower
+Technical Advisors: Dr. Hovannes Kulhandjian, Mr. Roger Moore	\\			
+\vspace{12pt} 								
 Thursday, April 25, 2019 \\ 
 \vspace{3.2in}
-ECE 186B - Senior Design II \\ 					%I am jamming all of the stuff I want on the title page into the Author spot, I know, this isn't elegant
+ECE 186B - Senior Design II \\ 					
 Spring 2019 - Dr. Aaron Stillmaker \\
 \vspace{5pt}
 California State University, Fresno \\
 Electrical and Computer Engineering Department \\ 
 
-\vspace{2in}								%You may need to mess with this space, this space is above the signature lines.
+\vspace{2in}							
 
 
-\vspace{4in}}								%You will need to mess with this space, this space is after the signature lines.  The idea
-										%is to make the title page by itself.  I know, this isn't elegant either, but IEEE formatting doesn't
-										%make title pages
+\vspace{4in}}							
+										
 
 \begin{document}
 
@@ -363,7 +371,7 @@ Electrical and Computer Engineering Department \\
  	      &         		 &            		              & Added Arduino Uno 3 microcontrollers to control \\
  	      &        		 &                			   & stepper motor units \\
  	      &         		 &              			   & \\
- 	      &         		 &               			   & Added sections pertaining to SPI and I2C \\
+ 	      &         		 &               			   & Added sections pertaining to SPI and I\textsuperscript{2}C \\
  	      &         		 &              			   & communications, updated information on image \\
  	      &        		 &                 			   &  processing implementation. \\
  	      &         		 &               			   & \\
@@ -381,7 +389,6 @@ Electrical and Computer Engineering Department \\
 		\multicolumn{1}{|c|}{\textbf{Name of Editor}} & 
 		\multicolumn{1}{|c|}{\textbf{Changes Made}} \\
 		\hline
- 	    &          		 &                			   & Removed movement detection while eraser in motion to \\
  	    &          		 &                			   & stay in scope of final product.\\
  	      \hline
 	 4 & 4/12/19  	 & Heather Libecki 		   & Changed the Arduino Uno 3 microcontrollers and the \\ 
@@ -430,7 +437,7 @@ Figure~\ref{fig:rough} shows an overview of the final deliverable's mechanical a
 	\item Camera: the Arducam will take in an image of a predefined (fixed) area on the whiteboard.
 	\item Microcontroller: the PSoC 6 microcontroller will take in the image from the camera and perform image processing to detect edges, indicating where there are markings on the whiteboard. It will then convert the array of edges that have been detected and find the top-most, left-most, bottom-most, and right-most locations of the markings. These four values are then put into an array. An array of instructions to be given to the stepper motors is then created, and this array is then sent to the Feather board.
 	\item SPI: one of two communication protocols used to communicate with the camera through the microcontroller and trigger a capture of an image.
-	\item I2C: the other of two communication protocols used to initialize the resolution and compression type of the image that is being captured by the camera. It is also the same type of communication method that is used to send data from the microcontroller to the Feather board.
+	\item I\textsuperscript{2}C: the other of two communication protocols used to initialize the resolution and compression type of the image that is being captured by the camera. It is also the same type of communication method that is used to send data from the microcontroller to the Feather board.
 	\item Feather Board: acts as an in-between for the microcontroller and the stepper motors, and is connected to the wireless transceivers (a.k.a. Adafruit's HUZZAH32 microcontroller boards) that allow wireless communication between the board and the stepper motors.
 	\item Transmitter: reads in the stepper motor instruction array from the microcontroller and sends the instructions to the stepper motors wirelessly, one at a time.
 	\item Receiver: receives the instructions sent by the transmitter and uses the proper libraries to move the stepper motors accordingly.
@@ -447,9 +454,9 @@ Figure~\ref{fig:rough} shows an overview of the final deliverable's mechanical a
 \end{itemize} \par
 \subsection{Work Distribution}
 \setlength{\parindent}{2.5ex} Heather Libecki was responsible for being the project manager of the Smart Eraser project. She was in charge of the stepper motors and all of their various components, including their drivers, their power system, and the PCBs needed to connect them together. She also created the wireless connections between the receiver stepper motor Feather boards and the transmitter Feather board. She assisted Chris with creating the SPI communication between the transmitter Feather board and the PSoC 6. Finally, she was in charge of the algorithms used to find the instructions for the stepper motors needed to move the eraser to the markings found on the whiteboard, before moving back to its standby position. Therefore, she was in charge of the movement of the Smart Eraser. \par
-\setlength{\parindent}{2.5ex} Chris Quesada was in charge of the research into and understanding of the PSoC 6 microcontroller, including its comprehensive Integrated Development Environment (IDE). He was then responsible for developing a working SPI and I2C communication between the PSoC 6 to configure the image sensor(I2C) to output RGB565 with a 320x240 resolution and then read in image data (SPI). After an image is received, he was to develop an image processing program which takes in an image, converts it to grayscale, then uses a sobel edge detection algorithm to detect objects in the image. To know if this algorithm worked correctly, he had to set up the PSoC 6 to display images on the included TFT display. He headed the creation of the I2C communication between the HUZZAH32 and the PSoC 6 with assistance from Heather. To allow for easier program management, he was in charge of adding virtual memory to the PSoC 6 to allow for an entire image to be processed rather than parts of the image. Therefore, he was in charge of the image processing brain behind the Smart Eraser, configuration of the PSoC 6 hardware, graphical display of image, addition of virtual memory, and any wired communications to and from the PSoC 6.
+\setlength{\parindent}{2.5ex} Chris Quesada was in charge of the research into and understanding of the PSoC 6 microcontroller, including its comprehensive Integrated Development Environment (IDE). He was then responsible for developing a working SPI and I\textsuperscript{2}C communication between the PSoC 6 to configure the image sensor(I\textsuperscript{2}C) to output RGB565 with a 320x240 resolution and then read in image data (SPI). After an image is received, he was to develop an image processing program which takes in an image, converts it to grayscale, then uses a sobel edge detection algorithm to detect objects in the image. To know if this algorithm worked correctly, he had to set up the PSoC 6 to display images on the included TFT display. He headed the creation of the I\textsuperscript{2}C communication between the HUZZAH32 and the PSoC 6 with assistance from Heather. To allow for easier program management, he was in charge of adding virtual memory to the PSoC 6 to allow for an entire image to be processed rather than parts of the image. Therefore, he was in charge of the image processing brain behind the Smart Eraser, configuration of the PSoC 6 hardware, graphical display of image, addition of virtual memory, and any wired communications to and from the PSoC 6.
  \par
-\setlength{\parindent}{2.5ex} Juan Colin was in charge of the initial conception, design, and execution of the physical mechanical system and its interconnections. He was also in charge of drafting and making the wooden prototype stand and mounting all of the components together so as to ensure spacial efficiency and visual impact. Therefore, he was in charge of the entire physical prototype construction of the Smart Eraser. He also assisted in setting up the Arducam via an Arduino platform to analyze the SPI and I2C being sent from the camera.
+\setlength{\parindent}{2.5ex} Juan Colin was in charge of the initial conception, design, and execution of the physical mechanical system and its interconnections. He was also in charge of drafting and making the wooden prototype stand and mounting all of the components together so as to ensure spacial efficiency and visual impact. Therefore, he was in charge of the entire physical prototype construction of the Smart Eraser. He also assisted in setting up the Arducam via an Arduino platform to analyze the SPI and I\textsuperscript{2}C being sent from the camera.
  \par
 \setlength{\parindent}{2.5ex} During the project's life cycle, there were a number of deliverables that needed to be turned in to Dr. Stillmaker which were worked on by all three members to ensure a consistent flow of information throughout all written documentation.
 
@@ -581,7 +588,7 @@ The following list outlines the relevant courses and the material they contain t
 		\item Development of algorithms
 		\item Basic foundation of and general layout of hardware in microcontrollers, as well as the IDE that is specific to it
 		\item Interfacing with peripherals on the microcontroller
-		\item SPI and I2C communication
+		\item SPI and I\textsuperscript{2}C communication
 	\end{itemize}
 \end{itemize}\par
  
@@ -600,7 +607,7 @@ The process of learning the hardware and IDE of a microcontroller, which was gai
 The original plan to create a shortest path algorithm came from the knowledge of Dijkstra's algorithm gained from the \textit{Computer Networks} course. This idea was scrapped, however, due to the time constraints on the project. An algorithm that finds the outer-most edges of the markings on the whiteboard, then erases the markings in a serpentine-like pattern was chosen instead.\\
 
 \subsubsection{Image Processing}
-One of the main components of the Smart Eraser is its image processing capabilities. The PSoC 6 is fed an image through a wired SPI and I2C communication with the camera and store that image in memory. Once the image has completed its processing and the array of the image data needs to be sent to the HUZZAH32, it does so through a UART serial connection to the board. All of these methods of communication were learned in the \textit{Embedded Systems} course. The rest of the image processing algorithm and other information pertaining to it had to be researched outside of the course information learned.\\
+One of the main components of the Smart Eraser is its image processing capabilities. The PSoC 6 is fed an image through a wired SPI and I\textsuperscript{2}C communication with the camera and store that image in memory. Once the image has completed its processing and the array of the image data needs to be sent to the HUZZAH32, it does so through a UART serial connection to the board. All of these methods of communication were learned in the \textit{Embedded Systems} course. The rest of the image processing algorithm and other information pertaining to it had to be researched outside of the course information learned.\\
 
 \subsubsection{Wireless Connectivity}
 The instructions for the stepper motors need to be sent wirelessly from the PSoC 6. The chat room program that was assigned in the \textit{Computer Networks} course was used as a template for the wireless transmission of these instructions between the transmitter HUZZAH32 and the two receiving HUZZAH32s. This program was made with the MicroPython programming language, and was also used as an assignment in the \textit{Micropython Lab} course.\\
@@ -626,7 +633,7 @@ Additional research pertaining to these topics and how they were implemented in 
 	\begin{itemize}
 		\item Defacto standard
 	\end{itemize}
-	\item I2C Communications
+	\item I\textsuperscript{2}C Communications
 	\begin{itemize}
 		\item Defacto standard
 	\end{itemize}
@@ -687,14 +694,14 @@ SPI communication is used in order to talk to the SPI interface of the Arducam-5
 	\label{fig:spiwrite}
 \end{figure}
 
-\subsubsection{I2C Communication}
-The purpose of including I2C communication is both to initialize and configure the image sensor of the Arducam-5MP-mini-plus as well as providing an interface between the PSoC 6 and HUZZAH32 microcontrollers. The figure below provides and example I2C exchange between a master and slave where the master is the PSoC 6 and the slave is the Arducam. The information provided from Arducam is slightly incorrect, as most developers incorrectly provide an 8-bit slave address when it should be a 7-bit. The correct address is 0x3C where a read/write bit is tacked on by the microcontroller. So, if its a write operation the slave address would be 0x3C plus a write-bit(0), making the slave address 0x78 (0x3C with a zero bit tacked onto the front of the LSB equals 0x78) and the same applies to a read operation which adds a read-bit(1). This means that there is only one slave address and not separate addresses for read and write operations.
+\subsubsection{I\textsuperscript{2}C Communication}
+The purpose of including I\textsuperscript{2}C communication is both to initialize and configure the image sensor of the Arducam-5MP-mini-plus as well as providing an interface between the PSoC 6 and HUZZAH32 microcontrollers. The figure below provides and example I\textsuperscript{2}C exchange between a master and slave where the master is the PSoC 6 and the slave is the Arducam. The information provided from Arducam is slightly incorrect, as most developers incorrectly provide an 8-bit slave address when it should be a 7-bit. The correct address is 0x3C where a read/write bit is tacked on by the microcontroller. So, if its a write operation the slave address would be 0x3C plus a write-bit(0), making the slave address 0x78 (0x3C with a zero bit tacked onto the front of the LSB equals 0x78) and the same applies to a read operation which adds a read-bit(1). This means that there is only one slave address and not separate addresses for read and write operations.
  
  \begin{figure}[H]
  	\centering
  	{\includegraphics[max size={\textwidth}{\textheight}, scale=1]{Images/I2C_write.png}}
- 	\caption{Bits corresponding to a system I2C write \cite{arducam}}
- 	\label{fig:i2cwrite}
+ 	\caption{Bits corresponding to a system I\textsuperscript{2}C write \cite{arducam}}
+ 	\label{fig:I2Cwrite}
  \end{figure}
  
  \subsubsection{Grayscale Conversion from RGB565}
@@ -722,7 +729,7 @@ The purpose of including I2C communication is both to initialize and configure t
  \end{figure}
  
 \subsubsection{Socket Programming for Wireless Communication}
- Due to malfunctioning hardware concerning the Arduinos and the Kuman wireless transceivers, the original idea for the wireless communication system had to be scrapped. The new concept is to use the HUZZAH32 Feather boards as the wireless transceivers that send and receive instructions for the stepper motors to execute. These boards can be programmed with either Micropython or Arduino programming languages, but in this project, they use Micropython to perform their tasks. One Feather board is initialized as a transmitter (server) that connect to the PSoC 6 via an I2C connection and take in the stepper motor instructions, then send these instructions to the stepper motors. Two other Feather boards act as receivers (clients); one is attached to each stepper motor, and receive the instructions for the stepper motors. They then give them the directions to move according to the instructions received.
+ Due to malfunctioning hardware concerning the Arduinos and the Kuman wireless transceivers, the original idea for the wireless communication system had to be scrapped. The new concept is to use the HUZZAH32 Feather boards as the wireless transceivers that send and receive instructions for the stepper motors to execute. These boards can be programmed with either Micropython or Arduino programming languages, but in this project, they use Micropython to perform their tasks. One Feather board is initialized as a transmitter (server) that connect to the PSoC 6 via an I\textsuperscript{2}C connection and take in the stepper motor instructions, then send these instructions to the stepper motors. Two other Feather boards act as receivers (clients); one is attached to each stepper motor, and receive the instructions for the stepper motors. They then give them the directions to move according to the instructions received.
  
    \begin{figure}[H]
  	\centering
@@ -765,7 +772,7 @@ The purpose of including I2C communication is both to initialize and configure t
  
  \subsection{Physical Technological Components}
  \subsubsection{Arducam}
- The camera is the input that drives the functionality of the rest of the system. It provides high enough quality for future improvement, but for the purposes of this project, only a 320x240 resolution is needed. The current design has the camera directly connected to the PSoC 6 microcontroller through SPI and I2C communication to both configure the image sensor (I2C) and initiate data transfer (SPI). Although it is referred to as a camera it is more accurately defined as a module which has an I2C interface to configure the image sensor and a SPI interface to handle data transfer.
+ The camera is the input that drives the functionality of the rest of the system. It provides high enough quality for future improvement, but for the purposes of this project, only a 320x240 resolution is needed. The current design has the camera directly connected to the PSoC 6 microcontroller through SPI and I\textsuperscript{2}C communication to both configure the image sensor (I\textsuperscript{2}C) and initiate data transfer (SPI). Although it is referred to as a camera it is more accurately defined as a module which has an I\textsuperscript{2}C interface to configure the image sensor and a SPI interface to handle data transfer.
     \begin{figure}[H]
  	\centering
  	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.15]{Images/arducam.jpg}}
@@ -774,7 +781,7 @@ The purpose of including I2C communication is both to initialize and configure t
  \end{figure}
  
  \subsubsection{PSoC 6 Microcontroller}
- Due to the processing capabilities that the Smart Eraser needs to be able to handle, and due to the peripheral devices that need to be attached, the PSoC 6 was found to be the best microcontroller to use for the brains behind the mechanism. The PSoC 6 not only allows for the straightforward programming of peripheral devices attached to it, but it also has a dual -core processor built into it which can handle the programming that needs to be done for the Smart Eraser to work as intended. Within the PSoC 6 are Serial Control Blocks(SCB) which can be configured to suite the projects needs, whether it be I2C, SPI, or UART. The SCB is the gateway to both the Arducam and HUZZAH32. There is also a TFT display attached to the microcontroller that allows for viewing of any image captured and any image processing results. Finally, SW2 is used to initiate the process from capture to erasing.
+ Due to the processing capabilities that the Smart Eraser needs to be able to handle, and due to the peripheral devices that need to be attached, the PSoC 6 was found to be the best microcontroller to use for the brains behind the mechanism. The PSoC 6 not only allows for the straightforward programming of peripheral devices attached to it, but it also has a dual -core processor built into it which can handle the programming that needs to be done for the Smart Eraser to work as intended. Within the PSoC 6 are Serial Control Blocks(SCB) which can be configured to suite the projects needs, whether it be I\textsuperscript{2}C, SPI, or UART. The SCB is the gateway to both the Arducam and HUZZAH32. There is also a TFT display attached to the microcontroller that allows for viewing of any image captured and any image processing results. Finally, SW2 is used to initiate the process from capture to erasing.
     \begin{figure}[H]
  	\centering
  	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.7]{Images/psoc.jpg}}
@@ -1330,9 +1337,9 @@ She had the responsibility of being the project manager for the Smart Eraser pro
 	\item Weaknesses: circuitry design, power systems, socket programming with Micropython 
 \end{itemize} 
  \subsection{Chris Quesada}
-Has experience in working with embedded systems and developing code for different applications. This project will be heavy on the software side, using both \textit{C} and \textit{Python} to take in data, analyze it, and then send an output.  He also developed the UART, SPI, and I2C communications needed for the SMART ERASER system. A solid understanding  of arrays, pointers, and how information is stored in memory was applied towards implementing the  image processing techniques used to find pixels that represent markings in the digital image. His work in ECE 70, concepts and experience gained in CSCI 41, and research into image processing allowed for the succesful completion of the SMART ERASER  image processing capabilities. Researching SPI and I2C in Embedded systems along with further research into theses communications along with UART during the SMART ERASER developement led to successful implementations of all three. He also assisted Heather with the developement of the wireless communicaions between the HUZZAH32 microcontrollers.
+Has experience in working with embedded systems and developing code for different applications. This project will be heavy on the software side, using both \textit{C} and \textit{Python} to take in data, analyze it, and then send an output.  He also developed the UART, SPI, and I\textsuperscript{2}C communications needed for the SMART ERASER system. A solid understanding  of arrays, pointers, and how information is stored in memory was applied towards implementing the  image processing techniques used to find pixels that represent markings in the digital image. His work in ECE 70, concepts and experience gained in CSCI 41, and research into image processing allowed for the succesful completion of the SMART ERASER  image processing capabilities. Researching SPI and I\textsuperscript{2}C in Embedded systems along with further research into theses communications along with UART during the SMART ERASER developement led to successful implementations of all three. He also assisted Heather with the developement of the wireless communicaions between the HUZZAH32 microcontrollers.
 \begin{itemize}
-	\item Strengths: programming (C, C++, Python),  programming concepts (arrays, pointers, structures, data types), embedded systems, developing algorithms, communications(SPI, UART, I2C)
+	\item Strengths: programming (C, C++, Python),  programming concepts (arrays, pointers, structures, data types), embedded systems, developing algorithms, communications(SPI, UART, I\textsuperscript{2}C)
 	
 	\item Weaknesses: circuitry design, mathematics, public speaking, power
 \end{itemize} \par
@@ -1345,8 +1352,42 @@ Has experience in working with embedded systems and developing code for differen
 \end{itemize}
 
 \section{Analysis and Design}
-\subsection{SPI communication}
-Serial Peripheral Communication (SPI) is a common form of wired communication between different systems. It is distastefully referred to as a master - slave relationship where there is one master and one or more slaves. There is no official standard for SPI however it is so widely used that it can be referred to as a De facto standard due to everyone operating along the same assumptions. These assumptions include the 4 modes SPI operate in and each mode is a different combination of the clock phase, when data is evaluated, and clock polarity, whether the clock is high or low when not in use. Once the mode has been decided, the slave clock dictates the rate of transaction between master and slave and therefore, the master must be configured accordingly. A Master-Out-Slave-In (MOSI) line feeds data, either MSB or LSB first, to the shift register in the SPI interface of the slave device. For every bit received, the slave will send a bit back to the master along the Master-In-Slave-Out (MISO) line. During a SPI exchange, every bit sent is a bit received and depending if you want to read or write data, the bits received are sometimes irrelevant (writing to slave).  
+
+\subsection{I\textsuperscript{2}C Communication - PSoC 6 to Arducam}
+Inter-Integrated-Circuit(I\textsuperscript{2}C) is a popular method for interactions between processors and slower ICs. For optimal efficiency, short distances should be used so it is mainly for intra-board connections. The naming scheme used to define the components is referred to as a master/slave relationship where there is one master and one or more slaves. Communication between the master and slave is through messages, with the messages being structured in a specific way. A start and stop bit are used to indicate the start and end of a message. After the start bit, an address is given, usually 7-10 bits, followed by the read/write bit. As was the case with Arducam, the data sheets for slave devices often incorrectly list the slave address with the read/write bit included. Using the PSoC 6 APIs for the I\textsuperscript{2}C Serial Control Block(SCB) added a start and stop bit to the given slave address based on whether it was a read or write. So, after omitting the LSB of the slave address provided from Arducam, communications worked perfectly(0x78 - LSB = 0x3C). This is known as the address frame. There are also 2 data frames that ensue, each a byte wide. Between each frame either an ACK is received from the slave or the communication failed and the ACK bit is set to NACK. The flow of how a message is sent can be seen in figure ~\ref{fig:I2Cmessage}.
+
+ \begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=1]{Images/I2Cmessage.png}}
+	\caption{Simple overview of an I2C message \cite{I2C}}
+	\label{fig:I2Cmessage}
+\end{figure}
+
+Some confusion may arise when it is stated that in order to communicate with the Arducam module both I\textsuperscript{2}C and SPI are needed to do so. This is because the Arducam is just that, a module, that has different components. The difference between these two types of communication is that I\textsuperscript{2}C is needed to initialize the image sensor on the module, determining what is transferred to the FIFO storage, located on the module as well. For example, with I\textsuperscript{2}C, the resolution, format, and size of the image can be configured. With SPI, the actual capture and transfer of the image data from that FIFO storage is done. Basically, the I\textsuperscript{2}C can only interact with the image sensor itself and the SPI communication is for operating the entire module. The layout of the different components is shown in ~\ref{fig:ArducamBlock}\par
+\setlength{\parindent}{2.5ex}
+
+ \begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=1]{Images/ArducamBlock.png}}
+	\caption{Arducam module block diagram \cite{arducam}}
+	\label{fig:ArducamBlock}
+\end{figure}
+
+Unfortunately due to time constraints, although the I\textsuperscript{2}C communication works correctly, attempts at configuring the image sensor to output RGB565 with a resolution of 320x240 were unsuccessful. This is due to the hundreds of control registers that can be found in the sensor and not knowing which ones need to be set and what values to set in them. This can be a project all on its own. However, the analysis and design will still be explained.\par
+\setlength{\parindent}{2.5ex} 
+In the file Arducam.C, found in ~\ref{A8}, MyCam\_Init() uses the Write\_I2C() function to send configuration signals to the image sensor of the Arducam module. These configurations are stored in structures in the beginning of the code file. As can be seen, just in the first configuration structure alone, there are over 250 configurations that need to be sent to the image sensor to get a RAW 1280x960 image stored to the FIFO buffer of the Arducam module. This is followed by another, much smaller set of configurations that is meant to resize the image. Due to the inability to set the output to RGB565, an attempt to receive RAW data was attempted and is the reasoning for sending theses configurations. Receiving RAW data requires another component to be added to the image processing, demosaicing, and is currently still in development. The Write\_I2C() function uses a combination of APIs provided by Cypress in order to interact with Serial Control Block 3 (SCB3) configured to be a I\textsuperscript{2}C master. It can be found in the section ~\ref{A6}.
+
+ \begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=1]{Images/I2Chardware.png}}
+	\caption{Hardware Configuration of I2C}
+	\label{fig:I2Chardware}
+\end{figure}
+
+
+
+\subsection{SPI communication - PSoC 6 to Arducam}
+Serial Peripheral Communication (SPI) is a common form of wired communication between different systems. The master/slave relationship used in I\textsuperscript{2}C is also used in SPI. There is no official standard for SPI however it is so widely used that it can be referred to as a De facto standard due to everyone operating along the same assumptions. These assumptions include the 4 modes SPI operate in and each mode is a different combination of the clock phase, when data is evaluated, and clock polarity, whether the clock is high or low when not in use. Once the mode has been decided, the slave clock dictates the rate of transaction between master and slave and therefore, the master must be configured accordingly. A Master-Out-Slave-In (MOSI) line feeds data, either MSB or LSB first, to the shift register in the SPI interface of the slave device. For every bit received, the slave will send a bit back to the master along the Master-In-Slave-Out (MISO) line. During a SPI exchange, every bit sent is a bit received and depending if you want to read or write data, the bits received are sometimes irrelevant (writing to slave).  
 
  \begin{figure}[H]
 	\centering
@@ -1356,29 +1397,35 @@ Serial Peripheral Communication (SPI) is a common form of wired communication be
 \end{figure}
 
 \setlength{\parindent}{2.5ex} 
-For the SMART ERASER system, the PSoC 6 is the master and the Arducam module is the slave. According to Arducam's data sheet, the Arducam SPI interface operates in SPI mode 0, meaning CPHA = 0 and CPOL = 0. Therefore the PSoC 6 is configured to operate in that mode as well. Also according the Arducam's data sheet the max frequency of its SPI interface is 8 MHz and therefore the PSoC 6 was configured to send a 7.142857 MHz signal to meet the requirement. Both the RX and TX of the PSoC 6 was set to be 16 bits wide in order to properly communicate with the Arducam SPI interface. An example of what the Arducam needs in order for proper communication can be found in figures ~\ref{fig:spiread} and  ~\ref{fig:spiwrite}. The command byte, sent first, is structured so that the MSB is designated as the read/write byte, leaving the other 6 bits to represent an address in the Arducam SPI interface. The following byte is the data byte which contains specific data if the action is a write. If it is a read SPI transaction then this byte is known as a dummy byte because its just sent to push what needs to be read to master. The reason the TX and RX were set to 16 bits instead of 8 is because when this command and data byte is sent to the Arducam, the CS line needs to be asserted while both bytes are sent. When the PSoC 6 was configured with and 8-bit TX and RX, it would de-assert the CS line between each byte. This caused improper communication between the devices because from the point of view of the Arducam, it was only receiving command bytes.\par
+For the SMART ERASER system, the PSoC 6 is the master and the Arducam module is the slave. According to Arducam's data sheet, the Arducam SPI interface operates in SPI mode 0, meaning CPHA = 0 and CPOL = 0. Therefore the PSoC 6 is configured to operate in that mode as well. Also according the Arducam's data sheet the max frequency of its SPI interface is 8 MHz and therefore the PSoC 6 was configured to send a 7.142857 MHz signal to meet the requirement. Both the RX and TX of the PSoC 6 was set to be 16 bits wide in order to properly communicate with the Arducam SPI interface. An example of what the Arducam needs in order for proper communication can be found in figures ~\ref{fig:spiread} and  ~\ref{fig:spiwrite}. The command byte, sent first, is structured so that the MSB is designated as the read/write byte, leaving the other 6 bits to represent an address in the Arducam SPI interface. The following byte is the data byte which contains specific data if the action is a write. If it is a read SPI transaction then this byte is known as a dummy byte because its just sent to push what needs to be read to master. The reason the TX and RX were set to 16 bits instead of 8 is because when this command and data byte is sent to the Arducam, the CS line needs to be asserted while both bytes are sent. When the PSoC 6 was configured with an 8-bit TX and RX, it would de-assert the CS line between each byte. This caused improper communication between the devices because from the point of view of the Arducam, it was only receiving command bytes.\par
 \setlength{\parindent}{2.5ex}
-This can be observed in the Arducam.C file, in any of the functions that use the write\_SPI() function. A packet of 2 bytes is built and then placed into the TX of the PSoC 6 for transfer. There is a test function that tests whether or not the SPI is working correctly, a MyCam\_Trigger() function that initiates a capture and a MyCam\_Check\_Capture\_Status() function that polls the capture ready flag in register 0x41 of the Arducam module. The Write\_I2C() function itself uses a combination of the APIs provided by Cypress in order to interact with the Serial Control Block(SCB) that has been configured as an SPI master.
+This can be observed in the Arducam.C file, in any of the functions that use the Write\_SPI() function. A packet of 2 bytes is built and then placed into the TX of the PSoC 6 for transfer, which is handle by Write\_SPI(). These functions are: \\
+
+\begin{itemize}
+	\item MyCam\_Test(): Tests whether or not the SPI is working correctly 
+	\item MyCam\_Trigger(): Function that initiates a capture 
+	\item MyCam\_Check\_Capture\_Status(): Function that polls the capture ready flag in register 0x41 of the Arducam module. \\
+\end{itemize}
+
+The Write\_SPI() function uses a combination of the APIs provided by Cypress in order to interact with the Serial Control Block 1(SCB1) that has been configured as aa SPI master. It is located in the I2Cmaster.C file found in ~\ref{A4}.
 
  \begin{figure}[H]
 	\centering
-	{\includegraphics[max size={\textwidth}{\textheight}, scale=1]{Images/SPIconfig1.png}}
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=.9]{Images/SPIconfig1.png}}
 	\caption{Hardware configuration of SPI (1)}
 	\label{fig:SPIconfig1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	{\includegraphics[max size={\textwidth}{\textheight}, scale=.85]{Images/SPIconfig2.png}}
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=.9]{Images/SPIconfig2.png}}
 	\caption{Hardware configuration of SPI (2)}
 	\label{fig:SPIconfig2}
 \end{figure}
 
-\subsection{I2C Communication}
-Some confusion may arise when it is stated that in order to communicate with the Arducam module both I2C and SPI are needed to do so. This is because the Arducam is just that, a module, that has different components. The difference between these two types of communication is that I2C is needed to initialize the camera's settings and how it transfers data. For example, with I2C, the resolution, format, and size of the image can be configured. With SPI, the actual capture and transfer of the image data is done. However, unfortunately due to time constraints, the I2C
 \subsection{Image Processing}
 \subsubsection{Resolution}
-The original idea was to use a HD image to process because it would be able to capture more information, and therefore more accurately detect objects in a picture. This was assumed without taking into account the capabilities of the microcontroller. As it has been stated, attempts to add more physical memory to the system proved to more difficult than expected, leaving the program to only operate with a limited amount of memory. Due to this limitation, as well as matching the resolution of the TFT screen, a resolution of 320x240 was chosen to implement the image processing aspects of the system. It should be stated that the program was structured in a way that allows for easy changing of resolutions. Another impact of memory limitation is that only 80 rows of the image can be evaluated at a time.\\
+The original idea was to use a HD image to process because it would be able to capture more information, and therefore more accurately detect objects in a picture. This was assumed without taking into account the capabilities of the microcontroller. As it has been stated, attempts to add more physical memory to the system proved to more difficult than expected, leaving the program to only operate with a limited amount of memory. Due to this limitation, as well as matching the resolution of the TFT screen, a resolution of 320x240 was chosen to implement the image processing aspects of the system. It should be stated that the program was structured in a way that allows for easy changing of resolutions. Another impact of memory limitation is that only 80 rows of the image can be evaluated at a time. The resolution parameters are set in ImProc.H which can be found in section ~\ref{A11}.\\
 
 \subsubsection{Output Format}
  There are a multitude of image formats than can be used and each one has its own specific way to read pixel information. JPEG was immediately decided against due to its lossy nature and high level of complexity to read pixel data. That left RGB, raw RGB, and YUV formats. Going a level down, each of the three formats have different arrangements and sizes in which they can be formed. For example, RGB can be either 888, 565, 555, 444, and even still further the ordering of the R,G, and B can vary.\par
@@ -1395,8 +1442,8 @@ For the Smart Eraser system, as mentioned above, a format of RGB565 was chosen. 
 \end{figure}
 
 \subsubsection{Resolution}
-here are many different ways to do grayscale conversion from RGB. All are capable of achieving what was needed for Smart Eraser System, and the only difference between the methods are how true to gray the image looks and whether it has a darker or lighter tone to it. Because it is more accurate to the human eye, the Luminance method was chosen for the Smart Eraser system to convert to grayscale, mainly for the fact that the images would be viewed and not just processed behind the scenes.\par
-Here is quick description of some different methods, including Luminance:
+There are many different ways to do grayscale conversion from RGB. All are capable of achieving what was needed for Smart Eraser System, and the only difference between the methods are how true to gray the image looks and whether it has a darker or lighter tone to it. Because it is more accurate to the human eye, the Luminance method was chosen for the Smart Eraser system to convert to grayscale, mainly for the fact that the images would be viewed and not just processed behind the scenes.\par
+Here is quick description of some different methods, including Luminance:\\
 
 \begin{itemize}
 \item Averaging Method
@@ -1420,15 +1467,15 @@ Here is quick description of some different methods, including Luminance:
 	\begin{itemize}
 		\item $ Gray = Red $ \cite{Helland}
 		\item $ Gray = Green $ \cite{Helland}
-		\item $ Gray = Blue $ \cite{Helland}
+		\item $ Gray = Blue $ \cite{Helland}\\
 	\end{itemize}	
-\end{itemize}\par
+\end{itemize}
 
-Once again, which method that is used isn’t important, it is seperating the intensities from each other and then comparing them on an equivalent scale. An output format of RGB565 uses 16 bits to represent a single pixel, as shown in (figure with rgb565 output in previous section). In order to separate these intensities, the variable that contains the pixel information (type uint16\_t) is masked accordingly to pull out the R,G, and B intensities, storing them into new variables (type uint8). Masking is the process of performing a logical AND operation on a variable to isolate bit values contained in that variable. As demonstrated in figure (the one right below) if the pixel data variable is ANDed with the Red Mask variable, only bits[15:11] will be retained.
+Once again, which method that is used is not important, it is separating the intensities from each other and then comparing them on an equivalent scale. An output format of RGB565 uses 16 bits to represent a single pixel, as shown in (figure with rgb565 output in previous section). In order to separate these intensities, the variable that contains the pixel information (type uint16\_t) is masked accordingly to pull out the R,G, and B intensities, storing them into new variables (type uint8). Masking is the process of performing a logical AND operation on a variable to isolate bit values contained in that variable. As demonstrated in figure ~\ref{fig:Seperate_Intensities} if the pixel data variable is ANDed with the Red Mask variable, only bits[15:11] will be retained.
 
 \begin{figure}[H]
 	\centering
-	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.8]{Images/Seperate_Intensities.png}}
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=1]{Images/Seperate_Intensities.png}}
 	\caption{How red, green, and blue intensities are seperated from one another}
 	\label{fig:Seperate_Intensities}
 \end{figure}
@@ -1441,6 +1488,12 @@ With the newly separated values as is, R and B represent shades of gray on a sca
 	\caption{Scaling seperated red green and blue intensities up to 8 bit numbers}
 	\label{fig:scaling}
 \end{figure}
+
+\noindent \textbf{Code Implementation (Separation and scaling):}\\ 
+R 	= ((pixel \& 0b1111100000000000) >> 11 << 3);\\			 
+G	= ((pixel \& 0b0000011111100000) >> 5 << 2);\\			
+B	= (pixel \& 0b0000000000011111) << 3;\\
+\textit{Code is from conv2gray() in ImProc.C located in section ~\ref{A10}}\\
 
 At this point the RGB values are ready to be run through the conversion formula to generate a gray pixel value, in 8 bits. This gray value will then be used as the new R, G and B intensities of the original pixel, creating a shade of gray in the RGB565 format.  To build this new RGB565 pixel, the process up until now is done in reverse. New variables are created to hold “processed” values of RGB that are of type uint16\_t, to match the original pixel data length. 
 
@@ -1457,6 +1510,14 @@ At this point the RGB values are ready to be run through the conversion formula 
 	\caption{Process in reverse: In order to create gray RGB pixel}
 	\label{fig:reverse}
 \end{figure}
+
+\noindent \textbf{Code Implementation (conversion, descaling, reassigning):}\\ 
+Gray\_pixel = (R * 0.2126) + (G * 0.7152) + (B * 0.0722);\\		
+R\_processed = ((uint16\_t)Gray\_pixel)>> 3 << 11;	\\						
+G\_processed = ((uint16\_t)Gray\_pixel)>> 2 << 5;	\\						
+B\_processed = (uint16\_t)Gray\_pixel >> 3;		\\						
+pixel = (uint16\_t)(R\_processed + G\_processed + B\_processed);\\
+\textit{Code is from conv2gray() in ImProc.C located in section ~\ref{A10}}\\\\\\\\\\\\\\\\\\
 
 \subsubsection{Grayscale Results}
 \FloatBarrier
@@ -1495,6 +1556,15 @@ When moving through the image array, the center of the 3x3 kernel must never rea
 	\label{fig:outofBounds}
 \end{figure}
 
+\noindent \textbf{Code Implementation (boundary detection):}\\ 
+for (k = Length + 1; k < bound - Length; k++)\{
+	
+	if ((k + 1) \% Length == 0) \{\\
+	ptr\_GD = ptr\_GD + 2;\\ 
+	ptr\_PD = ptr\_PD + 2;\\
+	k = k + 2;\\
+\}\\
+\textit{Code is from sobel() in ImProc.C located in section ~\ref{A10}}\\\\
 Once boundaries are accounted for in the program, the kernel can be convolved through the image array. At each pixel location (inside of boundary pixels) the operation shown in figure (right below) is carried out, both for the X and Y gradient.  
 
 \begin{figure}[H]
@@ -1507,7 +1577,7 @@ Once boundaries are accounted for in the program, the kernel can be convolved th
 \begin{figure}[H]
 	\centering
 	{\includegraphics[max size={\textwidth}{\textheight}, scale=.75]{Images/sobelConH.png}}
-	\caption{Operation of the Horizontal kerne}
+	\caption{Operation of the Horizontal kernel}
 	\label{fig:sobelConH}
 \end{figure}
 
@@ -1520,7 +1590,19 @@ Finding the gradient in both the X and Y direction at any given pixel location (
 	\label{fig:Pythag}
 \end{figure}
 
-The total magnitude G is now compared against a threshold value, which can be manipulated to adjust the strength of edge detection. If only sharp changes in intensity are desired, to be recognized as an edge then you would set the threshold value very high and if any change of intensity is desired then the threshold will be set very low. It’s a trial and error to see if the image turns out correctly or not and is easily adjustable. Conditional statements are used to then compare against this threshold to set a pixel value to either white (detected edge, G is above threshold) or black (nothing detected, G is below threshold). 
+\noindent \textbf{Code Implementation (kernel convolution):}\\ 
+\noindent Gx =(sobel\_kernel[0])*(*(ptr\_GD - Length + 1)) + (sobel\_kernel[1])*(*(ptr\_GD + 1)) 	            +\\
+(sobel\_kernel[2])*(*(ptr\_GD + Length + 1)) - (sobel\_kernel[0])*(*(ptr\_GD - Length - 1))    	-\\
+(sobel\_kernel[1])*(*(ptr\_GD - 1))			 - 	(sobel\_kernel[2])*(*(ptr\_GD + Length - 1));\\
+
+\noindent Gy =(sobel\_kernel[0])*(*(ptr\_GD - Length + 1)) + (sobel\_kernel[1])*(*(ptr\_GD - Length)) 		+\\
+(sobel\_kernel[2])*(*(ptr\_GD - Length - 1)) - (sobel\_kernel[0])*(*(ptr\_GD + Length + 1))    	-\\
+(sobel\_kernel[1])*(*(ptr\_GD + Length))	 - 	(sobel\_kernel[2])*(*(ptr\_GD + Length - 1)); \\
+
+\noindent G = (sqrt(pow(Gx,2) + pow(Gy,2)));\\\\
+\textit{Code is from sobel() in ImProc.C located in section ~\ref{A10}}\\
+
+The total magnitude G is now compared against a threshold value, which can be manipulated to adjust the strength of edge detection. If only sharp changes in intensity are desired, to be recognized as an edge then you would set the threshold value very high and if any change of intensity is desired then the threshold will be set very low. It is a trial and error to see if the image turns out correctly or not and is easily adjustable. Conditional statements are used to then compare against this threshold to set a pixel value to either white (detected edge, G is above threshold) or black (nothing detected, G is below threshold). 
 
 \subsubsection{Results of Sobel Edge Detection}
 
@@ -1533,12 +1615,23 @@ The total magnitude G is now compared against a threshold value, which can be ma
 \end{figure}
 \FloatBarrier
 
-\subsubsection{Results of Sobel Edge Detection}
-\subsubsection{Results of Sobel Edge Detection}
-
-
-
-
+\subsubsection{Square\_Detection.C Algorithm}
+\subsubsection{UART Communication - PSoC 6 to HUZZAH32 (server)}
+\subsubsection{Wireless Communication)}
+\subsubsection{Serpentine.C Algorithm}
+\subsubsection{Stepper Motor Movement}
+\subsection{Hardware}
+\subsubsection{Using the Logic Analyzer}
+\subsubsection{Testing with the Arduino and Arducam}
+\subsubsection{Stepper Motor and Driver Connections}
+\subsubsection{Power Parameters}
+\subsection{Project Prototype - Planning}
+\subsubsection{Initial Prototype Design}
+\subsubsection{Final Prototype Design}
+\subsubsection{Dimensions}
+\subsection{Project Prototype - Building}
+\subsubsection{Component Mounting Order}
+\subsubsection{Final Product}
 
  \section{Stakeholder List}
  \begin{enumerate}
@@ -1612,45 +1705,67 @@ The total magnitude G is now compared against a threshold value, which can be ma
 	\bibliographystyle{IEEEtran}
 	\bibliography{reference}	
 \newpage
+\lstdefinestyle{myCustomC}{
+	language=C,
+	basicstyle =\small\ttfamily
+	numbers=left,
+	stepnumber=1,
+	numbersep=1pt,
+	tabsize=2,
+	showspaces=false,
+	showstringspaces=false
+}
 \section{Appendices}
 
-\subsection{Appendix 1 - \textit{transmitter\_xy.ino}}
+\subsection{Appendix 1 - \textit{transmitter\_xy.ino}}\label{A1}
 \lstinputlisting{Appendices/transmitter_xy.ino}
+\newpage
 
-\subsection{Appendix 2 - \textit{receiver\_x.ino}}
+\subsection{Appendix 2 - \textit{receiver\_x.ino}}\label{A2}
 \lstinputlisting{Appendices/receiver_x.ino}
+\newpage
 
-\subsection{Appendix 3 - \textit{main.c}}
+\subsection{Appendix 3 - \textit{main.c}}\label{A3}
 \lstinputlisting{Appendices/main.c}
+\newpage
 
-\subsection{Appendix 4 - \textit{SPImaster.c}}
+\subsection{Appendix 4 - \textit{SPImaster.c}}\label{A4}
 \lstinputlisting{Appendices/SPImaster.c}
+\newpage
 
-\subsection{Appendix 5 - \textit{SPImaster.h}}
+\subsection{Appendix 5 - \textit{SPImaster.h}}\label{A5}
 \lstinputlisting{Appendices/SPImaster.h}
+\newpage
 
-\subsection{Appendix 6 - \textit{I2Cmaster.c}}
+\subsection{Appendix 6 - \textit{I\textsuperscript{2}Cmaster.c}}\label{A6}
 \lstinputlisting{Appendices/I2Cmaster.c}
+\newpage
 
-\subsection{Appendix 7 - \textit{I2Cmaster.h}}
+\subsection{Appendix 7 - \textit{I\textsuperscript{2}Cmaster.h}}\label{A7}
 \lstinputlisting{Appendices/I2Cmaster.h}
+\newpage
 
-\subsection{Appendix 8 - \textit{Arducam.c}}
+\subsection{Appendix 8 - \textit{Arducam.c}}\label{A8}
 \lstinputlisting{Appendices/Arducam.c}
+\newpage
 
-\subsection{Appendix 9 - \textit{Arducam.h}}
+\subsection{Appendix 9 - \textit{Arducam.h}}\label{A9}
 \lstinputlisting{Appendices/Arducam.h}
 
-\subsection{Appendix 10 - \textit{Improc.c}}
+\newpage
+\subsection{Appendix 10 - \textit{Improc.c}}\label{A10}
 \lstinputlisting{Appendices/Improc.c}
+\newpage
 
-\subsection{Appendix 11 - \textit{Improc.h}}
+\subsection{Appendix 11 - \textit{Improc.h}}\label{A11}
 \lstinputlisting{Appendices/Improc.h}
+\newpage
 
-\subsection{Appendix 12 - \textit{interface.h}}
+\subsection{Appendix 12 - \textit{interface.h}}\label{A12}
 \lstinputlisting{Appendices/interface.h}
+\newpage
 
-\subsection{Appendix 13 - \textit{square\_detection.c}}
+\subsection{Appendix 13 - \textit{square\_detection.c}}\label{A13}
 \lstinputlisting{Appendices/square_detection.c}
  
 \end{document}

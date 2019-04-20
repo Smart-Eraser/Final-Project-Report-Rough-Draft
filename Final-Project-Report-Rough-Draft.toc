@@ -26,7 +26,7 @@
 \contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-B}}Minor Components}{8}{subsection.5.2}
 \contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-C}}Software Components}{8}{subsection.5.3}
 \contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}1}SPI Communication}{8}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}2}I2C Communication}{9}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}2}I\textsuperscript {2}C Communication}{9}{subsubsection.5.3.2}
 \contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}3}Grayscale Conversion from RGB565}{10}{subsubsection.5.3.3}
 \contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}4}Sobel Edge Detection}{10}{subsubsection.5.3.4}
 \contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}5}Socket Programming for Wireless Communication}{11}{subsubsection.5.3.5}
@@ -57,32 +57,47 @@
 \contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XI-B}}Chris Quesada}{29}{subsection.11.2}
 \contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XI-C}}Juan Colin}{30}{subsection.11.3}
 \contentsline {section}{\numberline {XII}Analysis and Design}{30}{section.12}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-A}}SPI communication}{30}{subsection.12.1}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-B}}I2C Communication}{32}{subsection.12.2}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}}Image Processing}{32}{subsection.12.3}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}1}Resolution}{32}{subsubsection.12.3.1}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}2}Output Format}{32}{subsubsection.12.3.2}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}3}Resolution}{33}{subsubsection.12.3.3}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}4}Grayscale Results}{35}{figure.caption.49}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}5}Sobel Edge Detection}{36}{subsubsection.12.3.5}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}6}Results of Sobel Edge Detection}{39}{figure.caption.56}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}7}Results of Sobel Edge Detection}{39}{subsubsection.12.3.7}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}8}Results of Sobel Edge Detection}{39}{subsubsection.12.3.8}
-\contentsline {section}{\numberline {XIII}Stakeholder List}{39}{section.13}
-\contentsline {section}{\numberline {XIV}Project Approval Requirements}{40}{section.14}
-\contentsline {section}{\numberline {XV}Approvals}{41}{section.15}
-\contentsline {section}{References}{42}{section*.57}
-\contentsline {section}{\numberline {XVI}Appendices}{43}{section.16}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-A}}Appendix 1 - \textit {transmitter\_xy.ino}}{43}{subsection.16.1}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-B}}Appendix 2 - \textit {receiver\_x.ino}}{43}{subsection.16.2}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-C}}Appendix 3 - \textit {main.c}}{44}{subsection.16.3}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-D}}Appendix 4 - \textit {SPImaster.c}}{52}{subsection.16.4}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-E}}Appendix 5 - \textit {SPImaster.h}}{54}{subsection.16.5}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-F}}Appendix 6 - \textit {I2Cmaster.c}}{55}{subsection.16.6}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-G}}Appendix 7 - \textit {I2Cmaster.h}}{57}{subsection.16.7}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-H}}Appendix 8 - \textit {Arducam.c}}{59}{subsection.16.8}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-I}}Appendix 9 - \textit {Arducam.h}}{80}{subsection.16.9}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-J}}Appendix 10 - \textit {Improc.c}}{81}{subsection.16.10}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-K}}Appendix 11 - \textit {Improc.h}}{85}{subsection.16.11}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-L}}Appendix 12 - \textit {interface.h}}{85}{subsection.16.12}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-M}}Appendix 13 - \textit {square\_detection.c}}{87}{subsection.16.13}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-A}}I\textsuperscript {2}C Communication - PSoC 6 to Arducam}{30}{subsection.12.1}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-B}}SPI communication - PSoC 6 to Arducam}{32}{subsection.12.2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}}Image Processing}{34}{subsection.12.3}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}1}Resolution}{34}{subsubsection.12.3.1}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}2}Output Format}{35}{subsubsection.12.3.2}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}3}Resolution}{35}{subsubsection.12.3.3}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}4}Grayscale Results}{39}{figure.caption.52}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}5}Sobel Edge Detection}{40}{subsubsection.12.3.5}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}6}Results of Sobel Edge Detection}{43}{figure.caption.59}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}7}Square\_Detection.C Algorithm}{44}{subsubsection.12.3.7}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}8}UART Communication - PSoC 6 to HUZZAH32 (server)}{44}{subsubsection.12.3.8}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}9}Wireless Communication)}{44}{subsubsection.12.3.9}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}10}Serpentine.C Algorithm}{44}{subsubsection.12.3.10}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}11}Stepper Motor Movement}{44}{subsubsection.12.3.11}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}}Hardware}{44}{subsection.12.4}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}1}Using the Logic Analyzer}{44}{subsubsection.12.4.1}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}2}Testing with the Arduino and Arducam}{44}{subsubsection.12.4.2}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}3}Stepper Motor and Driver Connections}{44}{subsubsection.12.4.3}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}4}Power Parameters}{44}{subsubsection.12.4.4}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}}Project Prototype - Planning}{44}{subsection.12.5}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}1}Initial Prototype Design}{44}{subsubsection.12.5.1}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}2}Final Prototype Design}{44}{subsubsection.12.5.2}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}3}Dimensions}{44}{subsubsection.12.5.3}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}}Project Prototype - Building}{44}{subsection.12.6}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}1}Component Mounting Order}{44}{subsubsection.12.6.1}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}2}Final Product}{44}{subsubsection.12.6.2}
+\contentsline {section}{\numberline {XIII}Stakeholder List}{44}{section.13}
+\contentsline {section}{\numberline {XIV}Project Approval Requirements}{45}{section.14}
+\contentsline {section}{\numberline {XV}Approvals}{46}{section.15}
+\contentsline {section}{References}{47}{section*.60}
+\contentsline {section}{\numberline {XVI}Appendices}{48}{section.16}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-A}}Appendix 1 - \textit {transmitter\_xy.ino}}{48}{subsection.16.1}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-B}}Appendix 2 - \textit {receiver\_x.ino}}{49}{subsection.16.2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-C}}Appendix 3 - \textit {main.c}}{50}{subsection.16.3}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-D}}Appendix 4 - \textit {SPImaster.c}}{58}{subsection.16.4}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-E}}Appendix 5 - \textit {SPImaster.h}}{60}{subsection.16.5}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-F}}Appendix 6 - \textit {I\textsuperscript {2}Cmaster.c}}{61}{subsection.16.6}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-G}}Appendix 7 - \textit {I\textsuperscript {2}Cmaster.h}}{64}{subsection.16.7}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-H}}Appendix 8 - \textit {Arducam.c}}{66}{subsection.16.8}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-I}}Appendix 9 - \textit {Arducam.h}}{88}{subsection.16.9}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-J}}Appendix 10 - \textit {Improc.c}}{89}{subsection.16.10}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-K}}Appendix 11 - \textit {Improc.h}}{93}{subsection.16.11}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-L}}Appendix 12 - \textit {interface.h}}{94}{subsection.16.12}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-M}}Appendix 13 - \textit {square\_detection.c}}{96}{subsection.16.13}

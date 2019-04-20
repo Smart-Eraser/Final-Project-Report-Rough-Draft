@@ -33,6 +33,8 @@
 \citation{bracket}
 \citation{uxcell}
 \citation{merc}
+\citation{I2C}
+\citation{arducam}
 \citation{SPI}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Design overview of the final product\relax }}{1}{figure.caption.8}}
@@ -79,13 +81,13 @@
 \newlabel{fig:spiread}{{2}{9}{Bits corresponding to a system SPI read \cite {arducam}\relax }{figure.caption.9}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Bits corresponding to a system SPI write \cite  {arducam}\relax }}{9}{figure.caption.10}}
 \newlabel{fig:spiwrite}{{3}{9}{Bits corresponding to a system SPI write \cite {arducam}\relax }{figure.caption.10}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}2}I2C Communication}{9}{subsubsection.5.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}2}I\textsuperscript  {2}C Communication}{9}{subsubsection.5.3.2}}
 \citation{rgb565}
 \citation{rgb565}
 \citation{sobel}
 \citation{sobel}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Bits corresponding to a system I2C write \cite  {arducam}\relax }}{10}{figure.caption.11}}
-\newlabel{fig:i2cwrite}{{4}{10}{Bits corresponding to a system I2C write \cite {arducam}\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Bits corresponding to a system I\textsuperscript  {2}C write \cite  {arducam}\relax }}{10}{figure.caption.11}}
+\newlabel{fig:I2Cwrite}{{4}{10}{Bits corresponding to a system I\textsuperscript {2}C write \cite {arducam}\relax }{figure.caption.11}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}3}Grayscale Conversion from RGB565}{10}{subsubsection.5.3.3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces How an RGB565 pixel value is stored in memory \cite  {rgb565}\relax }}{10}{figure.caption.12}}
 \newlabel{fig:rgb565}{{5}{10}{How an RGB565 pixel value is stored in memory \cite {rgb565}\relax }{figure.caption.12}{}}
@@ -189,69 +191,94 @@
 \@writefile{toc}{\contentsline {section}{\numberline {X}Equipment and Budget}{27}{section.10}}
 \@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Cost of components for project\relax }}{28}{table.caption.39}}
 \newlabel{table:1}{{IV}{28}{Cost of components for project\relax }{table.caption.39}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Estimated costs of components for project\relax }}{29}{table.caption.40}}
-\newlabel{table:1}{{V}{29}{Estimated costs of components for project\relax }{table.caption.40}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Equipment used besides the components bought\relax }}{29}{table.caption.40}}
+\newlabel{table:2}{{V}{29}{Equipment used besides the components bought\relax }{table.caption.40}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {XI}Roles of Team Members}{29}{section.11}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XI-A}}Heather Libecki}{29}{subsection.11.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XI-B}}Chris Quesada}{29}{subsection.11.2}}
-\citation{SPI}
-\citation{SPI}
+\citation{I2C}
+\citation{I2C}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XI-C}}Juan Colin}{30}{subsection.11.3}}
 \@writefile{toc}{\contentsline {section}{\numberline {XII}Analysis and Design}{30}{section.12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-A}}SPI communication}{30}{subsection.12.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Simple overview of SPI communication \cite  {SPI}\relax }}{30}{figure.caption.41}}
-\newlabel{fig:SPIdiagram}{{29}{30}{Simple overview of SPI communication \cite {SPI}\relax }{figure.caption.41}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Hardware configuration of SPI (1)\relax }}{31}{figure.caption.42}}
-\newlabel{fig:SPIconfig1}{{30}{31}{Hardware configuration of SPI (1)\relax }{figure.caption.42}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Hardware configuration of SPI (2)\relax }}{32}{figure.caption.43}}
-\newlabel{fig:SPIconfig2}{{31}{32}{Hardware configuration of SPI (2)\relax }{figure.caption.43}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-B}}I2C Communication}{32}{subsection.12.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}}Image Processing}{32}{subsection.12.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}1}Resolution}{32}{subsubsection.12.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}2}Output Format}{32}{subsubsection.12.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-A}}I\textsuperscript  {2}C Communication - PSoC 6 to Arducam}{30}{subsection.12.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Simple overview of an I2C message \cite  {I2C}\relax }}{30}{figure.caption.41}}
+\newlabel{fig:I2Cmessage}{{29}{30}{Simple overview of an I2C message \cite {I2C}\relax }{figure.caption.41}{}}
+\citation{arducam}
+\citation{arducam}
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Arducam module block diagram \cite  {arducam}\relax }}{31}{figure.caption.42}}
+\newlabel{fig:ArducamBlock}{{30}{31}{Arducam module block diagram \cite {arducam}\relax }{figure.caption.42}{}}
+\citation{SPI}
+\citation{SPI}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Hardware Configuration of I2C\relax }}{32}{figure.caption.43}}
+\newlabel{fig:I2Chardware}{{31}{32}{Hardware Configuration of I2C\relax }{figure.caption.43}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-B}}SPI communication - PSoC 6 to Arducam}{32}{subsection.12.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Simple overview of SPI communication \cite  {SPI}\relax }}{33}{figure.caption.44}}
+\newlabel{fig:SPIdiagram}{{32}{33}{Simple overview of SPI communication \cite {SPI}\relax }{figure.caption.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces Hardware configuration of SPI (1)\relax }}{34}{figure.caption.45}}
+\newlabel{fig:SPIconfig1}{{33}{34}{Hardware configuration of SPI (1)\relax }{figure.caption.45}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces Hardware configuration of SPI (2)\relax }}{34}{figure.caption.46}}
+\newlabel{fig:SPIconfig2}{{34}{34}{Hardware configuration of SPI (2)\relax }{figure.caption.46}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}}Image Processing}{34}{subsection.12.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}1}Resolution}{34}{subsubsection.12.3.1}}
+\citation{Helland}
+\citation{Helland}
+\citation{Helland}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}2}Output Format}{35}{subsubsection.12.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces Pixel Information being received through SPI from Arducam\relax }}{35}{figure.caption.47}}
+\newlabel{fig:outputFormat}{{35}{35}{Pixel Information being received through SPI from Arducam\relax }{figure.caption.47}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}3}Resolution}{35}{subsubsection.12.3.3}}
 \citation{Helland}
 \citation{Helland}
 \citation{Helland}
 \citation{Helland}
 \citation{Helland}
-\citation{Helland}
-\citation{Helland}
-\citation{Helland}
-\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Pixel Information being received through SPI from Arducam\relax }}{33}{figure.caption.44}}
-\newlabel{fig:outputFormat}{{32}{33}{Pixel Information being received through SPI from Arducam\relax }{figure.caption.44}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}3}Resolution}{33}{subsubsection.12.3.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces How red, green, and blue intensities are seperated from one another\relax }}{34}{figure.caption.45}}
-\newlabel{fig:Seperate_Intensities}{{33}{34}{How red, green, and blue intensities are seperated from one another\relax }{figure.caption.45}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces Scaling seperated red green and blue intensities up to 8 bit numbers\relax }}{34}{figure.caption.46}}
-\newlabel{fig:scaling}{{34}{34}{Scaling seperated red green and blue intensities up to 8 bit numbers\relax }{figure.caption.46}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces Luminance method for converting RGB to grayscale\relax }}{35}{figure.caption.47}}
-\newlabel{fig:gray_equation}{{35}{35}{Luminance method for converting RGB to grayscale\relax }{figure.caption.47}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces Process in reverse: In order to create gray RGB pixel\relax }}{35}{figure.caption.48}}
-\newlabel{fig:reverse}{{36}{35}{Process in reverse: In order to create gray RGB pixel\relax }{figure.caption.48}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}4}Grayscale Results}{35}{figure.caption.49}}
-\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces Reuslts of grayscale algorithm from PSoC 6 (1)\relax }}{36}{figure.caption.49}}
-\newlabel{fig:results1}{{37}{36}{Reuslts of grayscale algorithm from PSoC 6 (1)\relax }{figure.caption.49}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces Reuslts of grayscale algorithm from PSoC 6 (2)\relax }}{36}{figure.caption.50}}
-\newlabel{fig:results2}{{38}{36}{Reuslts of grayscale algorithm from PSoC 6 (2)\relax }{figure.caption.50}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}5}Sobel Edge Detection}{36}{subsubsection.12.3.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces Sobel Kernels\relax }}{37}{figure.caption.51}}
-\newlabel{fig:sobelKernel}{{39}{37}{Sobel Kernels\relax }{figure.caption.51}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces Visual of what happens if the the sobel kernel is convolved along a boundary\relax }}{37}{figure.caption.52}}
-\newlabel{fig:outofBounds}{{40}{37}{Visual of what happens if the the sobel kernel is convolved along a boundary\relax }{figure.caption.52}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces Operation of the vertical kernel\relax }}{38}{figure.caption.53}}
-\newlabel{fig:sobelConV}{{41}{38}{Operation of the vertical kernel\relax }{figure.caption.53}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces Operation of the Horizontal kerne\relax }}{38}{figure.caption.54}}
-\newlabel{fig:sobelConH}{{42}{38}{Operation of the Horizontal kerne\relax }{figure.caption.54}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {43}{\ignorespaces Using Pythagorean theorom to determin the magnitude of the gradient\relax }}{39}{figure.caption.55}}
-\newlabel{fig:Pythag}{{43}{39}{Using Pythagorean theorom to determin the magnitude of the gradient\relax }{figure.caption.55}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {44}{\ignorespaces Results of Sobel edge detection\relax }}{39}{figure.caption.56}}
-\newlabel{fig:sobelResults}{{44}{39}{Results of Sobel edge detection\relax }{figure.caption.56}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}6}Results of Sobel Edge Detection}{39}{figure.caption.56}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}7}Results of Sobel Edge Detection}{39}{subsubsection.12.3.7}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}8}Results of Sobel Edge Detection}{39}{subsubsection.12.3.8}}
-\@writefile{toc}{\contentsline {section}{\numberline {XIII}Stakeholder List}{39}{section.13}}
-\@writefile{toc}{\contentsline {section}{\numberline {XIV}Project Approval Requirements}{40}{section.14}}
-\@writefile{toc}{\contentsline {section}{\numberline {XV}Approvals}{41}{section.15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces How red, green, and blue intensities are seperated from one another\relax }}{36}{figure.caption.48}}
+\newlabel{fig:Seperate_Intensities}{{36}{36}{How red, green, and blue intensities are seperated from one another\relax }{figure.caption.48}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces Scaling seperated red green and blue intensities up to 8 bit numbers\relax }}{37}{figure.caption.49}}
+\newlabel{fig:scaling}{{37}{37}{Scaling seperated red green and blue intensities up to 8 bit numbers\relax }{figure.caption.49}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces Luminance method for converting RGB to grayscale\relax }}{37}{figure.caption.50}}
+\newlabel{fig:gray_equation}{{38}{37}{Luminance method for converting RGB to grayscale\relax }{figure.caption.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces Process in reverse: In order to create gray RGB pixel\relax }}{38}{figure.caption.51}}
+\newlabel{fig:reverse}{{39}{38}{Process in reverse: In order to create gray RGB pixel\relax }{figure.caption.51}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces Reuslts of grayscale algorithm from PSoC 6 (1)\relax }}{39}{figure.caption.52}}
+\newlabel{fig:results1}{{40}{39}{Reuslts of grayscale algorithm from PSoC 6 (1)\relax }{figure.caption.52}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}4}Grayscale Results}{39}{figure.caption.52}}
+\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces Reuslts of grayscale algorithm from PSoC 6 (2)\relax }}{40}{figure.caption.53}}
+\newlabel{fig:results2}{{41}{40}{Reuslts of grayscale algorithm from PSoC 6 (2)\relax }{figure.caption.53}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}5}Sobel Edge Detection}{40}{subsubsection.12.3.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces Sobel Kernels\relax }}{40}{figure.caption.54}}
+\newlabel{fig:sobelKernel}{{42}{40}{Sobel Kernels\relax }{figure.caption.54}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {43}{\ignorespaces Visual of what happens if the the sobel kernel is convolved along a boundary\relax }}{41}{figure.caption.55}}
+\newlabel{fig:outofBounds}{{43}{41}{Visual of what happens if the the sobel kernel is convolved along a boundary\relax }{figure.caption.55}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {44}{\ignorespaces Operation of the vertical kernel\relax }}{42}{figure.caption.56}}
+\newlabel{fig:sobelConV}{{44}{42}{Operation of the vertical kernel\relax }{figure.caption.56}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {45}{\ignorespaces Operation of the Horizontal kernel\relax }}{42}{figure.caption.57}}
+\newlabel{fig:sobelConH}{{45}{42}{Operation of the Horizontal kernel\relax }{figure.caption.57}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {46}{\ignorespaces Using Pythagorean theorom to determin the magnitude of the gradient\relax }}{43}{figure.caption.58}}
+\newlabel{fig:Pythag}{{46}{43}{Using Pythagorean theorom to determin the magnitude of the gradient\relax }{figure.caption.58}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {47}{\ignorespaces Results of Sobel edge detection\relax }}{43}{figure.caption.59}}
+\newlabel{fig:sobelResults}{{47}{43}{Results of Sobel edge detection\relax }{figure.caption.59}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}6}Results of Sobel Edge Detection}{43}{figure.caption.59}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}7}Square\_Detection.C Algorithm}{44}{subsubsection.12.3.7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}8}UART Communication - PSoC 6 to HUZZAH32 (server)}{44}{subsubsection.12.3.8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}9}Wireless Communication)}{44}{subsubsection.12.3.9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}10}Serpentine.C Algorithm}{44}{subsubsection.12.3.10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}11}Stepper Motor Movement}{44}{subsubsection.12.3.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}}Hardware}{44}{subsection.12.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}1}Using the Logic Analyzer}{44}{subsubsection.12.4.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}2}Testing with the Arduino and Arducam}{44}{subsubsection.12.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}3}Stepper Motor and Driver Connections}{44}{subsubsection.12.4.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}4}Power Parameters}{44}{subsubsection.12.4.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}}Project Prototype - Planning}{44}{subsection.12.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}1}Initial Prototype Design}{44}{subsubsection.12.5.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}2}Final Prototype Design}{44}{subsubsection.12.5.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}3}Dimensions}{44}{subsubsection.12.5.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}}Project Prototype - Building}{44}{subsection.12.6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}1}Component Mounting Order}{44}{subsubsection.12.6.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}2}Final Product}{44}{subsubsection.12.6.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {XIII}Stakeholder List}{44}{section.13}}
+\@writefile{toc}{\contentsline {section}{\numberline {XIV}Project Approval Requirements}{45}{section.14}}
+\@writefile{toc}{\contentsline {section}{\numberline {XV}Approvals}{46}{section.15}}
 \bibstyle{IEEEtran}
 \bibdata{reference}
 \bibcite{arducam}{1}
@@ -267,37 +294,51 @@
 \bibcite{bracket}{11}
 \bibcite{uxcell}{12}
 \bibcite{merc}{13}
-\bibcite{SPI}{14}
-\bibcite{wifiStandards}{15}
-\bibcite{ieee}{16}
-\bibcite{nema1}{17}
-\bibcite{rec709}{18}
-\bibcite{Helland}{19}
-\@writefile{toc}{\contentsline {section}{References}{42}{section*.57}}
-\@writefile{toc}{\contentsline {section}{\numberline {XVI}Appendices}{43}{section.16}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-A}}Appendix 1 - \textit  {transmitter\_xy.ino}}{43}{subsection.16.1}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/transmitter\textunderscore xy.ino}{43}{lstlisting.-1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-B}}Appendix 2 - \textit  {receiver\_x.ino}}{43}{subsection.16.2}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/receiver\textunderscore x.ino}{43}{lstlisting.-2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-C}}Appendix 3 - \textit  {main.c}}{44}{subsection.16.3}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/main.c}{44}{lstlisting.-3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-D}}Appendix 4 - \textit  {SPImaster.c}}{52}{subsection.16.4}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/SPImaster.c}{52}{lstlisting.-4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-E}}Appendix 5 - \textit  {SPImaster.h}}{54}{subsection.16.5}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/SPImaster.h}{54}{lstlisting.-5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-F}}Appendix 6 - \textit  {I2Cmaster.c}}{55}{subsection.16.6}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/I2Cmaster.c}{55}{lstlisting.-6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-G}}Appendix 7 - \textit  {I2Cmaster.h}}{57}{subsection.16.7}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/I2Cmaster.h}{57}{lstlisting.-7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-H}}Appendix 8 - \textit  {Arducam.c}}{59}{subsection.16.8}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/Arducam.c}{59}{lstlisting.-8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-I}}Appendix 9 - \textit  {Arducam.h}}{80}{subsection.16.9}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/Arducam.h}{80}{lstlisting.-9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-J}}Appendix 10 - \textit  {Improc.c}}{81}{subsection.16.10}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/Improc.c}{81}{lstlisting.-10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-K}}Appendix 11 - \textit  {Improc.h}}{85}{subsection.16.11}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/Improc.h}{85}{lstlisting.-11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-L}}Appendix 12 - \textit  {interface.h}}{85}{subsection.16.12}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/interface.h}{85}{lstlisting.-12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-M}}Appendix 13 - \textit  {square\_detection.c}}{87}{subsection.16.13}}
-\@writefile{lol}{\contentsline {lstlisting}{Appendices/square\textunderscore detection.c}{87}{lstlisting.-13}}
+\bibcite{I2C}{14}
+\bibcite{SPI}{15}
+\bibcite{wifiStandards}{16}
+\bibcite{ieee}{17}
+\bibcite{nema1}{18}
+\bibcite{rec709}{19}
+\bibcite{Helland}{20}
+\@writefile{toc}{\contentsline {section}{References}{47}{section*.60}}
+\@writefile{toc}{\contentsline {section}{\numberline {XVI}Appendices}{48}{section.16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-A}}Appendix 1 - \textit  {transmitter\_xy.ino}}{48}{subsection.16.1}}
+\newlabel{A1}{{\unhbox \voidb@x \hbox {XVI-A}}{48}{Appendix 1 - \textit {transmitter\_xy.ino}}{subsection.16.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/transmitter\textunderscore xy.ino}{48}{lstlisting.-1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-B}}Appendix 2 - \textit  {receiver\_x.ino}}{49}{subsection.16.2}}
+\newlabel{A2}{{\unhbox \voidb@x \hbox {XVI-B}}{49}{Appendix 2 - \textit {receiver\_x.ino}}{subsection.16.2}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/receiver\textunderscore x.ino}{49}{lstlisting.-2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-C}}Appendix 3 - \textit  {main.c}}{50}{subsection.16.3}}
+\newlabel{A3}{{\unhbox \voidb@x \hbox {XVI-C}}{50}{Appendix 3 - \textit {main.c}}{subsection.16.3}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/main.c}{50}{lstlisting.-3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-D}}Appendix 4 - \textit  {SPImaster.c}}{58}{subsection.16.4}}
+\newlabel{A4}{{\unhbox \voidb@x \hbox {XVI-D}}{58}{Appendix 4 - \textit {SPImaster.c}}{subsection.16.4}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/SPImaster.c}{58}{lstlisting.-4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-E}}Appendix 5 - \textit  {SPImaster.h}}{60}{subsection.16.5}}
+\newlabel{A5}{{\unhbox \voidb@x \hbox {XVI-E}}{60}{Appendix 5 - \textit {SPImaster.h}}{subsection.16.5}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/SPImaster.h}{60}{lstlisting.-5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-F}}Appendix 6 - \textit  {I\textsuperscript  {2}Cmaster.c}}{61}{subsection.16.6}}
+\newlabel{A6}{{\unhbox \voidb@x \hbox {XVI-F}}{61}{Appendix 6 - \textit {I\textsuperscript {2}Cmaster.c}}{subsection.16.6}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/I2Cmaster.c}{61}{lstlisting.-6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-G}}Appendix 7 - \textit  {I\textsuperscript  {2}Cmaster.h}}{64}{subsection.16.7}}
+\newlabel{A7}{{\unhbox \voidb@x \hbox {XVI-G}}{64}{Appendix 7 - \textit {I\textsuperscript {2}Cmaster.h}}{subsection.16.7}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/I2Cmaster.h}{64}{lstlisting.-7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-H}}Appendix 8 - \textit  {Arducam.c}}{66}{subsection.16.8}}
+\newlabel{A8}{{\unhbox \voidb@x \hbox {XVI-H}}{66}{Appendix 8 - \textit {Arducam.c}}{subsection.16.8}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/Arducam.c}{66}{lstlisting.-8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-I}}Appendix 9 - \textit  {Arducam.h}}{88}{subsection.16.9}}
+\newlabel{A9}{{\unhbox \voidb@x \hbox {XVI-I}}{88}{Appendix 9 - \textit {Arducam.h}}{subsection.16.9}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/Arducam.h}{88}{lstlisting.-9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-J}}Appendix 10 - \textit  {Improc.c}}{89}{subsection.16.10}}
+\newlabel{A10}{{\unhbox \voidb@x \hbox {XVI-J}}{89}{Appendix 10 - \textit {Improc.c}}{subsection.16.10}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/Improc.c}{89}{lstlisting.-10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-K}}Appendix 11 - \textit  {Improc.h}}{93}{subsection.16.11}}
+\newlabel{A11}{{\unhbox \voidb@x \hbox {XVI-K}}{93}{Appendix 11 - \textit {Improc.h}}{subsection.16.11}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/Improc.h}{93}{lstlisting.-11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-L}}Appendix 12 - \textit  {interface.h}}{94}{subsection.16.12}}
+\newlabel{A12}{{\unhbox \voidb@x \hbox {XVI-L}}{94}{Appendix 12 - \textit {interface.h}}{subsection.16.12}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/interface.h}{94}{lstlisting.-12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XVI-M}}Appendix 13 - \textit  {square\_detection.c}}{96}{subsection.16.13}}
+\newlabel{A13}{{\unhbox \voidb@x \hbox {XVI-M}}{96}{Appendix 13 - \textit {square\_detection.c}}{subsection.16.13}{}}
+\@writefile{lol}{\contentsline {lstlisting}{Appendices/square\textunderscore detection.c}{96}{lstlisting.-13}}

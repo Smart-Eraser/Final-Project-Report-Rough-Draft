@@ -79,6 +79,10 @@ Mercury, ``{Mercurry 5 Meters GT2 timing belt width 6mm Fit for RepRap Mendel
   Rostock Prusa GT2-6mm Belt },''
   \url{https://www.amazon.com/dp/B071K8HYB4/?coliid=I3KCLVNOTYFU5Y\&colid=22YAOKWOJAKA9\&psc=0\&ref\_=lv\_ov\_lig\_dp\_it}.
 
+\bibitem{I2C}
+C.~Basics, ``{Basics of the I2C Communication Protocol},''
+  \url{http://www.circuitbasics.com/basics-of-the-i2c-communication-protocol/}.
+
 \bibitem{SPI}
 S.~VHDL, ``{How to Design SPI Controller in VHDL)},''
   \url{https://surf-vhdl.com/how-to-design-spi-controller-in-vhdl/}.
