@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.9.26)  19 APR 2019 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.9.26)  20 APR 2019 00:35
 entering extended mode
 **./Final-Project-Report-Rough-Draft.tex
 (Final-Project-Report-Rough-Draft.tex
@@ -441,9 +441,6 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 272.
 
 (Final-Project-Report-Rough-Draft.aux
 
-LaTeX Warning: Label `table:3' multiply defined.
-
-
 LaTeX Warning: Label `table:1' multiply defined.
 
 )
@@ -848,188 +845,188 @@ Package pdftex.def Info: Images/side_view.png  used on input line 891.
 (pdftex.def)             Requested size: 556.92932pt x 856.84909pt.
  [19 <./Images/prot.png>]
 [20 <./Images/front_view.png> <./Images/side_view.png>]
-Overfull \hbox (37.63968pt too wide) in paragraph at lines 936--980
+Overfull \hbox (2.30019pt too wide) in paragraph at lines 936--1015
  [][] 
  []
 
-[21]
-Overfull \hbox (32.39539pt too wide) in paragraph at lines 987--1020
- [][] 
- []
+[21] [22]
+Overfull \vbox (5.43906pt too high) has occurred while \output is active []
 
 
-Overfull \hbox (39.99149pt too wide) in paragraph at lines 1027--1067
- [][] 
- []
-
-[22]
-<Images/test.png, id=792, 550.30594pt x 662.475pt>
+[23]
+<Images/test.png, id=797, 550.30594pt x 662.475pt>
 File: Images/test.png Graphic file (type png)
 <use Images/test.png>
-Package pdftex.def Info: Images/test.png  used on input line 1077.
+Package pdftex.def Info: Images/test.png  used on input line 1180.
 (pdftex.def)             Requested size: 550.3046pt x 662.47339pt.
- [23]
-<Images/test2.png, id=798, 550.30594pt x 625.58719pt>
+ [24]
+<Images/test2.png, id=802, 550.30594pt x 625.58719pt>
 File: Images/test2.png Graphic file (type png)
 <use Images/test2.png>
-Package pdftex.def Info: Images/test2.png  used on input line 1084.
+Package pdftex.def Info: Images/test2.png  used on input line 1187.
 (pdftex.def)             Requested size: 550.3046pt x 625.58566pt.
- [24 <./Images/test.png>]
+ [25 <./Images/test.png>]
 
-LaTeX Warning: File `Images/GANTT chart 186A 1.png' not found on input line 109
-5.
+LaTeX Warning: File `Images/GANTT chart 186A 1.png' not found on input line 119
+8.
 
-<Images/GANTT chart 186A 1.png, id=804, 1003.49907pt x 578.91281pt>
+<Images/GANTT chart 186A 1.png, id=808, 1003.49907pt x 578.91281pt>
 File: Images/GANTT chart 186A 1.png Graphic file (type png)
 <use Images/GANTT chart 186A 1.png>
-Package pdftex.def Info: Images/GANTT chart 186A 1.png  used on input line 1095
+Package pdftex.def Info: Images/GANTT chart 186A 1.png  used on input line 1198
 .
 (pdftex.def)             Requested size: 1003.49661pt x 578.91139pt.
-[25 <./Images/test2.png>]
+[26 <./Images/test2.png>]
 
-LaTeX Warning: File `Images/GANTT chart 186B.png' not found on input line 1102.
+LaTeX Warning: File `Images/GANTT chart 186B.png' not found on input line 1205.
 
 
-<Images/GANTT chart 186B.png, id=810, 1291.07344pt x 542.025pt>
+<Images/GANTT chart 186B.png, id=814, 1291.07344pt x 542.025pt>
 File: Images/GANTT chart 186B.png Graphic file (type png)
 <use Images/GANTT chart 186B.png>
-Package pdftex.def Info: Images/GANTT chart 186B.png  used on input line 1102.
+Package pdftex.def Info: Images/GANTT chart 186B.png  used on input line 1205.
 (pdftex.def)             Requested size: 1291.07031pt x 542.02367pt.
-[26 <./Images/GANTT chart 186A 1.png> <./Images/GANTT chart 186B.png>]
-Overfull \hbox (0.93315pt too wide) in paragraph at lines 1188--1216
+[27 <./Images/GANTT chart 186A 1.png> <./Images/GANTT chart 186B.png>]
+Overfull \hbox (0.93315pt too wide) in paragraph at lines 1291--1319
  [][] 
  []
 
-[27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 1239--1240
+[28] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 1342--1343
 
  []
 
-<Images/SPIdiagram.png, id=851, 1017.8025pt x 781.92125pt>
+<Images/SPIdiagram.png, id=856, 1017.8025pt x 781.92125pt>
 File: Images/SPIdiagram.png Graphic file (type png)
 <use Images/SPIdiagram.png>
-Package pdftex.def Info: Images/SPIdiagram.png  used on input line 1248.
+Package pdftex.def Info: Images/SPIdiagram.png  used on input line 1351.
 (pdftex.def)             Requested size: 1017.80003pt x 781.91934pt.
-[29 <./Images/SPIdiagram.png>]
-<Images/SPIconfig1.png, id=862, 347.04657pt x 287.57437pt>
+[30 <./Images/SPIdiagram.png>]
+<Images/SPIconfig1.png, id=866, 347.04657pt x 287.57437pt>
 File: Images/SPIconfig1.png Graphic file (type png)
 <use Images/SPIconfig1.png>
-Package pdftex.def Info: Images/SPIconfig1.png  used on input line 1260.
+Package pdftex.def Info: Images/SPIconfig1.png  used on input line 1363.
 (pdftex.def)             Requested size: 347.04572pt x 287.57367pt.
-<Images/SPIconfig2.png, id=863, 361.35pt x 293.59688pt>
+<Images/SPIconfig2.png, id=867, 361.35pt x 293.59688pt>
 File: Images/SPIconfig2.png Graphic file (type png)
 <use Images/SPIconfig2.png>
-Package pdftex.def Info: Images/SPIconfig2.png  used on input line 1267.
+Package pdftex.def Info: Images/SPIconfig2.png  used on input line 1370.
 (pdftex.def)             Requested size: 361.34912pt x 293.59615pt.
- [30 <./Images/SPIconfig1.png>] [31 <./Images/SPIconfig2.png>]
-<Images/outputFormat.png, id=874, 1248.665pt x 257.96375pt>
+ [31 <./Images/SPIconfig1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1379--1380
+
+ []
+
+[32 <./Images/SPIconfig2.png>]
+<Images/outputFormat.png, id=878, 1248.665pt x 257.96375pt>
 File: Images/outputFormat.png Graphic file (type png)
 <use Images/outputFormat.png>
-Package pdftex.def Info: Images/outputFormat.png  used on input line 1287.
+Package pdftex.def Info: Images/outputFormat.png  used on input line 1390.
 (pdftex.def)             Requested size: 1248.66196pt x 257.9631pt.
-<Images/Seperate_Intensities.png, id=883, 725.71124pt x 420.57124pt>
+<Images/Seperate_Intensities.png, id=887, 725.71124pt x 420.57124pt>
 File: Images/Seperate_Intensities.png Graphic file (type png)
 <use Images/Seperate_Intensities.png>
-Package pdftex.def Info: Images/Seperate_Intensities.png  used on input line 13
-26.
+Package pdftex.def Info: Images/Seperate_Intensities.png  used on input line 14
+29.
 (pdftex.def)             Requested size: 725.70947pt x 420.57022pt.
- [32 <./Images/outputFormat.png>]
-<Images/scaling.png, id=890, 436.33012pt x 142.73325pt>
+ [33 <./Images/outputFormat.png>]
+<Images/scaling.png, id=894, 436.33012pt x 142.73325pt>
 File: Images/scaling.png Graphic file (type png)
 <use Images/scaling.png>
-Package pdftex.def Info: Images/scaling.png  used on input line 1335.
+Package pdftex.def Info: Images/scaling.png  used on input line 1438.
 (pdftex.def)             Requested size: 436.32906pt x 142.73288pt.
-<Images/gray_equation.png, id=891, 976.64874pt x 186.6975pt>
+<Images/gray_equation.png, id=895, 976.64874pt x 186.6975pt>
 File: Images/gray_equation.png Graphic file (type png)
 <use Images/gray_equation.png>
-Package pdftex.def Info: Images/gray_equation.png  used on input line 1344.
+Package pdftex.def Info: Images/gray_equation.png  used on input line 1447.
 (pdftex.def)             Requested size: 976.64636pt x 186.69704pt.
- [33 <./Images/Seperate_Intensities.png> <./Images/scaling.png>]
-<Images/reverse.png, id=897, 682.49982pt x 576.35326pt>
+ [34 <./Images/Seperate_Intensities.png> <./Images/scaling.png>]
+<Images/reverse.png, id=901, 682.49982pt x 576.35326pt>
 File: Images/reverse.png Graphic file (type png)
 <use Images/reverse.png>
-Package pdftex.def Info: Images/reverse.png  used on input line 1351.
+Package pdftex.def Info: Images/reverse.png  used on input line 1454.
 (pdftex.def)             Requested size: 682.49815pt x 576.35185pt.
-<Images/gray1.jpg, id=898, 2464.20625pt x 1642.135pt>
+<Images/gray1.jpg, id=902, 2464.20625pt x 1642.135pt>
 File: Images/gray1.jpg Graphic file (type jpg)
 <use Images/gray1.jpg>
-Package pdftex.def Info: Images/gray1.jpg  used on input line 1360.
+Package pdftex.def Info: Images/gray1.jpg  used on input line 1463.
 (pdftex.def)             Requested size: 2464.20027pt x 1642.131pt.
- [34 <./Images/gray_equation.png> <./Images/reverse.png>]
-<Images/gray2.jpg, id=905, 1736.4875pt x 1295.84125pt>
+ [35 <./Images/gray_equation.png> <./Images/reverse.png>]
+<Images/gray2.jpg, id=910, 1736.4875pt x 1295.84125pt>
 File: Images/gray2.jpg Graphic file (type jpg)
 <use Images/gray2.jpg>
-Package pdftex.def Info: Images/gray2.jpg  used on input line 1368.
+Package pdftex.def Info: Images/gray2.jpg  used on input line 1471.
 (pdftex.def)             Requested size: 1736.48328pt x 1295.83809pt.
-<Images/sobelKernel.png, id=906, 233.52243pt x 144.99168pt>
+<Images/sobelKernel.png, id=911, 233.52243pt x 144.99168pt>
 File: Images/sobelKernel.png Graphic file (type png)
 <use Images/sobelKernel.png>
-Package pdftex.def Info: Images/sobelKernel.png  used on input line 1379.
+Package pdftex.def Info: Images/sobelKernel.png  used on input line 1482.
 (pdftex.def)             Requested size: 233.52185pt x 144.99132pt.
- [35 <./Images/gray1.jpg> <./Images/gray2.jpg>]
-<Images/outofBounds.png, id=913, 229.90894pt x 228.55388pt>
+ [36 <./Images/gray1.jpg> <./Images/gray2.jpg>]
+<Images/outofBounds.png, id=917, 229.90894pt x 228.55388pt>
 File: Images/outofBounds.png Graphic file (type png)
 <use Images/outofBounds.png>
-Package pdftex.def Info: Images/outofBounds.png  used on input line 1388.
+Package pdftex.def Info: Images/outofBounds.png  used on input line 1491.
 (pdftex.def)             Requested size: 229.90837pt x 228.55331pt.
-<Images/sobelConV.png, id=914, 513.92pt x 356.33125pt>
+<Images/sobelConV.png, id=918, 513.92pt x 356.33125pt>
 File: Images/sobelConV.png Graphic file (type png)
 <use Images/sobelConV.png>
-Package pdftex.def Info: Images/sobelConV.png  used on input line 1397.
+Package pdftex.def Info: Images/sobelConV.png  used on input line 1500.
 (pdftex.def)             Requested size: 513.91873pt x 356.33037pt.
- [36 <./Images/sobelKernel.png> <./Images/outofBounds.png>]
-<Images/sobelConH.png, id=920, 513.92pt x 356.33125pt>
+
+[37 <./Images/sobelKernel.png> <./Images/outofBounds.png>]
+<Images/sobelConH.png, id=924, 513.92pt x 356.33125pt>
 File: Images/sobelConH.png Graphic file (type png)
 <use Images/sobelConH.png>
-Package pdftex.def Info: Images/sobelConH.png  used on input line 1404.
+Package pdftex.def Info: Images/sobelConH.png  used on input line 1507.
 (pdftex.def)             Requested size: 513.91873pt x 356.33037pt.
-<Images/Pythag.png, id=921, 971.63pt x 172.645pt>
+<Images/Pythag.png, id=925, 971.63pt x 172.645pt>
 File: Images/Pythag.png Graphic file (type png)
 <use Images/Pythag.png>
-Package pdftex.def Info: Images/Pythag.png  used on input line 1413.
+Package pdftex.def Info: Images/Pythag.png  used on input line 1516.
 (pdftex.def)             Requested size: 971.62764pt x 172.64456pt.
- [37 <./Images/sobelConV.png> <./Images/sobelConH.png>]
-<Images/sobelResult.jpg, id=926, 1965.3425pt x 1525.7pt>
+ [38 <./Images/sobelConV.png> <./Images/sobelConH.png>]
+<Images/sobelResult.jpg, id=930, 1965.3425pt x 1525.7pt>
 File: Images/sobelResult.jpg Graphic file (type jpg)
 <use Images/sobelResult.jpg>
-Package pdftex.def Info: Images/sobelResult.jpg  used on input line 1425.
+Package pdftex.def Info: Images/sobelResult.jpg  used on input line 1528.
 (pdftex.def)             Requested size: 1965.33772pt x 1525.69629pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1440--1441
+Underfull \hbox (badness 10000) in paragraph at lines 1543--1544
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1441--1442
+Underfull \hbox (badness 10000) in paragraph at lines 1544--1545
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1442--1443
+Underfull \hbox (badness 10000) in paragraph at lines 1545--1546
 
  []
 
-[38 <./Images/Pythag.png> <./Images/sobelResult.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1443--1444
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1444--1445
+[39 <./Images/Pythag.png> <./Images/sobelResult.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1546--1547
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1445--1446
+Underfull \hbox (badness 10000) in paragraph at lines 1547--1548
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1446--1447
+Underfull \hbox (badness 10000) in paragraph at lines 1548--1549
 
  []
 
-[39] [40] (Final-Project-Report-Rough-Draft.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 1549--1550
+
+ []
+
+[40] [41] (Final-Project-Report-Rough-Draft.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1040,9 +1037,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--40
 n,'' [][]$https : / / www . kodefork . com / articles /
  []
 
-) [41]
+) [42]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 1513.
+nput line 1616.
  (Appendices/transmitter_xy.ino
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 1.
 
@@ -1052,7 +1049,7 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
 )
-(Appendices/receiver_x.ino [42]) (Appendices/main.c
+(Appendices/receiver_x.ino [43]) (Appendices/main.c
 Overfull \hbox (45.60571pt too wide) in paragraph at lines 1--2
 [][][][] 
  []
@@ -1087,7 +1084,7 @@ Overfull \hbox (60.00586pt too wide) in paragraph at lines 15--16
 [][][][] 
  []
 
-[43]
+[44]
 Overfull \hbox (45.60571pt too wide) in paragraph at lines 30--31
 [][][][] 
  []
@@ -1132,7 +1129,7 @@ Overfull \hbox (60.00586pt too wide) in paragraph at lines 60--61
 [][][][] 
  []
 
-[44]
+[45]
 Overfull \hbox (60.00586pt too wide) in paragraph at lines 80--81
 [][][][] 
  []
@@ -1177,7 +1174,7 @@ Overfull \hbox (52.80579pt too wide) in paragraph at lines 116--117
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[45]
+[46]
 Overfull \hbox (60.00586pt too wide) in paragraph at lines 122--123
 [][][][] 
  []
@@ -1274,7 +1271,7 @@ Overfull \hbox (88.80615pt too wide) in paragraph at lines 166--167
 [][][][][][][][][][][] 
  []
 
-[46]
+[47]
 Overfull \hbox (2.40527pt too wide) in paragraph at lines 177--178
 [][][][][][][][][][][][][][][][][][][] 
  []
@@ -1314,7 +1311,7 @@ Overfull \hbox (9.60535pt too wide) in paragraph at lines 193--194
 [][][][][][][][][][][] 
  []
 
-[47]
+[48]
 Overfull \hbox (60.00586pt too wide) in paragraph at lines 221--222
 [][][][][][][][][][][][][][][][][][][] 
  []
@@ -1424,7 +1421,7 @@ Overfull \hbox (240.00769pt too wide) in paragraph at lines 266--267
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[48]
+[49]
 Overfull \hbox (240.00769pt too wide) in paragraph at lines 267--268
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1479,7 +1476,7 @@ Overfull \hbox (60.00586pt too wide) in paragraph at lines 312--313
 [][][][] 
  []
 
-[49]
+[50]
 Overfull \hbox (60.00586pt too wide) in paragraph at lines 334--335
 [][][][] 
  []
@@ -1524,7 +1521,7 @@ Overfull \hbox (60.00586pt too wide) in paragraph at lines 365--366
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[50]
+[51]
 Overfull \hbox (52.80579pt too wide) in paragraph at lines 370--371
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1569,7 +1566,7 @@ Overfull \hbox (2.40527pt too wide) in paragraph at lines 21--22
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[51]
+[52]
 Overfull \hbox (52.80579pt too wide) in paragraph at lines 27--28
 [][][][] 
  []
@@ -1624,7 +1621,7 @@ Overfull \hbox (276.00806pt too wide) in paragraph at lines 75--77
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[52]
+[53]
 Overfull \hbox (31.20557pt too wide) in paragraph at lines 79--80
 [][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1684,7 +1681,7 @@ Overfull \hbox (31.20557pt too wide) in paragraph at lines 34--35
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[53]) (Appendices/I2Cmaster.c
+[54]) (Appendices/I2Cmaster.c
 Overfull \hbox (60.00586pt too wide) in paragraph at lines 30--31
 [][][][] 
  []
@@ -1704,7 +1701,7 @@ Overfull \hbox (60.00586pt too wide) in paragraph at lines 37--38
 [][][][] 
  []
 
-[54]
+[55]
 Overfull \hbox (67.20593pt too wide) in paragraph at lines 41--42
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1734,7 +1731,7 @@ Overfull \hbox (182.4071pt too wide) in paragraph at lines 82--83
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[55]
+[56]
 Overfull \hbox (60.00586pt too wide) in paragraph at lines 91--92
 [][][][] 
  []
@@ -1804,7 +1801,7 @@ Overfull \hbox (31.20557pt too wide) in paragraph at lines 16--17
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[56]
+[57]
 Overfull \hbox (38.40564pt too wide) in paragraph at lines 17--18
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1919,7 +1916,7 @@ Overfull \hbox (60.00586pt too wide) in paragraph at lines 61--62
 [][][][] 
  []
 
-) [57] (Appendices/Arducam.c
+) [58] (Appendices/Arducam.c
 Overfull \hbox (45.60571pt too wide) in paragraph at lines 1--2
 [][][][] 
  []
@@ -1934,8 +1931,8 @@ Overfull \hbox (60.00586pt too wide) in paragraph at lines 9--11
 [][][][] 
  []
 
-[58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72]
-[73]
+[59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73]
+[74]
 Overfull \hbox (196.80725pt too wide) in paragraph at lines 820--821
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1950,7 +1947,7 @@ Overfull \hbox (38.40564pt too wide) in paragraph at lines 826--827
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[74]
+[75]
 Overfull \hbox (52.80579pt too wide) in paragraph at lines 872--873
 [][][][] 
  []
@@ -1985,7 +1982,7 @@ Overfull \hbox (52.80579pt too wide) in paragraph at lines 896--897
 [][][][] 
  []
 
-[75]
+[76]
 Overfull \hbox (52.80579pt too wide) in paragraph at lines 898--899
 [][][][] 
  []
@@ -2040,7 +2037,7 @@ Overfull \hbox (2.40527pt too wide) in paragraph at lines 947--948
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[76]
+[77]
 Overfull \hbox (52.80579pt too wide) in paragraph at lines 954--955
 [][][][] 
  []
@@ -2100,7 +2097,7 @@ Overfull \hbox (9.60535pt too wide) in paragraph at lines 996--997
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[77]
+[78]
 Overfull \hbox (52.80579pt too wide) in paragraph at lines 1003--1004
 [][][][] 
  []
@@ -2160,7 +2157,7 @@ Overfull \hbox (52.80579pt too wide) in paragraph at lines 1047--1048
 [][][][] 
  []
 
-[78]) (Appendices/Arducam.h
+[79]) (Appendices/Arducam.h
 Overfull \hbox (45.60571pt too wide) in paragraph at lines 1--2
 [][][][] 
  []
@@ -2190,7 +2187,7 @@ Overfull \hbox (31.20557pt too wide) in paragraph at lines 36--37
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[79]
+[80]
 Overfull \hbox (24.0055pt too wide) in paragraph at lines 46--48
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2301,7 +2298,7 @@ Overfull \hbox (708.01245pt too wide) in paragraph at lines 37--39
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[80]
+[81]
 Overfull \hbox (708.01245pt too wide) in paragraph at lines 40--41
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2465,7 +2462,7 @@ Overfull \hbox (81.60608pt too wide) in paragraph at lines 87--88
 [][][][][][][] 
  []
 
-[81]
+[82]
 Overfull \hbox (794.41333pt too wide) in paragraph at lines 90--91
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2561,7 +2558,7 @@ Overfull \hbox (463.20996pt too wide) in paragraph at lines 137--138
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-[82]
+[83]
 Overfull \hbox (463.20996pt too wide) in paragraph at lines 138--139
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
@@ -2621,7 +2618,7 @@ Overfull \hbox (81.60608pt too wide) in paragraph at lines 168--170
 [][][][][][][] 
  []
 
-) [83] (Appendices/Improc.h
+) [84] (Appendices/Improc.h
 Overfull \hbox (52.80579pt too wide) in paragraph at lines 1--2
 [][][][] 
  []
@@ -2666,7 +2663,7 @@ Overfull \hbox (60.00586pt too wide) in paragraph at lines 10--11
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[84]
+[85]
 Overfull \hbox (52.80579pt too wide) in paragraph at lines 11--12
 [][][][] 
  []
@@ -2786,7 +2783,7 @@ Overfull \hbox (60.00586pt too wide) in paragraph at lines 39--40
 [][][][] 
  []
 
-[85]) (Appendices/square_detection.c
+[86]) (Appendices/square_detection.c
 Overfull \hbox (218.40747pt too wide) in paragraph at lines 21--22
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2824,7 +2821,7 @@ Overfull \hbox (2.40527pt too wide) in paragraph at lines 39--40
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[86]
+[87]
 Overfull \hbox (74.406pt too wide) in paragraph at lines 48--49
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2846,12 +2843,12 @@ Overfull \hbox (31.20557pt too wide) in paragraph at lines 78--80
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1551.
- [87]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1551.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1654.
+ [88]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1654.
  (Final-Project-Report-Rough-Draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1551.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1551.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1654.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1654.
 
 Package rerunfilecheck Info: File `Final-Project-Report-Rough-Draft.out' has no
 t changed.
@@ -2860,13 +2857,13 @@ t changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1551.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1654.
  ) 
 Here is how much of TeX's memory you used:
- 12812 strings out of 493312
- 204644 string characters out of 3138899
- 316773 words of memory out of 3000000
- 13593 multiletter control sequences out of 15000+200000
+ 12814 strings out of 493312
+ 204660 string characters out of 3138899
+ 316860 words of memory out of 3000000
+ 13594 multiletter control sequences out of 15000+200000
  99616 words of font info for 107 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,10n,77p,1621b,1598s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2877,10 +2874,10 @@ pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
 b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Final-Project-Report-Rough-Draft.pdf (95 pages, 8940050 bytes
+Output written on Final-Project-Report-Rough-Draft.pdf (96 pages, 8945565 bytes
 ).
 PDF statistics:
- 3975 PDF objects out of 4296 (max. 8388607)
- 2522 named destinations out of 2984 (max. 500000)
+ 3979 PDF objects out of 4296 (max. 8388607)
+ 2523 named destinations out of 2984 (max. 500000)
  925 words of extra memory for PDF output out of 10000 (max. 10000000)
 
