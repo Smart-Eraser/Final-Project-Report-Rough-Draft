@@ -261,6 +261,7 @@
 \usepackage[export]{adjustbox}
 \usepackage{hyperref}
 \usepackage{placeins}
+\usepackage{listings}
 
 \hypersetup{
 	colorlinks=true,
@@ -1104,99 +1105,117 @@ The following figures show the GANTT chart schedules over the next two semesters
 \end{figure}
 
 \section{Equipment and Budget}
-The following table lists the components that are expected for the completion of this project, as well as the production company responsible for the creation of the product listed, and the prices of each component before tax and shipping costs. The ``estimated'' listed prices will be known with more design implementation of the project. The total budget price at the bottom of the table includes shipping and tax costs.
+The following table lists the components that were bought in order to complete the Smart Eraser, as well as the company that made them and their cost. The costs are listed without taxes and shipping costs taken into account, but the total of the budget at the bottom of the table includes these. The components are listed in alphanumeric order.
 \setlength{\parindent}{5ex}
 \begin{table} [H]
 	\normalsize
 	\centering
 	\begin{tabular}{|l|l|l|}
 		\hline
-		\multicolumn{1}{|c|}{\textbf{Component}}  & 
+		\multicolumn{1}{|c|}{\textbf{Component Name and Model}}  & 
 		\multicolumn{1}{|c|}{\textbf{Production Company}}  & 
-		\multicolumn{1}{|c|}{\textbf{Est. Price}} \\
+		\multicolumn{1}{|c|}{\textbf{Cost}} \\
 		\hline
-		\href{https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=836}{DE1\_SoC FPGA Development Board} 	& Terasic 		& \$175 \\
+		\href{https://www.amazon.com/dp/B0728PDWY5/?coliid=I3K7SWFRMQ3A2F\&colid=22YAOKWOJAKA9\&psc=0\&ref_=lv_ov_lig_dp_it}{Aluminum GT2 40 Teeth 6.35mm Bore Timing Belt Pulley} 	& Uxcell 		& \$7.19 x4 \\
+		\href{https://www.amazon.com/dp/B0728PDWY5/?coliid=I3K7SWFRMQ3A2F\&colid=22YAOKWOJAKA9\&psc=0\&ref_=lv_ov_lig_dp_it}{Flange} 	& 		& \\
 		\hline
-		\href{https://www.accuride.com/ss0115-cassrc-carriage-for-115rc}{115RC Cassette with Stainless Steel}	& Accuride 		& \$135 (\$45.00 x3) \\
-		\href{https://www.accuride.com/ss0115-cassrc-carriage-for-115rc}{Bearings - model SS0115-CASSRC}		&				&	\\
+		\href{https://www.amazon.com/dp/B06VSYJ7HN/?coliid=I2N6U5HO8N5E5L\&colid=22YAOKWOJAKA9\&psc=0\&ref_=lv_ov_lig_dp_it}{Antenna Wireless Transceiver nRF24L01+PA+LNA} 	& Kuman 		& \$13.99 \\
 		\hline
-		\href{https://www.accuride.com/al0115-0120rc-aluminum-track-without-pre-drilled-holes}{115RC 47in Medium-Duty Aluminum}		& Accuride 		& \$108.66 (\$36.22 x3) \\ 
-		\href{https://www.accuride.com/al0115-0120rc-aluminum-track-without-pre-drilled-holes}{Linear Track System - model }					&				&	\\
-		\href{https://www.accuride.com/al0115-0120rc-aluminum-track-without-pre-drilled-holes}{AL0115-0120RC}					&				&	\\
-		\hline 		
-		\href{https://www.amazon.com/dp/B06Y5VPSFN/?coliid=I1R941FDJ72L0R&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{CNC Stepper Motor Driver - model} 		    & STEPPERONLINE & \$67.90 (\$33.95 x2) \\
-		\href{https://www.amazon.com/dp/B06Y5VPSFN/?coliid=I1R941FDJ72L0R&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{ DM542T}						&				&	\\
+		\href{https://www.amazon.com/Arducam-Module-Camera-Arduino-Mega2560/dp/B013JUKZ48/ref=sr_1_fkmrnull_2_sspa?keywords=Arducam+Mini+Module+Camera+5+Megapixel+OV5647\&qid=1555715678\&s=gateway\&sr=8-2-fkmrnull-spons\&psc=1}{Arducam Mini Module Camera 5 Megapixel OV5647} 	& Arducam 		& \$39.99 \\
 		\hline
-		\href{https://www.amazon.com/dp/B07789DM4R/?coliid=I1G2VVNW6NF88L&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{WiFi 1080P HD Camera with IR LED} 	& sv3c	 		& \$59.99 \\
-		\href{https://www.amazon.com/dp/B07789DM4R/?coliid=I1G2VVNW6NF88L&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{Motion Detection and 128GB SD Card}			&				&	\\
-		\href{https://www.amazon.com/dp/B07789DM4R/?coliid=I1G2VVNW6NF88L&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{ Support}						&				&	\\
+		\href{https://store.arduino.cc/usa/arduino-mkr1000}{Arduino MKR1000 WiFi with Headers} 	& Arduino 		& \$33.95 \\
 		\hline
-		\href{https://www.amazon.com/dp/B01LWQ5K9K/?coliid=I2CQSP60ATX4U6&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{Magnetic Whiteboard/Dry Erase Board}	& VIZ-PRO 		& \$55.89 \\
-		\href{https://www.amazon.com/dp/B01LWQ5K9K/?coliid=I2CQSP60ATX4U6&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{48in x 36in, Silver Aluminum Frame}	&				&	\\
+		\href{https://www.adafruit.com/product/3619}{Assembled HUZZAH32-ESP32 Feather Board with Stacking} 	& Adafruit 		& \$21.95 x3 \\
+		\href{https://www.adafruit.com/product/3619}{Headers} 	&  		&  \\
 		\hline
-		\href{https://www.amazon.com/dp/B00PNEPF5I/?coliid=I3APKEM9Y17HEP&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{Nema 23 CNC 2.8A Stepper Motor} 		& STEPPERONLINE	& \$52.00 (\$26.00 x2) \\
-		\href{https://www.amazon.com/dp/B00PNEPF5I/?coliid=I3APKEM9Y17HEP&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{1.26Nm Holding Torque - model}		&				&	\\
-		\href{https://www.amazon.com/dp/B00PNEPF5I/?coliid=I3APKEM9Y17HEP&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{23HS22-2804S}						&				&	\\
+		\href{https://www.amazon.com/dp/B06Y5VPSFN/?coliid=I1R941FDJ72L0R\&colid=22YAOKWOJAKA9\&psc=0\&ref_=lv_ov_lig_dp_it}{CNC Stepper Motor Driver DM542T} 	& STEPPERONLINE 		& \$38.99 x2 \\
 		\hline
-		\href{https://www.amazon.com/gp/product/B071LRYYHH/ref=ppx_yo_dt_b_asin_title_o00__o00_s02?ie=UTF8&psc=1}{Arduino MKR1000 WiFi} 	& Arduino	& \$33.95 \\
+		\href{https://www.amazon.com/dp/B07GB3TSKH/?coliid=I3FJDEJ8MXP6RY\&colid=22YAOKWOJAKA9\&psc=0\&ref_=lv_ov_lig_dp_it}{Li-ion 9V Battery Charger Bay} 	& EBL Official 		& \$12.99 \\
 		\hline
-	    \href{https://www.amazon.com/dp/B0728PDWY5/?coliid=I3K7SWFRMQ3A2F&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{6.35mm GT2 40 Teeth Bore Timing Belt}& Uxcell 		& \$28.76 (\$7.19 x4) \\
-	    \href{https://www.amazon.com/dp/B0728PDWY5/?coliid=I3K7SWFRMQ3A2F&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{ Pulley Flange}							&				&	\\
+		\href{https://www.amazon.com/gp/product/B06XC9SMVN/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8\&psc=1}{Magnetic Whiteboard 48''x36''} 	& Lockways 		& \$49.99 \\
 		\hline
-		\href{https://www.amazon.com/dp/B00GLK1BO2/?coliid=ICY9TJ3NF7CJT&colid=22YAOKWOJAKA9&ref_=lv_ov_lig_dp_it&th=1}{9 Volt 600mAh Li-ion Rechargeable}   & EBL 			& \$25.99 \\
-		\href{https://www.amazon.com/dp/B00GLK1BO2/?coliid=ICY9TJ3NF7CJT&colid=22YAOKWOJAKA9&ref_=lv_ov_lig_dp_it&th=1}{Batteries Lithium-ion, 6 Pack - model}		&				&	\\
-		\href{https://www.amazon.com/dp/B00GLK1BO2/?coliid=ICY9TJ3NF7CJT&colid=22YAOKWOJAKA9&ref_=lv_ov_lig_dp_it&th=1}{ 6F22}							&				&	\\
+		\href{https://www.omc-stepperonline.com/nema-23-stepper-motor/nema-23-bipolar-18deg-126nm-1784ozin-28a-25v-57x57x56mm-4-wires-23hs22-2804s.html}{NEMA 23 CNC Stepper Motors} 	& STEPPERONLINE 		& \$19.99 x2 \\
 		\hline
-		\href{https://www.amazon.com/dp/B07BZDM8FH/?coliid=I3284FABZ8WOUB&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{10 meter long, 6mm Timing Belt White}& Hilitand		& \$16.79 \\
-		\href{https://www.amazon.com/dp/B07BZDM8FH/?coliid=I3284FABZ8WOUB&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{GT2 Open Synchronous Belt with Steel}&				&	\\
-		\href{https://www.amazon.com/dp/B07BZDM8FH/?coliid=I3284FABZ8WOUB&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{Core}								&				&	\\
+		\href{https://www.amazon.com/gp/product/B07JGTHVVL/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8\&psc=1}{NEMA 23 Stepper Motor Mounting Bracket 4 pack} 	& Jiuwu 		& \$18.99 \\
 		\hline
-		\href{https://www.amazon.com/dp/B06VSYJ7HN/?coliid=I2N6U5HO8N5E5L&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{3 pcs Antenna Wireless Transceiver} 	& Kuman 		& \$13.99 \\
-		\href{https://www.amazon.com/dp/B06VSYJ7HN/?coliid=I2N6U5HO8N5E5L&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{RF Transceiver Module - model} 		&				&	\\
-		\href{https://www.amazon.com/dp/B06VSYJ7HN/?coliid=I2N6U5HO8N5E5L&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{nRF24L01+PA+LNA}						&				&	\\
+		\href{https://www.cypress.com/documentation/development-kitsboards/psoc-6-wifi-bt-pioneer-kit-cy8ckit-062-wifi-bt}{PSoC 6 WiFi-BT Pioneer Kit} 	& Cypress 		& \$99.00 \\
 		\hline
-		\href{https://www.amazon.com/dp/B07GB3TSKH/?coliid=I3FJDEJ8MXP6RY&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{9 Volt Li-ion Battery Charger 5 Bay-}& EBL			& \$12.99 \\
-		\href{https://www.amazon.com/dp/B07GB3TSKH/?coliid=I3FJDEJ8MXP6RY&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{use with model 6F22 Lithium-ion}		&				&	\\
-		\href{https://www.amazon.com/dp/B07GB3TSKH/?coliid=I3FJDEJ8MXP6RY&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{Rechargeable Batteries}				&				&	\\
+		\href{https://www.pcbway.com/}{Stepper Motor PCBs} 	& PCBWay 		& \$147.00 \\
 		\hline
-		\href{https://pcbshopper.com/?GetPrices&Width=3&Height=3&Quantity=2&Trace=6&Drill=16&Fingers=0&Designs=1&Units=inches&Finish=cheapest&Thickness=1.6&Cu=1&TWUnits=mil&DrillUnits=mil&Stencil=0&Quality=any&Country=US&days=default&Layers=2&Color=cheapest&Silkscreen=1}{PCBs for stepper motor connections}  & Varies		& \$10 - \$20 (estimated)\\
+		\href{https://www.homedepot.com/}{Various Braces and Glue} 	& Home Depot 		& \$27.46 \\
+		\hline
+		\href{https://www.homedepot.com/}{Various Screws, Nuts, and Bolts} 	& Home Depot 		& \$24.64 \\
+		\hline
+		\href{https://www.homedepot.com/}{Wood Plywood Backing 96''x48''} 	& Home Depot 		& \$39.82 \\
+		\hline
+		\href{https://www.homedepot.com/}{Wood 2''x4''} 	& Home Depot 		& \$12.27 x4 \\
+		\hline
+		\href{https://www.amazon.com/gp/product/B0748CNTFR/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8\&psc=1}{10 Meter GT2 6mm Steel Core White Open Ended Timing} 	& Nineone 		& \$15.89 \\
+		\href{https://www.amazon.com/gp/product/B0748CNTFR/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8\&psc=1}{Belt} 	& 		&  \\
+		\hline
+		\href{https://www.accuride.com/ss0115-cassrc-carriage-for-115rc}{115RC Cassette with Stainless Steel Bearings} 	& Accuride 		& \$45.00 x3 \\
+		\hline
+		\href{https://www.accuride.com/al0115-0120rc-aluminum-track-without-pre-drilled-holes}{115RC 47'' Aluminum Track} 	& Accuride 		& \$36.22 x3 \\
+		\hline
+		\href{https://www.homedepot.com/}{2'' Caster Rubber Wheels with Swivel and Brake} 	& Home Depot 		& \$3.98 x4 \\
+		\hline
+		\href{https://www.amazon.com/gp/product/B0779ZSNS3/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8\&psc=1}{9V Battery Clips} 	& BBTO US 		& \$6.25 \\
+		\hline
+		\href{https://www.mouser.com/ProductDetail/Keystone-Electronics/1294?qs=sGAEpiMZZMsb53hqUvtGaal96fsGiPnZeBRTs87TntQ\%3D}{9V Battery Holders for PCBs} 	& Mouser 		& \$1.90 x10 \\
+		\hline
+		\href{https://www.amazon.com/gp/product/B00GLK1BO2/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8\&th=1}{9V Rechargeable Batteries 6 pack} 	& EBL Official 		& \$25.99 x2 \\
+		\hline
+
+		\hline
+				\textbf{TOTAL COST} & & \ \textbf{\$1,202.13} \\
+				\hline
+				\textbf{Allotted Budget} & & \ \textbf{\$930.00} \\
+				\hline
+				\textbf{Over Budget Cost} & & \ \textbf{\$272.13} \\
 		\hline 
-		\href{https://www.amazon.com/dp/B073V77VLD/?coliid=I3S0XHJ6LUPARP&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{4pcs Nema 23 Stepper Motor Steel}	& HobbyUnlimited& \$10.99 \\
-		\href{https://www.amazon.com/dp/B073V77VLD/?coliid=I3S0XHJ6LUPARP&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{Mounting Bracket with Screws}		& 				&	\\
+	\end{tabular} 
+	\caption{Cost of components for project}
+	\label{table:1}
+\end{table}	
+
+As shown in the table for the budget, this project has exceeded the original expected budget by almost \$300. The original estimate was not taking into account the problems that were run into during the course of the project's life cycle. For example, the Arduino and Kuman wireless transceivers had to be changed to the HUZZAH32 Feather boards for the wireless communications because of their inoperability. This and a few other unforeseen circumstances pushed the budget over the limit.\par
+
+\setlength{\parindent}{2.5ex}Along with the components listed in the budget, the following resources were also used to complete the project.
+
+\begin{table} [H]
+	\normalsize
+	\centering
+	\begin{tabular}{|l|l|l|}
 		\hline
-		\href{https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=78&No=1027}{USB Wifi Dongle Xiaomi Mi Portable}  & Terasic		& \&8.00 \\
-		\href{https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=78&No=1027}{WiFi}								&				&	\\
+		\multicolumn{1}{|c|}{\textbf{Name of Equipment}}  & 
+		\multicolumn{1}{|c|}{\textbf{Type}}  & 
+		\multicolumn{1}{|c|}{\textbf{Description}} \\
 		\hline
-		\href{https://www.amazon.com/dp/B013FA7VCQ/?coliid=I2RKBBD5A0FCRN&colid=22YAOKWOJAKA9&psc=0&ref_=lv_ov_lig_dp_it}{Dry Erase Board Eraser - model 81505}& Expo			& \$3.58 \\
+				DipTrace 	&  Software		& Designing PCBs \\
 		\hline
-		\href{https://www.homedepot.com/p/Sheathing-Plywood-Common-15-32-in-x-4-ft-x-8-ft-Actual-0-438-in-x-48-in-x-96-in-20159/206827282}{Plywood,}
-		\href{https://www.homedepot.com/p/Outdoor-Essentials-4-in-x-4-in-x-6-ft-Pressure-Treated-Cedar-Tone-Moulded-Fence-Post-162525/204126782}{4x4 posts,} 
-		\href{https://www.homedepot.com/p/Everbilt-5-in-Swivel-with-Brake-Non-Marking-Rubber-Caster-4031545EB/203672648}{wheels, and camera}	& Home Depot	& \$76.93 (estimated) \\
-		\href{https://www.homedepot.com/p/Veranda-Linden-5-in-x-5-in-x-9-ft-White-Vinyl-Routed-Fence-End-Post-73013274/203109195}{ pole for mobility of product}					&				&	\\
+				Arduino IDE 	&  Software		& For programming and running the Arduinos when \\
+								&  				& they were being used for the wireless \\
+								&  				& communications. \\
 		\hline
-											\textbf{Total Budget with Shipping and Taxes} & & \ \textbf{\$928.49} \\
+				Modus ToolBox IDE 	&  Software		& Programming and setting up the system for the \\
+									&  				& PSoC 6. \\
+		\hline
+				uPyCraft IDE 	&  Software		& Programming the HUZZAH32 Feather Board. \\
+		\hline
+				Various connectors and jumper cables	&  Hardware		& For connections between components  \\
+		\hline
+				Digital Multimeter 	&  Hardware		& For testing and recording voltages, currents, and \\
+									&  				& resistances across components. \\
+		\hline
+				Solderless Breadboard 	&  Hardware		& For testing purposes. \\
+		\hline
+				Logic Analyzer 	&  Hardware		& For testing purposes. \\
+
 		\hline 
 	\end{tabular} 
 	\caption{Estimated costs of components for project}
 	\label{table:1}
 \end{table}	
-
-Along with the components listed in the budget, the following resources will also be needed to ensure the completion of this project.
-
-\begin{itemize}
-	\item A DC power source to provide the appropriate voltage to the stepper motors
-	\item A power outlet for the DE1\_SoC board
-	\item Various connections and jumper cables between the power system and the Smart Eraser
-	\item A place to store the components we will be using when they are not being utilized, to ensure their safety and reliability
-	\item Testing items:
-	\begin{itemize}
-		\item DC power source
-		\item Digital multimeter
-		\item Solderless breadboard
-		\item A monitor to display the camera feed
-		\item A computer with the Altera Monitor Program installed in order to write, run, and debug the ARM assembly language on the DE1\_SoC and the C language
-	\end{itemize}
-\end{itemize}
 
 \section{Roles of Team Members}
 \subsection{Heather Libecki}
@@ -1222,7 +1241,7 @@ Has experience in working with embedded systems and developing code for differen
 
 \section{Analysis and Design}
 \subsection{SPI communication}
-Serial Peripheral Communication(SPI) is a common form of wired communication between different systems. It is distastefully referred to as a master - slave relationship where there is one master and one or more slaves. There is no official standard for SPI however it is so widely used that it can be referred to as a De facto standard due to everyone operating along the same assumptions. These assumptions include the 4 modes SPI operate in and each mode is a different combination of the clock phase, when data is evaluated, and clock polarity, whether the clock is high or low when not in use. Once the mode has been decided, the slave clock dictates the rate of transaction between master and slave and therefore, the master must be configured accordingly. A Master-Out-Slave-In (MOSI) line feeds data, either MSB or LSB first, to the shift register in the SPI interface of the slave device. For every bit received, the slave will send a bit back to the master along the Master-In-Slave-Out (MISO) line. During a SPI exchange, every bit sent is a bit received and depending if you want to read or write data, the bits received are sometimes irrelevant (writing to slave).  
+Serial Peripheral Communication (SPI) is a common form of wired communication between different systems. It is distastefully referred to as a master - slave relationship where there is one master and one or more slaves. There is no official standard for SPI however it is so widely used that it can be referred to as a De facto standard due to everyone operating along the same assumptions. These assumptions include the 4 modes SPI operate in and each mode is a different combination of the clock phase, when data is evaluated, and clock polarity, whether the clock is high or low when not in use. Once the mode has been decided, the slave clock dictates the rate of transaction between master and slave and therefore, the master must be configured accordingly. A Master-Out-Slave-In (MOSI) line feeds data, either MSB or LSB first, to the shift register in the SPI interface of the slave device. For every bit received, the slave will send a bit back to the master along the Master-In-Slave-Out (MISO) line. During a SPI exchange, every bit sent is a bit received and depending if you want to read or write data, the bits received are sometimes irrelevant (writing to slave).  
 
  \begin{figure}[H]
 	\centering
@@ -1251,10 +1270,10 @@ This can be observed in the Arducam.C file, in any of the functions that use the
 \end{figure}
 
 \subsection{I2C Communication}
-Some confusion may arise when it is stated that in order to communicate with the Arducam module both I2C and SPI are needed to do so. This is because the Arducam is just that, a module, that has different components.
+Some confusion may arise when it is stated that in order to communicate with the Arducam module both I2C and SPI are needed to do so. This is because the Arducam is just that, a module, that has different components. The difference between these two types of communication is that I2C is needed to initialize the camera's settings and how it transfers data. For example, with I2C, the resolution, format, and size of the image can be configured. With SPI, the actual capture and transfer of the image data is done. However, unfortunately due to time constraints, the I2C
 \subsection{Image Processing}
 \subsubsection{Resolution}
-The original idea was to use a HD image to process because it would be able to capture more information, and therefore more accurately detect objects in a picture. This was assumed without taking into account the capabilities of the microcontroller. As it has been stated, attempts to add more physical memory to the system proved to more difficult than expected, leaving the program to only operate with a limited amount of memory. Due to this limitation, as well as matching the resolution of the TFT screen, a resolution of 320x240 was chosen to implement the image processing aspects of the system. It should be stated that the program was structured in a way that allows for easy changing of resolutions. Another impact of memory limitation is that only 80 rows of the image can be evaluated at a time.
+The original idea was to use a HD image to process because it would be able to capture more information, and therefore more accurately detect objects in a picture. This was assumed without taking into account the capabilities of the microcontroller. As it has been stated, attempts to add more physical memory to the system proved to more difficult than expected, leaving the program to only operate with a limited amount of memory. Due to this limitation, as well as matching the resolution of the TFT screen, a resolution of 320x240 was chosen to implement the image processing aspects of the system. It should be stated that the program was structured in a way that allows for easy changing of resolutions. Another impact of memory limitation is that only 80 rows of the image can be evaluated at a time.\\
 
 \subsubsection{Output Format}
  There are a multitude of image formats than can be used and each one has its own specific way to read pixel information. JPEG was immediately decided against due to its lossy nature and high level of complexity to read pixel data. That left RGB, raw RGB, and YUV formats. Going a level down, each of the three formats have different arrangements and sizes in which they can be formed. For example, RGB can be either 888, 565, 555, 444, and even still further the ordering of the R,G, and B can vary.\par
@@ -1418,8 +1437,10 @@ The total magnitude G is now compared against a threshold value, which can be ma
 
  \section{Stakeholder List}
  \begin{enumerate}
- 	\item	Aaron Stillmaker, Ph.D.: He is the professor of the Senior Design course, therefore wants to guide the students working on the Smart Eraser toward success through the completion of this project. He is also the manager of the project deliverable deadlines.\\ 
- 	\item   Hovannes Kulhandjian, Ph.D.: He is the technical advisor of this project, and he held the original concept of this project. Therefore he wants to help give technical advice to the students working on the Smart Eraser, as well as see the final product of their efforts.\\
+ 	\item	Aaron Stillmaker, Ph.D.: As the professor of the Senior Design course, wants to guide the students working on the Smart Eraser toward success through the completion of this project. Is also the manager of the project deliverable due dates.\\ 
+ 	\item   Hovannes Kulhandjian, Ph.D.: As a technical advisor of this project, he wants to see the success of this idea. He also held the original concept of this project, therefore he wants to help give technical advice to the students working on the Smart Eraser, as well as see the final product of their efforts.\\
+ 	\item   Roger Moore: As a technical advisor of this project, he wants to see the success of this idea. He has contributed his opinions on some of the technology and methods used for the image processing program, and wishes to see this project come to fruition. Although he has offered advice and his expertise, he does not wish to be apart of the Approvals signature section of this report. Therefore, in that section, his name is omitted.\\
+ 	\item   Richard Martinez, Research and Development - DPS Telecom: Sponsor that will be contributing funds to this project. He will also be providing the expertise of those who work at his company, as well as any additional resources that may be needed for testing the product and creating any deliverables. Although his company has contributed these funds to this project, he does not wish to be a part of the Approvals signature section of this report, as he considers the fund a “donation” rather than a “contribution”. Therefore, in the Approvals section, his name is omitted.\\
  	\item	Heather Libecki: Project Manager, Team Member\\
  	\item	Chris Quesada: Team Member\\
 	\item 	Juan Colin: Team Member\\
@@ -1485,5 +1506,46 @@ The total magnitude G is now compared against a threshold value, which can be ma
 
 	\bibliographystyle{IEEEtran}
 	\bibliography{reference}	
+\newpage
+\section{Appendices}
+
+\subsection{Appendix 1 - \textit{transmitter\_xy.ino}}
+\lstinputlisting{Appendices/transmitter_xy.ino}
+
+\subsection{Appendix 2 - \textit{receiver\_x.ino}}
+\lstinputlisting{Appendices/receiver_x.ino}
+
+\subsection{Appendix 3 - \textit{main.c}}
+\lstinputlisting{Appendices/main.c}
+
+\subsection{Appendix 4 - \textit{SPImaster.c}}
+\lstinputlisting{Appendices/SPImaster.c}
+
+\subsection{Appendix 5 - \textit{SPImaster.h}}
+\lstinputlisting{Appendices/SPImaster.h}
+
+\subsection{Appendix 6 - \textit{I2Cmaster.c}}
+\lstinputlisting{Appendices/I2Cmaster.c}
+
+\subsection{Appendix 7 - \textit{I2Cmaster.h}}
+\lstinputlisting{Appendices/I2Cmaster.h}
+
+\subsection{Appendix 8 - \textit{Arducam.c}}
+\lstinputlisting{Appendices/Arducam.c}
+
+\subsection{Appendix 9 - \textit{Arducam.h}}
+\lstinputlisting{Appendices/Arducam.h}
+
+\subsection{Appendix 10 - \textit{Improc.c}}
+\lstinputlisting{Appendices/Improc.c}
+
+\subsection{Appendix 11 - \textit{Improc.h}}
+\lstinputlisting{Appendices/Improc.h}
+
+\subsection{Appendix 12 - \textit{interface.h}}
+\lstinputlisting{Appendices/interface.h}
+
+\subsection{Appendix 13 - \textit{square\_detection.c}}
+\lstinputlisting{Appendices/square_detection.c}
  
 \end{document}

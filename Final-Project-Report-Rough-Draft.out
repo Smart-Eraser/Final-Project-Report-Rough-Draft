@@ -63,12 +63,26 @@
 \BOOKMARK [3][-]{subsubsection.12.3.1}{Resolution}{subsection.12.3}% 63
 \BOOKMARK [3][-]{subsubsection.12.3.2}{Output Format}{subsection.12.3}% 64
 \BOOKMARK [3][-]{subsubsection.12.3.3}{Resolution}{subsection.12.3}% 65
-\BOOKMARK [3][-]{figure.caption.48}{Grayscale Results}{subsection.12.3}% 66
+\BOOKMARK [3][-]{figure.caption.49}{Grayscale Results}{subsection.12.3}% 66
 \BOOKMARK [3][-]{subsubsection.12.3.5}{Sobel Edge Detection}{subsection.12.3}% 67
-\BOOKMARK [3][-]{figure.caption.55}{Results of Sobel Edge Detection}{subsection.12.3}% 68
+\BOOKMARK [3][-]{figure.caption.56}{Results of Sobel Edge Detection}{subsection.12.3}% 68
 \BOOKMARK [3][-]{subsubsection.12.3.7}{Results of Sobel Edge Detection}{subsection.12.3}% 69
 \BOOKMARK [3][-]{subsubsection.12.3.8}{Results of Sobel Edge Detection}{subsection.12.3}% 70
 \BOOKMARK [1][-]{section.13}{Stakeholder List}{}% 71
 \BOOKMARK [1][-]{section.14}{Project Approval Requirements}{}% 72
 \BOOKMARK [1][-]{section.15}{Approvals}{}% 73
-\BOOKMARK [1][-]{section*.56}{References}{}% 74
+\BOOKMARK [1][-]{section*.57}{References}{}% 74
+\BOOKMARK [1][-]{section.16}{Appendices}{}% 75
+\BOOKMARK [2][-]{subsection.16.1}{Appendix 1 - transmitter\137xy.ino}{section.16}% 76
+\BOOKMARK [2][-]{subsection.16.2}{Appendix 2 - receiver\137x.ino}{section.16}% 77
+\BOOKMARK [2][-]{subsection.16.3}{Appendix 3 - main.c}{section.16}% 78
+\BOOKMARK [2][-]{subsection.16.4}{Appendix 4 - SPImaster.c}{section.16}% 79
+\BOOKMARK [2][-]{subsection.16.5}{Appendix 5 - SPImaster.h}{section.16}% 80
+\BOOKMARK [2][-]{subsection.16.6}{Appendix 6 - I2Cmaster.c}{section.16}% 81
+\BOOKMARK [2][-]{subsection.16.7}{Appendix 7 - I2Cmaster.h}{section.16}% 82
+\BOOKMARK [2][-]{subsection.16.8}{Appendix 8 - Arducam.c}{section.16}% 83
+\BOOKMARK [2][-]{subsection.16.9}{Appendix 9 - Arducam.h}{section.16}% 84
+\BOOKMARK [2][-]{subsection.16.10}{Appendix 10 - Improc.c}{section.16}% 85
+\BOOKMARK [2][-]{subsection.16.11}{Appendix 11 - Improc.h}{section.16}% 86
+\BOOKMARK [2][-]{subsection.16.12}{Appendix 12 - interface.h}{section.16}% 87
+\BOOKMARK [2][-]{subsection.16.13}{Appendix 13 - square\137detection.c}{section.16}% 88
