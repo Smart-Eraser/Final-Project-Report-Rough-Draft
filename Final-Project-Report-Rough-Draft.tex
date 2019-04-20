@@ -1274,6 +1274,7 @@ The following table lists the components that were bought in order to complete t
 				\hline
 				\textbf{Allotted Budget} & & \ \textbf{\$930.00} \\
 				\hline
+				\hline
 				\textbf{Over Budget Cost} & & \ \textbf{\$272.13} \\
 		\hline 
 	\end{tabular} 
@@ -1316,30 +1317,31 @@ As shown in the table for the budget, this project has exceeded the original exp
 
 		\hline 
 	\end{tabular} 
-	\caption{Estimated costs of components for project}
-	\label{table:1}
+	\caption{Equipment used besides the components bought}
+	\label{table:2}
 \end{table}	
 
 \section{Roles of Team Members}
+This section contains a more in depth look at what the specific roles of each team member were throughout this project. Included in this section is each member’s areas of expertise, areas they were not experienced in, and what they had to work on the most throughout the completion of the Smart Eraser.
 \subsection{Heather Libecki}
-She will take on the responsibility of being the project manager for the Smart Eraser. She has experience with programming the DE1\_SoC that will be used in this project, as well as connecting the physical devices to it and controlling them via the GPIO ports, which will come in handy when connecting the Raspberry Pi to the board and controlling the data transfer between the devices. This project will be dependent on translating data from the camera into information that the microcontroller will be able to process, and her previous experience with the board plus her ability to learn and adapt quickly will help in that implementation. She is adept at solving problems, debugging and error detection, and technical writing, which will be an integral part in the completion of this project. A solid understanding of the microcontroller's full capabilities will need to be further ascertained, as well as how the coordinate system will work in conjunction with the stepper motors, which will be connected to the DE1\_SoC via a wireless connection.
+She had the responsibility of being the project manager for the Smart Eraser project. She also wanted to take charge of the stepper motors and their operations. She has had previous experience with stepper motors and how they work, so she was ready to take on this task. The technical advisor Dr. Kulhandjian wanted the project to be as wireless as possible, so wireless transceivers were decided upon to communicate with the stepper motors from a master controller that would send instructions. She decided to take on the task of creating the wireless communications as well, as she has a personal interest in wireless connections and networking programming. Although she had no experience in wireless communications, she wanted to learn this for the project. Finally, because she was in charge of the connections and movement of the stepper motors, she needed to create the algorithms that would actually allow the stepper motors to move the eraser to where they needed to go based on the image processing that Chris did. She was responsible for the algorithm that would find the outer-most edges of the markings on the whiteboard, then for the algorithm that took those coordinates and created a serpentine-like path, out of stepper motor instructions, that the eraser would need to follow. The following list details her strengths and weaknesses that would come in handy and needed to be addressed for this project.
 \begin{itemize}
-	\item Strengths: programming (assembly, some verilog), DE1\_SoC programming, mathematics, debugging, circuit implementation, problem solving, technical writing, public speaking
-	\item Weaknesses: circuitry design, coding algorithms, power systems, PCB design 
+	\item Strengths: programming (Verilog, C programming), PCB design, mathematics, debugging, circuit implementation, problem solving, technical writing, public speaking
+	\item Weaknesses: circuitry design, power systems, socket programming with Micropython 
 \end{itemize} 
  \subsection{Chris Quesada}
 Has experience in working with embedded systems and developing code for different applications. This project will be heavy on the software side, using both \textit{C} and \textit{Python} to take in data, analyze it, and then send an output.  He also developed the UART, SPI, and I2C communications needed for the SMART ERASER system. A solid understanding  of arrays, pointers, and how information is stored in memory was applied towards implementing the  image processing techniques used to find pixels that represent markings in the digital image. His work in ECE 70, concepts and experience gained in CSCI 41, and research into image processing allowed for the succesful completion of the SMART ERASER  image processing capabilities. Researching SPI and I2C in Embedded systems along with further research into theses communications along with UART during the SMART ERASER developement led to successful implementations of all three. He also assisted Heather with the developement of the wireless communicaions between the HUZZAH32 microcontrollers.
 \begin{itemize}
-	\item Strengths: programming (C, C++, Python),  programming concepts (arrays, pointers, structures, data types), embedded systems, developing algorithms, communications(SPI, 		UART, I2C).
+	\item Strengths: programming (C, C++, Python),  programming concepts (arrays, pointers, structures, data types), embedded systems, developing algorithms, communications(SPI, UART, I2C)
 	
-	\item Weaknesses:  circuitry design, mathematics, public speaking, power
+	\item Weaknesses: circuitry design, mathematics, public speaking, power
 \end{itemize} \par
  \subsection{Juan Colin}
-  Has experience in working with electrical systems and physical circuit design. He is proficient in the use of problem solving techniques to create a functioning system with given design specifications. His part of the project will be dependent on learning the physical mechanical aspects of the design, and how the connected parts will be powered. Therefore, he will need to further his understanding of how the parts should be connected in order to ensure the most spatial efficiency, as well as the connection of the power system that will allow all parts of the system to work properly and move the way they need to.
+  Has experience in working with electrical systems and physical circuit design. He is proficient in the use of problem solving techniques to create a functioning system with given design specifications. His part of the project was dependent on learning the physical mechanical aspects of the design, and how the connected parts will be powered. Therefore, he was in charge of the main mechanical system as well as the wooden prototype stand, and how the power can be supplied to the technological components in order to allow all parts of the system to work properly and move the way they need to. He also used knowledge from previous classes to program a microcontroller to detect the presence of a person in front of the whiteboard in order to provide a safety measure because there are moving parts in this project. He needed to research Micropython from scratch and use that knowledge to accomplish this.
   
 	\begin{itemize}
-	\item Strengths: electrical systems, circuitry design, problem solving, power systems, public speaking/relations
-	\item Weaknesses: programming (assembly, verilog), technical writing and spelling \\
+	\item Strengths: electrical systems, circuitry design, problem solving, power systems, public relations
+	\item Weaknesses: programming (Assembly, Verilog), technical writing and spelling
 \end{itemize}
 
 \section{Analysis and Design}
