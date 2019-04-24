@@ -26,7 +26,7 @@
 #define Height						(80)
 #define Pixel_Count_1				(25600)
 #define	Pixel_Count_2				(16960)
-#define Threshold					(20000)
+#define Threshold					(40000)
 
 //Prototype of functions
 

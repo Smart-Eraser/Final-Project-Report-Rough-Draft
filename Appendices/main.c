@@ -4,9 +4,9 @@
 * Version: 		1.0
 *
 * Description:	Uses SPI and I2C communication to receive image form Arducam,
-* 				process the image to find edges, translate detected edges to
+* 				process the image to find edges, translates detected edges to
 * 				coordinates for stepper motors, and	sends coordinate information
-* 				to stepper motor modules on a white board.
+* 				to HUZZAH32 server via UART communication.
 *
 *    			This code was modified from a template provided by Cypress
 *    			Semiconductor Corporation -> TFTemWin example
@@ -109,15 +109,15 @@ void ShowInstructionsScreen(void)
 }
 
 /*******************************************************************************
-* Function Name: Process_Image(void)
+* Function Name: Trigger_Capture(void)
 ********************************************************************************
 *
-* Summary: 		This function takes an image, converts it to grayscale, and then
-* 				detects edges using the Sobel operator(kernel).
+* Summary: 		This functions sends a trigger command to the Arducam module
+* 				via SPI
 *
 * Parameters:	None
 *
-* Return:		None
+* Return:		int status
 *
 *******************************************************************************/
 int Trigger_Capture(void)
@@ -138,8 +138,9 @@ int Trigger_Capture(void)
 * Function Name: Process_Image(void)
 ********************************************************************************
 *
-* Summary: 		This function takes an image, converts it to grayscale, and then
-* 				detects edges using the Sobel operator(kernel).
+* Summary: 		This function takes an image, converts it to grayscale, detects
+* 				edges, implements square detection on detected edges, sends
+* 				results to HUZZAH32 via UART
 *
 * Parameters:	None
 *
@@ -159,19 +160,29 @@ void Process_Image(void)
 	uint16_t 	    *ptr_PD 						= &Pixel_Data;				// Pointer to processed pixels array
 	uint16_t		*ptr_GD							= &Gray_Data;				// Pointer to grayscale pixels array
 	uint16_t 	    *ptr_Image_PD 					= bmExampleImage.pData;		// Pointer to Pre-loaded image for image processing testing
+	//uint16_t 	    *ptr_Image_PD 					= &Pixel_Data;				// Pointer to Pre-loaded image for image processing testing
+	int				start 							= 0;
+	int 			middle							= 0;
+	int				middleGStart 					= 1;
+	int				middleBStart 					= 2;
+	uint8 BayerFilter[2][Length]					= {0};
+
 
 	GUI_SetBkColor(GUI_BLACK);
 	GUI_Clear();
+	GUI_DrawBitmap(&bmExampleImage, 0, 0);
+
+//-------------------------- STILL IN DEVELOPEMENT----------------------------//
 
 	/* ---------------------------Initializations---------------------------- */
-	initSPIMaster();
-	initI2CMaster();
-	MyCam_Init();
+	/*MyCam_Init();
 	Trigger_Capture();
 
 	while (flag != CAPTURE_COMPLETE) {
 	flag = MyCam_Check_Capture_Status(rxBuffer, txBuffer);
 	}
+
+	Cy_SysLib_Delay(1000);
 
 	GUI_BITMAP Image = {
 	  (unsigned int)Length, 				// xSize
@@ -185,39 +196,48 @@ void Process_Image(void)
 
 	Cy_SysLib_Delay(1000);
 
-	for (int k = 0; k < Height*Length; k++) {
-		if (k == 0) {
-			MyCam_Single_DUMMY_Read(txBuffer, ptr_Dmmy);
-		}
-			else{
-				MyCam_Single_FIFO_Read(txBuffer, ptr_PD);
-				ptr_PD = ptr_PD + 1;
-			}
+	MyCam_Pixel_Read(txBuffer, ptr_PD, start, &BayerFilter);
+	middle = middleGStart;
+
+	for (k = 0; k < Height - 1; k++) {
+		ptr_PD = MyCam_Pixel_Read(txBuffer, ptr_PD, middle, &BayerFilter);
+		if (middle == middleGStart)
+			middle = middleBStart;
+		else if (middle == middleBStart)
+			middle = middleGStart;
 	}
 
+	ptr_PD = &Pixel_Data;
 	GUI_DrawBitmap(&Image, 0, 0);
 	Cy_SysLib_Delay(750);
 
-	for (int k = 0; k < Height*Length; k++) {
-		MyCam_Single_FIFO_Read(txBuffer, ptr_PD);
-		ptr_PD = ptr_PD + 1;
-		}
+	for (k = 0; k < Height - 1; k++) {
+		ptr_PD = MyCam_Pixel_Read(txBuffer, ptr_PD, middle, &BayerFilter);
+		if (middle == middleGStart)
+			middle = middleBStart;
+		else if (middle == middleBStart)
+			middle = middleGStart;
+	}
 
+	ptr_PD = &Pixel_Data;
 	GUI_DrawBitmap(&Image, 0, 80);
 	Cy_SysLib_Delay(750);
 
-	for (int k = 0; k < Height*Length; k++) {
-		MyCam_Single_FIFO_Read(txBuffer, ptr_PD);
-		ptr_PD = ptr_PD + 1;
+	for (k = 0; k < Height - 1; k++) {
+		ptr_PD = MyCam_Pixel_Read(txBuffer, ptr_PD, middle, &BayerFilter);
+		if (middle == middleGStart)
+			middle = middleBStart;
+		else if (middle == middleBStart)
+			middle = middleGStart;
 	}
-
+	ptr_PD = &Pixel_Data;
 	GUI_DrawBitmap(&Image, 0, 160);
 	Cy_SysLib_Delay(750);
 
 	/* GUI_BITMAP is a structure the EMWIN graphics driver
 	 * uses to display an image */
 
-	/*GUI_BITMAP Image = {
+	GUI_BITMAP Image = {
 		  (unsigned int)Length, 				// xSize
 		  (unsigned int)Height,  				// ySize
 		  640, 									// BytesPerLine
@@ -225,7 +245,7 @@ void Process_Image(void)
 		  (unsigned char *)Pixel_Data,  		// Pointer to picture data
 		  NULL,  								// Pointer to palette
 		  GUI_DRAW_BMPM565,						// Specifies RGB format
-		};*/
+		};
 
 	/*******************************************************************************
 	* Function Call: conv2gray()
@@ -243,19 +263,16 @@ void Process_Image(void)
 	* 				third call -> 160 - 239
 	*******************************************************************************/
 
-	ptr_Image_PD = conv2gray(ptr_Image_PD, ptr_PD, ptr_GD);
-	GUI_DrawBitmap(&Image, 0, 0);
-	Cy_SysLib_Delay(750);
+	//ptr_Image_PD = conv2gray(ptr_Image_PD, ptr_PD, ptr_GD);
+	//GUI_DrawBitmap(&Image, 0, 0);
 
-	ptr_Image_PD = conv2gray(ptr_Image_PD, ptr_PD, ptr_GD);
-	Cy_SysLib_Delay(750);
-	GUI_DrawBitmap(&Image, 0, 80);
+	//ptr_Image_PD = conv2gray(ptr_Image_PD, ptr_PD, ptr_GD);
+	//GUI_DrawBitmap(&Image, 0, 80);
 
-	ptr_Image_PD = conv2gray(ptr_Image_PD, ptr_PD, ptr_GD);
-	Cy_SysLib_Delay(750);
-	GUI_DrawBitmap(&Image, 0, 160);
+	//ptr_Image_PD = conv2gray(ptr_Image_PD, ptr_PD, ptr_GD);
+	//GUI_DrawBitmap(&Image, 0, 160);
 
-	ptr_Image_PD = bmExampleImage.pData;		// Reset test image pointer to beginning
+	//ptr_Image_PD = bmExampleImage.pData;		// Reset test image pointer to beginning
 
 	/*******************************************************************************
 	* Function Call: sobel()
@@ -274,15 +291,43 @@ void Process_Image(void)
 
 	ptr_Image_PD = sobel(ptr_Image_PD, ptr_PD, ptr_GD);
 	GUI_DrawBitmap(&Image, 0, 0);
-	Cy_SysLib_Delay(750);
+
+	for (k = 0; k < 1024; k++){
+		Cy_SCB_UART_PutArray(KIT_UART_HW, ptr_PD, 25);
+		Cy_SysLib_Delay(1);
+		Cy_SCB_UART_ClearTxFifoStatus(KIT_UART_HW, CY_SCB_UART_TX_DONE);
+		ptr_PD = ptr_PD + 128;
+}
+
+	ptr_PD = &Pixel_Data;
+
+	Cy_SysLib_Delay(500);
 
 	ptr_Image_PD = sobel(ptr_Image_PD, ptr_PD, ptr_GD);
-	Cy_SysLib_Delay(750);
 	GUI_DrawBitmap(&Image, 0, 80);
 
+	for (k = 0; k < 1024; k++){
+		Cy_SCB_UART_PutArray(KIT_UART_HW, ptr_PD, 25);
+		Cy_SysLib_Delay(1);
+		Cy_SCB_UART_ClearTxFifoStatus(KIT_UART_HW, CY_SCB_UART_TX_DONE);
+		ptr_PD = ptr_PD + 128;
+	}
+
+	ptr_PD = &Pixel_Data;
+
+	Cy_SysLib_Delay(500);
+
 	ptr_Image_PD = sobel(ptr_Image_PD, ptr_PD, ptr_GD);
-	Cy_SysLib_Delay(750);
 	GUI_DrawBitmap(&Image, 0, 160);
+
+	for (k = 0; k < 1024; k++){
+		Cy_SCB_UART_PutArray(KIT_UART_HW, ptr_PD, 25);
+		Cy_SysLib_Delay(1);
+		Cy_SCB_UART_ClearTxFifoStatus(KIT_UART_HW, CY_SCB_UART_TX_DONE);
+		ptr_PD = ptr_PD + 128;
+	}
+
+	ptr_PD = &Pixel_Data;
 
 	/* -------------------Set font size, font color to black-------------------- */
 	GUI_SetFont(GUI_FONT_16B_1);
@@ -354,6 +399,13 @@ int main(void)
     init_cycfg_all();
     __enable_irq();
     GUI_Init();
+    initSPIMaster();
+    initI2CMaster();
+
+    cy_stc_scb_uart_context_t KIT_UART_context;
+
+    Cy_SCB_UART_Init(KIT_UART_HW, &KIT_UART_config, &KIT_UART_context);
+    Cy_SCB_UART_Enable(KIT_UART_HW);
 
    /* --------------Display the startup screen for 2 seconds----------------- */
    ShowStartupScreen();

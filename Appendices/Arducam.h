@@ -13,11 +13,10 @@
 
 #include "cy_pdl.h"
 #include "cycfg.h"
+#include "ImProc.h"
 
-#define	QVGAinit						(715UL)
-#define QSXGA							(91UL)
-#define QVGA							(27UL)
-#define JPEGtoYUV						(10UL)
+#define	RAWinit							(274UL)
+#define	RAWres							(5UL)
 
 /* --------------------SPI Command Addresses for Arducam----------------- */
 
@@ -26,7 +25,7 @@
 #define SET_FRAME_COUNT				(0x01)
 #define FIFO_CONTROL				(0x04)
 #define CAPTURE_FLAG				(0x41)
-#define FIFO_READ_BURST				(0x3d)
+#define FIFO_READ_SINGLE				(0x3d)
 
 /* ---------------SPI Command operations for Arducam--------------------- */
 #define WRITE						(0x80)
@@ -41,7 +40,7 @@
 void MyCam_Test(uint16_t rxBuffer, uint16_t txBuffer);
 void MyCam_Trigger(uint16_t rxBuffer, uint16_t txBuffer);
 void MyCam_Init(void);
-void MyCam_Single_FIFO_Read(uint16_t txBuffer, uint16_t *ptr_PD);
+unsigned short* MyCam_Pixel_Read(uint16_t txBuffer, uint16_t *ptr_PD, int position, uint8 *BayerFilter);
 void MyCam_Single_DUMMY_Read(uint16_t txBuffer, uint16_t *ptr_PD);
 uint16_t  MyCam_Check_Capture_Status(uint16_t rxBuffer, uint16_t txBuffer);
 

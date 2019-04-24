@@ -1,15 +1,11 @@
-/*****************************************************************************
-* File Name: 	 main.c
+/******************************************************************************
+* File Name: 	SPIMaster.h
 *
 * Version: 		1.0
 *
-* Description:	Uses SPI and I2C communication to receive image form Arducam,
-* 				process the image to find edges, translate detected edges to
-* 				coordinates for stepper motors, and	sends coordinate information
-* 				to stepper motor modules on a white board.
-*
-*    			This code was modified from a template provided by Cypress
-*    			Semiconductor Corporation -> TFTemWin example
+* Description: 	This file contains function prototypes for SPI Master.
+* 					- These functions were provided from Cypress and
+* 					  were altered to fit the Smart Eraser application.
 *
 * Author:		Chris Quesada
 *******************************************************************************/

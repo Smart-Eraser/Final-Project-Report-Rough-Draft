@@ -292,6 +292,11 @@
 \usepackage{hyperref}
 \usepackage{placeins}
 \usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
 
 \hypersetup{
 	colorlinks=true,
@@ -1244,14 +1249,14 @@ The following figures show the GANTT chart schedules over the next two semesters
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[max size={\textwidth}{\textheight}]{Images/GANTT chart 186A 1.png}
+	\includegraphics[max size={\textwidth}{\textheight}]{Images/GANTTchart186A.png}
 	\caption{GANTT chart for Senior Design Semester 1 - Research Phase}
 	\label{fig:GANTT186A}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	{\includegraphics[max size={\textwidth}{\textheight}]{Images/GANTT chart 186B.png}}
+	{\includegraphics[max size={\textwidth}{\textheight}]{Images/GANTTchart186B.png}}
 	\caption{GANTT chart for Senior Design Semester 2 - Implementation Phase}
 	\label{fig:GANTT186B}
 \end{figure}
@@ -1787,67 +1792,99 @@ In order to mitigate wiring, wireless communication is done to provide the stepp
 	\bibliographystyle{IEEEtran}
 	\bibliography{reference}	
 \newpage
-\lstdefinestyle{myCustomC}{
-	language=C,
-	basicstyle =\small\ttfamily
-	numbers=left,
-	stepnumber=1,
-	numbersep=1pt,
-	tabsize=2,
-	showspaces=false,
-	showstringspaces=false
+\lstset{frame=tb,
+	language=c,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
 }
 \section{Appendices}
 
 \subsection{Appendix 1 - \textit{transmitter\_xy.ino}}\label{A1}
+
 \lstinputlisting{Appendices/transmitter_xy.ino}
+
 \newpage
 
 \subsection{Appendix 2 - \textit{receiver\_x.ino}}\label{A2}
+
 \lstinputlisting{Appendices/receiver_x.ino}
+
 \newpage
 
 \subsection{Appendix 3 - \textit{main.c}}\label{A3}
+
 \lstinputlisting{Appendices/main.c}
+
 \newpage
 
 \subsection{Appendix 4 - \textit{SPImaster.c}}\label{A4}
+
 \lstinputlisting{Appendices/SPImaster.c}
+
 \newpage
 
 \subsection{Appendix 5 - \textit{SPImaster.h}}\label{A5}
+
 \lstinputlisting{Appendices/SPImaster.h}
+
 \newpage
 
-\subsection{Appendix 6 - \textit{I\textsuperscript{2}Cmaster.c}}\label{A6}
+\subsection{Appendix 6 - \textit{I2Cmaster.c}}\label{A6}
+
 \lstinputlisting{Appendices/I2Cmaster.c}
+
 \newpage
 
 \subsection{Appendix 7 - \textit{I\textsuperscript{2}Cmaster.h}}\label{A7}
+
 \lstinputlisting{Appendices/I2Cmaster.h}
+
 \newpage
 
 \subsection{Appendix 8 - \textit{Arducam.c}}\label{A8}
+
 \lstinputlisting{Appendices/Arducam.c}
+
 \newpage
 
 \subsection{Appendix 9 - \textit{Arducam.h}}\label{A9}
+
 \lstinputlisting{Appendices/Arducam.h}
+
 
 \newpage
 \subsection{Appendix 10 - \textit{Improc.c}}\label{A10}
+
 \lstinputlisting{Appendices/Improc.c}
+
 \newpage
 
 \subsection{Appendix 11 - \textit{Improc.h}}\label{A11}
+
 \lstinputlisting{Appendices/Improc.h}
+
 \newpage
 
 \subsection{Appendix 12 - \textit{interface.h}}\label{A12}
+
 \lstinputlisting{Appendices/interface.h}
+
 \newpage
 
 \subsection{Appendix 13 - \textit{square\_detection.c}}\label{A13}
+
 \lstinputlisting{Appendices/square_detection.c}
+
  
 \end{document}

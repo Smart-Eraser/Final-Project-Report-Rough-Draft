@@ -1,10 +1,21 @@
+/******************************************************************************
+* File Name: 	I2CMaster.c
+*
+* Version: 		1.0
+*
+* Description: 	This file contains function definitions for I2C Master.
+* 					- These functions were provided from Cypress and
+* 					  were altered to fit the Smart Eraser application.
+*
+* Author:		Chris Quesada
+*******************************************************************************/
 
 #include "I2CMaster.h"
 #include "Interface.h"
 
-/***************************************
+/******************************************************************************
 *            Constants
-****************************************/
+******************************************************************************/
 /* I2C slave address to communicate with */
 #define I2C_SLAVE_ADDR        (0x3C)
 
