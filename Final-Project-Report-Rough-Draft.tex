@@ -1,8 +1,8 @@
-%Written by: Aaron Stillmaker
-%October 23, 2018
-%ECE 186A - Senior Design
-%
-%This is a template you can use for your Project Charter, though you will need to change a good portion of it for your own needs.
+%Written by: The Smart Eraser Senior Design team!
+%Project Manager: Heather Libecki
+%Team Members: Chris Quesada and Juan Colin
+%Let's get started!
+
 \RequirePackage{filecontents}
 \begin{filecontents*}{reference.bib}
 	@misc{de1,
@@ -281,6 +281,25 @@
 	note			={\url{https://www.electronics-notes.com/articles/connectivity/serial-data-communications/transmission-standards.php}
 	}
 }
+	@misc{mkr,
+	author			={Arduino},
+	title			={{ARDUINO MKR1000 WIFI}},
+	note			={\url{https://store.arduino.cc/usa/arduino-mkr1000}
+	}
+}
+	@misc{trans1,
+	author			={How to Mechatronics},
+	title			={{Arduino Wireless Communication – NRF24L01 Tutorial}},
+	note			={\url{https://howtomechatronics.com/tutorials/arduino/arduino-wireless-communication-nrf24l01-tutorial/}
+	}
+}
+	@misc{uno,
+	author			={Bob5421},
+	title			={{which pins should i take for i2c on arduino uno}},
+	note			={\url{https://stackoverflow.com/questions/42022000/which-pins-should-i-take-for-i2c-on-arduino-uno/42022566}
+	}
+
+}
 \end{filecontents*}
 
 \documentclass[12pt,onecolumn]{IEEEtran}			
@@ -292,6 +311,7 @@
 \usepackage{hyperref}
 \usepackage{placeins}
 \usepackage{listings}
+\usepackage{xcolor}
 
 \hypersetup{
 	colorlinks=true,
@@ -911,13 +931,13 @@ The dimensions of the whiteboard prototype are shown in the next two figures. Mo
    \begin{figure}[H]
 	\centering
 	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.65]{Images/front_view.png}}
-	\caption{Front view of the SMART ERASER system with dimensions}
+	\caption{Front view of the Smart Eraser system with dimensions}
 	\label{fig:front_view}
 \end{figure}   
 \begin{figure}[H]
 \centering
 {\includegraphics[max size={\textwidth}{\textheight}, scale=0.50]{Images/side_view.png}}
-\caption{Side view of the SMART ERASER system with dimensions}
+\caption{Side view of the Smart Eraser system with dimensions}
 \label{fig:side_view}
 \end{figure}
 
@@ -1379,7 +1399,7 @@ She had the responsibility of being the project manager for the Smart Eraser pro
 	\item Weaknesses: circuitry design, power systems, socket programming with Micropython 
 \end{itemize} 
  \subsection{Chris Quesada}
-Has experience in working with embedded systems and developing code for different applications. This project will be heavy on the software side, using both \textit{C} and \textit{Python} to take in data, analyze it, and then send an output.  He also developed the UART, SPI, and I\textsuperscript{2}C communications needed for the SMART ERASER system. A solid understanding  of arrays, pointers, and how information is stored in memory was applied towards implementing the  image processing techniques used to find pixels that represent markings in the digital image. His work in ECE 70, concepts and experience gained in CSCI 41, and research into image processing allowed for the succesful completion of the SMART ERASER  image processing capabilities. Researching SPI and I\textsuperscript{2}C in Embedded systems along with further research into theses communications along with UART during the SMART ERASER developement led to successful implementations of all three. He also assisted Heather with the developement of the wireless communicaions between the HUZZAH32 microcontrollers.
+Has experience in working with embedded systems and developing code for different applications. This project will be heavy on the software side, using both \textit{C} and \textit{Python} to take in data, analyze it, and then send an output.  He also developed the UART, SPI, and I\textsuperscript{2}C communications needed for the Smart Eraser system. A solid understanding  of arrays, pointers, and how information is stored in memory was applied towards implementing the  image processing techniques used to find pixels that represent markings in the digital image. His work in ECE 70, concepts and experience gained in CSCI 41, and research into image processing allowed for the succesful completion of the Smart Eraser  image processing capabilities. Researching SPI and I\textsuperscript{2}C in Embedded systems along with further research into theses communications along with UART during the Smart Eraser developement led to successful implementations of all three. He also assisted Heather with the developement of the wireless communicaions between the HUZZAH32 microcontrollers.
 \begin{itemize}
 	\item Strengths: programming (C, C++, Python),  programming concepts (arrays, pointers, structures, data types), embedded systems, developing algorithms, communications(SPI, UART, I\textsuperscript{2}C)
 	
@@ -1394,6 +1414,8 @@ Has experience in working with embedded systems and developing code for differen
 \end{itemize}
 
 \section{Analysis and Design}
+
+In this section, the implementation of the components that came together to make the Smart Eraser functional will be described.
 
 \subsection{I\textsuperscript{2}C Communication - PSoC 6 to Arducam}
 Inter-Integrated-Circuit(I\textsuperscript{2}C) is a popular method for interactions between processors and slower ICs. For optimal efficiency, short distances should be used so it is mainly for intra-board connections. The naming scheme used to define the components is referred to as a master/slave relationship where there is one master and one or more slaves. Communication between the master and slave is through messages, with the messages being structured in a specific way. A start and stop bit are used to indicate the start and end of a message. After the start bit, an address is given, usually 7-10 bits, followed by the read/write bit. As was the case with Arducam, the data sheets for slave devices often incorrectly list the slave address with the read/write bit included. Using the PSoC 6 APIs for the I\textsuperscript{2}C Serial Control Block(SCB) added a start and stop bit to the given slave address based on whether it was a read or write. So, after omitting the LSB of the slave address provided from Arducam, communications worked perfectly(0x78 - LSB = 0x3C). This is known as the address frame. There are also 2 data frames that ensue, each a byte wide. Between each frame either an ACK is received from the slave or the communication failed and the ACK bit is set to NACK. The flow of how a message is sent can be seen in figure ~\ref{fig:I2Cmessage}.
@@ -1439,7 +1461,7 @@ Serial Peripheral Communication (SPI) is a common form of wired communication be
 \end{figure}
 
 \setlength{\parindent}{2.5ex} 
-For the SMART ERASER system, the PSoC 6 is the master and the Arducam module is the slave. According to Arducam's data sheet, the Arducam SPI interface operates in SPI mode 0, meaning CPHA = 0 and CPOL = 0. Therefore the PSoC 6 is configured to operate in that mode as well. Also according the Arducam's data sheet the max frequency of its SPI interface is 8 MHz and therefore the PSoC 6 was configured to send a 7.142857 MHz signal to meet the requirement. Both the RX and TX of the PSoC 6 was set to be 16 bits wide in order to properly communicate with the Arducam SPI interface. An example of what the Arducam needs in order for proper communication can be found in figures ~\ref{fig:spiread} and  ~\ref{fig:spiwrite}. The command byte, sent first, is structured so that the MSB is designated as the read/write byte, leaving the other 6 bits to represent an address in the Arducam SPI interface. The following byte is the data byte which contains specific data if the action is a write. If it is a read SPI transaction then this byte is known as a dummy byte because its just sent to push what needs to be read to master. The reason the TX and RX were set to 16 bits instead of 8 is because when this command and data byte is sent to the Arducam, the CS line needs to be asserted while both bytes are sent. When the PSoC 6 was configured with an 8-bit TX and RX, it would de-assert the CS line between each byte. This caused improper communication between the devices because from the point of view of the Arducam, it was only receiving command bytes.\par
+For the Smart Eraser system, the PSoC 6 is the master and the Arducam module is the slave. According to Arducam's data sheet, the Arducam SPI interface operates in SPI mode 0, meaning CPHA = 0 and CPOL = 0. Therefore the PSoC 6 is configured to operate in that mode as well. Also according the Arducam's data sheet the max frequency of its SPI interface is 8 MHz and therefore the PSoC 6 was configured to send a 7.142857 MHz signal to meet the requirement. Both the RX and TX of the PSoC 6 was set to be 16 bits wide in order to properly communicate with the Arducam SPI interface. An example of what the Arducam needs in order for proper communication can be found in figures ~\ref{fig:spiread} and  ~\ref{fig:spiwrite}. The command byte, sent first, is structured so that the MSB is designated as the read/write byte, leaving the other 6 bits to represent an address in the Arducam SPI interface. The following byte is the data byte which contains specific data if the action is a write. If it is a read SPI transaction then this byte is known as a dummy byte because its just sent to push what needs to be read to master. The reason the TX and RX were set to 16 bits instead of 8 is because when this command and data byte is sent to the Arducam, the CS line needs to be asserted while both bytes are sent. When the PSoC 6 was configured with an 8-bit TX and RX, it would de-assert the CS line between each byte. This caused improper communication between the devices because from the point of view of the Arducam, it was only receiving command bytes.\par
 \setlength{\parindent}{2.5ex}
 This can be observed in the Arducam.C file, in any of the functions that use the Write\_SPI() function. A packet of 2 bytes is built and then placed into the TX of the PSoC 6 for transfer, which is handled by Write\_SPI(). These functions are: \\
 
@@ -1649,9 +1671,11 @@ Finding the gradient in both the X and Y direction at any given pixel location (
 \noindent G = (sqrt(pow(Gx,2) + pow(Gy,2)));\\\\
 \textit{Code is from sobel() in ImProc.C located in section ~\ref{A10}}\\
 
-The total magnitude G is now compared against a threshold value, which can be manipulated to adjust the strength of edge detection. If only sharp changes in intensity are desired, to be recognized as an edge then you would set the threshold value very high and if any change of intensity is desired then the threshold will be set very low. It is a trial and error to see if the image turns out correctly or not and is easily adjustable. Conditional statements are used to then compare against this threshold to set a pixel value to either white (detected edge, G is above threshold) or black (nothing detected, G is below threshold). 
+The total magnitude G is now compared against a threshold value, which can be manipulated to adjust the strength of edge detection. If only sharp changes in intensity are desired, to be recognized as an edge then you would set the threshold value very high and if any change of intensity is desired then the threshold will be set very low. It is a trial and error to see if the image turns out correctly or not and is easily adjustable. Conditional statements are used to then compare against this threshold to set a pixel value to either white (detected edge, G is above threshold) or black (nothing detected, G is below threshold).
 
 \subsubsection{Results of Sobel Edge Detection}
+\textcolor{white}{This text is so the following figure will be below this heading!}
+
 
 \begin{figure}[H]
 	\centering
@@ -1662,6 +1686,9 @@ The total magnitude G is now compared against a threshold value, which can be ma
 
 
 \subsubsection{Square\_Detection.C Algorithm}
+
+
+
 \subsubsection{UART Communication - PSoC 6 to HUZZAH32 (server)}
 Universal Asynchronous Receiver/Transmitter (UART) was chosen as the communication protocol between the main microcontroller (PSoC 6) and server microcontroller (HUZZAH32). This is the simplest of the three communication protocols used in the Smart Eraser. As the name suggests, communication is asynchronous, meaning there is no clock regulating the transfer of data between devices. Instead a baud rate is used, which is defined as the rate information can be transferred along a communication channel. Unlike SPI and I\textsuperscript{2}C, there is no master/slave relationship and thus communication relies on a few, simple parameters. Each device must be set to the same parameters in order to properly communicate. These parameters include; baud rate, parity, stop bit(s). The Smart Eraser system operates with a 115200 baud rate, parity enabled and set to even, with 1 stop bit and aheres to the RS232 standard of serial communication \cite{UARTstandard}.  
 
@@ -1696,8 +1723,68 @@ def UARTread():\\
     return buff\\\\
 \textit{Code is from UARTread() in UART.py located in section adddddddd pyttttttttttthhhhhhhhhhooooooooooonnnnnnnnnn fillllllllllllllleeeeeeeeeeesssssssss ~\ref{A3}}\\
 
+\subsubsection{The Original Plan for Wireless Communication}
 
-\subsubsection{Wireless Communication (server to clients)}
+When this project was originally started, the idea was to use wires to connect all of the components. This meant that a long wire would need to be used to connect the components on the Y-axis of the whiteboard in order to allow it to move. This idea was scrapped when everyone involved realized that not only would wireless communication allow for a more “pleasing to the eye” design, but would also add a layer of complexity to the project’s difficulty. \par
+\setlength{\parindent}{2.5ex}
+The original plan for the wireless communication was to use Raspberry Pi boards that would connect to the DE1\_SoC wirelessly via a wireless dongle that would plug into the DE1\_SoC. However, the transceivers that were found that would allow the Raspberry Pi boards to be wireless were only compatible with Arduino boards, so the Raspberry Pi was changed to Arduino. Soon after, problems arose from using the DE1\_SoC, so the microcontroller changed to the PSoC 6, and the new plan became to hardwire the transmitter Arduino to the PSoC 6. \\
+
+\subsubsection{Arduino Wireless Communication}
+
+Arduino microcontrollers are notoriously straightforward to use because of their open-sourced nature, meaning that there are already many libraries that are made for the board for various other external devices they can be used with, as well as applications that they can be used for. Therefore, the wireless communication between the transmitter and receiver Arduinos was straightforward, as well as the connections between the board and the transceiver. \par
+\setlength{\parindent}{2.5ex}
+The transmitter Arduino that would send instructions to the stepper motors was the model MKR1000, and the transceiver that could process the wireless communication and send the information needed was a Kuman nRF24L01 with an attachable antenna to extend the range that the wireless radio signal could reach. The pin layouts for the MKR1000 and the transceiver are shown in the following figures.
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.8]{Images/arduino_mkr_back.jpg}}
+	\caption{Image and pin layout of the MKR1000 WiFi module by Arduino \cite{mkr}}
+	\label{fig:mkr}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.5]{Images/transceiver_pins.jpg}}
+	\caption{Image and pin layout of the Kuman nRF24L01 transceivers\cite{trans1}}
+	\label{fig:trans1}
+\end{figure}
+
+A diagram showing the connections between these two chips is in the following figure.
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.7]{Images/Arduino_conn.png}}
+	\caption{Pin connections between the MKR1000 microcontroller and the wireless transceiver to create the transmitter module}
+	\label{fig:conn1}
+\end{figure}
+
+For the code of the transmitter, the template code was taken from the example shown by Dejan Nedelkovski, and is shown in Appendix 1 of this report. In order to use the wireless transceiver, the specific library made for it needed to be included. The RF24 radio was then configured to use pins 6 and 7 on the Arduino as the CE and CSN pins shown in ~\ref{fig:trans1}. In the setup of the program, the radio connection is initialized, the PA level is set to the minimum it can be, and the radio is set to be a transmitter with the stopListening() function. The addresses the transmitter will be sending data to are also outlined. The PA is the Power Amplifier factor, and the higher it is, the more unstable it can be, which would then require a bypass capacitor to be connected between the voltage power source and ground connected to the chip. Therefore, it was kept to a minimum, especially because the modules were so close together, so it was unnecessary to amplify it more.\par
+\setlength{\parindent}{2.5ex}
+Next, in the main loop of the program, in order to send a signal to a specific address, a writing pipe needs to be opened to that address. Only one writing pipe can be open at a time, so separate writing pipes to each receiver were opened and continuously alternated between in the loop. The number for the stepper motors to rotate a certain degree were then sent using the radio.write() function, whos parameters include a pointer to the name of the variable to send to the receiver, and the length of the data.\par
+\setlength{\parindent}{2.5ex}
+The receivers that were attached to each stepper motor were the Arduino UNO R3, and the transceivers were the same model used for the transmitter. The Arduino UNO R3 used is shown in the following figure.
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=1.2]{Images/uno_r3.png}}
+	\caption{Pin layout on the Arduino UNO R3 \cite{uno}}
+	\label{fig:uno}
+\end{figure}
+
+The pin connections between the UNO R3 and the wireless transceiver are shown in the following figure.
+
+\begin{figure}[H]
+	\centering
+	{\includegraphics[max size={\textwidth}{\textheight}, scale=0.8]{Images/Arduino_conn2.png}}
+	\caption{Pin connections between the UNO R3 microcontroller and the wireless transceiver to create the receiver modules}
+	\label{fig:conn2}
+\end{figure}
+
+For the code of the receiver, the template code was taken from the example shown by Dejan Nedelkovski, and is shown in Appendix 2 of this report. In order to use the wireless transceiver, the specific library made for it needed to be included. The RF24 radio was then configured to use pins 9 and 10 on the Arduino as the CE and CSN pins. In the setup of the program, the radio connection is initialized, the PA level is set to the minimum it can be, and the radio is set to be a receiver with the startListening() function. The address of the receiver is set, and the baud rate is also set for the Serial Monitor within the Arduino IDE so it will read in data at the specified rate. Next, in the main loop of the program, a loop is created to check if there is data available to receive. If there is, the data is read into a variable to be used for the stepper motor movement.\par
+\setlength{\parindent}{2.5ex}
+When both of these programs ran, they each received the instructions wirelessly and were able to move the stepper motors the right degree of rotation. However, unfortunately, due to an unknown reason the wireless communication stopped working with about 30 days left to complete the project. The most likely culprit for the malfunction may have been due to faulty transceivers; upon further inspection of the reviews left by those who have used these devices in the past, many did not work correctly upon arrival. Therefore, this method of wireless communication had to be replaced with three HUZZAH32 Feather boards by Adafruit, with one being used as a host server (a.k.a. the transmitter) and two being used as clients to the server (a.k.a. the receivers). This leads to the current wireless communication system, which is a connection between a `host' or `server' (which acts as the transmitter) and the `client' (which acts as the receievr).\\
+
+
+\subsubsection{The Current Wireless Communication System (Server to Clients)}
 In order to mitigate wiring, wireless communication is done to provide the stepper motor units instructions for moving the Eraser. 
 
 \subsubsection{Serpentine.C Algorithm}

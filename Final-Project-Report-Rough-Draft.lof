@@ -20,33 +20,38 @@
 \contentsline {figure}{\numberline {20}{\ignorespaces Pulley flange \cite {uxcell}\relax }}{18}{figure.caption.27}
 \contentsline {figure}{\numberline {21}{\ignorespaces Pulley belt \cite {merc}\relax }}{18}{figure.caption.28}
 \contentsline {figure}{\numberline {22}{\ignorespaces Rough image of the prototype stand\relax }}{19}{figure.caption.29}
-\contentsline {figure}{\numberline {23}{\ignorespaces Front view of the SMART ERASER system with dimensions\relax }}{20}{figure.caption.30}
-\contentsline {figure}{\numberline {24}{\ignorespaces Side view of the SMART ERASER system with dimensions\relax }}{20}{figure.caption.31}
+\contentsline {figure}{\numberline {23}{\ignorespaces Front view of the Smart Eraser system with dimensions\relax }}{20}{figure.caption.30}
+\contentsline {figure}{\numberline {24}{\ignorespaces Side view of the Smart Eraser system with dimensions\relax }}{20}{figure.caption.31}
 \contentsline {figure}{\numberline {25}{\ignorespaces Test Plan for the Smart Eraser - Part 1\relax }}{25}{figure.caption.35}
-\contentsline {figure}{\numberline {26}{\ignorespaces Test Plan for the Smart Eraser - Part 2\relax }}{25}{figure.caption.36}
-\contentsline {figure}{\numberline {27}{\ignorespaces Test Plan for the Smart Eraser - Part 3\relax }}{26}{figure.caption.37}
-\contentsline {figure}{\numberline {28}{\ignorespaces Test Plan for the Smart Eraser - Part 4\relax }}{26}{figure.caption.38}
-\contentsline {figure}{\numberline {29}{\ignorespaces Test Plan for the Smart Eraser - Part 5\relax }}{26}{figure.caption.39}
-\contentsline {figure}{\numberline {30}{\ignorespaces GANTT chart for Senior Design Semester 1 - Research Phase\relax }}{27}{figure.caption.40}
-\contentsline {figure}{\numberline {31}{\ignorespaces GANTT chart for Senior Design Semester 2 - Implementation Phase\relax }}{27}{figure.caption.41}
-\contentsline {figure}{\numberline {32}{\ignorespaces Simple overview of an I2C message \cite {I2C}\relax }}{30}{figure.caption.44}
-\contentsline {figure}{\numberline {33}{\ignorespaces Arducam module block diagram \cite {arducam}\relax }}{31}{figure.caption.45}
-\contentsline {figure}{\numberline {34}{\ignorespaces Hardware Configuration of I2C\relax }}{32}{figure.caption.46}
-\contentsline {figure}{\numberline {35}{\ignorespaces Simple overview of SPI communication \cite {SPI}\relax }}{33}{figure.caption.47}
-\contentsline {figure}{\numberline {36}{\ignorespaces Hardware configuration of SPI (1)\relax }}{34}{figure.caption.48}
-\contentsline {figure}{\numberline {37}{\ignorespaces Hardware configuration of SPI (2)\relax }}{34}{figure.caption.49}
-\contentsline {figure}{\numberline {38}{\ignorespaces Pixel Information being received through SPI from Arducam\relax }}{35}{figure.caption.50}
-\contentsline {figure}{\numberline {39}{\ignorespaces How red, green, and blue intensities are seperated from one another\relax }}{36}{figure.caption.51}
-\contentsline {figure}{\numberline {40}{\ignorespaces Scaling seperated red green and blue intensities up to 8 bit numbers\relax }}{37}{figure.caption.52}
-\contentsline {figure}{\numberline {41}{\ignorespaces Luminance method for converting RGB to grayscale\relax }}{37}{figure.caption.53}
-\contentsline {figure}{\numberline {42}{\ignorespaces Process in reverse: In order to create gray RGB pixel\relax }}{38}{figure.caption.54}
-\contentsline {figure}{\numberline {43}{\ignorespaces Reuslts of grayscale algorithm from PSoC 6 (1)\relax }}{39}{figure.caption.55}
-\contentsline {figure}{\numberline {44}{\ignorespaces Reuslts of grayscale algorithm from PSoC 6 (2)\relax }}{39}{figure.caption.56}
-\contentsline {figure}{\numberline {45}{\ignorespaces Sobel Kernels\relax }}{40}{figure.caption.57}
-\contentsline {figure}{\numberline {46}{\ignorespaces Visual of what happens if the the sobel kernel is convolved along a boundary\relax }}{40}{figure.caption.58}
-\contentsline {figure}{\numberline {47}{\ignorespaces Operation of the vertical kernel\relax }}{41}{figure.caption.59}
-\contentsline {figure}{\numberline {48}{\ignorespaces Operation of the Horizontal kernel\relax }}{41}{figure.caption.60}
-\contentsline {figure}{\numberline {49}{\ignorespaces Using Pythagorean theorem to determine the magnitude of the gradient\relax }}{42}{figure.caption.61}
-\contentsline {figure}{\numberline {50}{\ignorespaces Results of Sobel edge detection\relax }}{42}{figure.caption.62}
-\contentsline {figure}{\numberline {51}{\ignorespaces UART Communication \cite {UARToverview}\relax }}{43}{figure.caption.63}
-\contentsline {figure}{\numberline {52}{\ignorespaces UART packet contents \cite {UARTmessage}\relax }}{43}{figure.caption.64}
+\contentsline {figure}{\numberline {26}{\ignorespaces Test Plan for the Smart Eraser - Part 2\relax }}{26}{figure.caption.36}
+\contentsline {figure}{\numberline {27}{\ignorespaces Test Plan for the Smart Eraser - Part 3\relax }}{27}{figure.caption.37}
+\contentsline {figure}{\numberline {28}{\ignorespaces Test Plan for the Smart Eraser - Part 4\relax }}{28}{figure.caption.38}
+\contentsline {figure}{\numberline {29}{\ignorespaces Test Plan for the Smart Eraser - Part 5\relax }}{29}{figure.caption.39}
+\contentsline {figure}{\numberline {30}{\ignorespaces GANTT chart for Senior Design Semester 1 - Research Phase\relax }}{30}{figure.caption.40}
+\contentsline {figure}{\numberline {31}{\ignorespaces GANTT chart for Senior Design Semester 2 - Implementation Phase\relax }}{30}{figure.caption.41}
+\contentsline {figure}{\numberline {32}{\ignorespaces Simple overview of an I2C message \cite {I2C}\relax }}{34}{figure.caption.44}
+\contentsline {figure}{\numberline {33}{\ignorespaces Arducam module block diagram \cite {arducam}\relax }}{34}{figure.caption.45}
+\contentsline {figure}{\numberline {34}{\ignorespaces Hardware Configuration of I2C\relax }}{35}{figure.caption.46}
+\contentsline {figure}{\numberline {35}{\ignorespaces Simple overview of SPI communication \cite {SPI}\relax }}{36}{figure.caption.47}
+\contentsline {figure}{\numberline {36}{\ignorespaces Hardware configuration of SPI (1)\relax }}{37}{figure.caption.48}
+\contentsline {figure}{\numberline {37}{\ignorespaces Hardware configuration of SPI (2)\relax }}{37}{figure.caption.49}
+\contentsline {figure}{\numberline {38}{\ignorespaces Pixel Information being received through SPI from Arducam\relax }}{38}{figure.caption.50}
+\contentsline {figure}{\numberline {39}{\ignorespaces How red, green, and blue intensities are seperated from one another\relax }}{39}{figure.caption.51}
+\contentsline {figure}{\numberline {40}{\ignorespaces Scaling seperated red green and blue intensities up to 8 bit numbers\relax }}{40}{figure.caption.52}
+\contentsline {figure}{\numberline {41}{\ignorespaces Luminance method for converting RGB to grayscale\relax }}{40}{figure.caption.53}
+\contentsline {figure}{\numberline {42}{\ignorespaces Process in reverse: In order to create gray RGB pixel\relax }}{41}{figure.caption.54}
+\contentsline {figure}{\numberline {43}{\ignorespaces Reuslts of grayscale algorithm from PSoC 6 (1)\relax }}{42}{figure.caption.55}
+\contentsline {figure}{\numberline {44}{\ignorespaces Reuslts of grayscale algorithm from PSoC 6 (2)\relax }}{42}{figure.caption.56}
+\contentsline {figure}{\numberline {45}{\ignorespaces Sobel Kernels\relax }}{43}{figure.caption.57}
+\contentsline {figure}{\numberline {46}{\ignorespaces Visual of what happens if the the sobel kernel is convolved along a boundary\relax }}{43}{figure.caption.58}
+\contentsline {figure}{\numberline {47}{\ignorespaces Operation of the vertical kernel\relax }}{44}{figure.caption.59}
+\contentsline {figure}{\numberline {48}{\ignorespaces Operation of the Horizontal kernel\relax }}{44}{figure.caption.60}
+\contentsline {figure}{\numberline {49}{\ignorespaces Using Pythagorean theorem to determine the magnitude of the gradient\relax }}{45}{figure.caption.61}
+\contentsline {figure}{\numberline {50}{\ignorespaces Results of Sobel edge detection\relax }}{45}{figure.caption.62}
+\contentsline {figure}{\numberline {51}{\ignorespaces UART Communication \cite {UARToverview}\relax }}{46}{figure.caption.63}
+\contentsline {figure}{\numberline {52}{\ignorespaces UART packet contents \cite {UARTmessage}\relax }}{46}{figure.caption.64}
+\contentsline {figure}{\numberline {53}{\ignorespaces Image and pin layout of the MKR1000 WiFi module by Arduino \cite {mkr}\relax }}{47}{figure.caption.65}
+\contentsline {figure}{\numberline {54}{\ignorespaces Image and pin layout of the Kuman nRF24L01 transceivers\cite {trans1}\relax }}{48}{figure.caption.66}
+\contentsline {figure}{\numberline {55}{\ignorespaces Pin connections between the MKR1000 microcontroller and the wireless transceiver to create the transmitter module\relax }}{48}{figure.caption.67}
+\contentsline {figure}{\numberline {56}{\ignorespaces Pin layout on the Arduino UNO R3 \cite {uno}\relax }}{49}{figure.caption.68}
+\contentsline {figure}{\numberline {57}{\ignorespaces Pin connections between the UNO R3 microcontroller and the wireless transceiver to create the receiver modules\relax }}{50}{figure.caption.69}
