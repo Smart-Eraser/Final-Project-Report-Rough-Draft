@@ -96,6 +96,18 @@ R.~Keim, ``{Back to Basics: The Universal Asynchronous Receiver/Transmitter
 C.~Basics, ``{Basics of UART Communication},''
   \url{http://www.circuitbasics.com/basics-uart-communication/}.
 
+\bibitem{mkr}
+Arduino, ``{ARDUINO MKR1000 WIFI},''
+  \url{https://store.arduino.cc/usa/arduino-mkr1000}.
+
+\bibitem{trans1}
+H.~to~Mechatronics, ``{Arduino Wireless Communication – NRF24L01 Tutorial},''
+  \url{https://howtomechatronics.com/tutorials/arduino/arduino-wireless-communication-nrf24l01-tutorial/}.
+
+\bibitem{uno}
+Bob5421, ``{which pins should i take for i2c on arduino uno},''
+  \url{https://stackoverflow.com/questions/42022000/which-pins-should-i-take-for-i2c-on-arduino-uno/42022566}.
+
 \bibitem{wifiStandards}
 I.~S. Association, ``{IEEE 802.15.3e-2017 - IEEE Standard for High Data Rate
   Wireless Multi-Media Networks--Amendment 1: High-Rate Close Proximity
