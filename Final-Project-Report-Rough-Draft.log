@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.9.26)  25 APR 2019 19:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.9.26)  25 APR 2019 19:10
 entering extended mode
 **./Final-Project-Report-Rough-Draft.tex
 (Final-Project-Report-Rough-Draft.tex
@@ -1227,12 +1227,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1718--1723
 
 Underfull \hbox (badness 10000) in paragraph at lines 1724--1732
 
- []
-
-
-Overfull \hbox (44.4439pt too wide) in paragraph at lines 1724--1732
-\T1/ptm/m/it/12 Code is from UAR-Tread() in UART.py lo-cated in sec-tion ad-ddd
-dddd pytttttttttt-th-h-h-h-h-h-h-h-h-hooooooooooonnnnnnnnnn
  []
 
 
@@ -25335,7 +25329,7 @@ iles/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
 times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on Final-Project-Report-Rough-Draft.pdf (121 pages, 38515905 byt
+Output written on Final-Project-Report-Rough-Draft.pdf (121 pages, 38515406 byt
 es).
 PDF statistics:
  4402 PDF objects out of 5155 (max. 8388607)
