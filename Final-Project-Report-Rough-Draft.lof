@@ -56,3 +56,16 @@
 \contentsline {figure}{\numberline {56}{\ignorespaces Pin layout on the Arduino UNO R3 \cite {uno}\relax }}{49}{figure.caption.68}
 \contentsline {figure}{\numberline {57}{\ignorespaces Pin connections between the UNO R3 microcontroller and the wireless transceiver to create the receiver modules\relax }}{50}{figure.caption.69}
 \contentsline {figure}{\numberline {58}{\ignorespaces Overview of client/server interaction \cite {socket}\relax }}{51}{figure.caption.70}
+\contentsline {figure}{\numberline {59}{\ignorespaces Visualization of \textit {square\_detection.c} and \textit {serpentine.c} working together to eraser markings on the whiteboard\relax }}{52}{figure.caption.71}
+\contentsline {figure}{\numberline {60}{\ignorespaces Result of \textit {square\_detection.c} program with the dummy matrix introduced within it for testing\relax }}{52}{figure.caption.72}
+\contentsline {figure}{\numberline {61}{\ignorespaces Result of \textit {serpentine.c} program with the dummy matrix introduced within it for testing\relax }}{53}{figure.caption.73}
+\contentsline {figure}{\numberline {62}{\ignorespaces Rotor and coil layout in the bipolar 2-phase NEMA 23 stepper motor\relax }}{53}{figure.caption.74}
+\contentsline {figure}{\numberline {63}{\ignorespaces Labeling of lead colors corresponding to winding inputs\relax }}{54}{figure.caption.75}
+\contentsline {figure}{\numberline {64}{\ignorespaces Stepper motor driver for the NEMA 23 \cite {smdataD}\relax }}{55}{figure.caption.76}
+\contentsline {figure}{\numberline {65}{\ignorespaces TDK Lambda power supply \cite {smdataD}\relax }}{56}{figure.caption.77}
+\contentsline {figure}{\numberline {66}{\ignorespaces A rough initial image of the prototype\relax }}{56}{figure.caption.78}
+\contentsline {figure}{\numberline {67}{\ignorespaces A rough side view with dimensions of the prototype\relax }}{57}{figure.caption.79}
+\contentsline {figure}{\numberline {68}{\ignorespaces The front view of the prototype stand schematic\relax }}{58}{figure.caption.80}
+\contentsline {figure}{\numberline {69}{\ignorespaces The side view of the prototype stand schematic\relax }}{58}{figure.caption.81}
+\contentsline {figure}{\numberline {70}{\ignorespaces The building of the prototype stand in progress\relax }}{60}{figure.caption.82}
+\contentsline {figure}{\numberline {71}{\ignorespaces The front view of the actual prototype stand\relax }}{60}{figure.caption.83}

@@ -66,11 +66,11 @@
 \BOOKMARK [3][-]{figure.caption.55}{Grayscale Results}{subsection.12.3}% 66
 \BOOKMARK [3][-]{subsubsection.12.3.5}{Sobel Edge Detection}{subsection.12.3}% 67
 \BOOKMARK [3][-]{subsubsection.12.3.6}{Results of Sobel Edge Detection}{subsection.12.3}% 68
-\BOOKMARK [3][-]{subsubsection.12.3.7}{Square\137Detection.C Algorithm}{subsection.12.3}% 69
-\BOOKMARK [3][-]{subsubsection.12.3.8}{UART Communication - PSoC 6 to HUZZAH32 \(server\)}{subsection.12.3}% 70
-\BOOKMARK [3][-]{subsubsection.12.3.9}{The Original Plan for Wireless Communication}{subsection.12.3}% 71
-\BOOKMARK [3][-]{subsubsection.12.3.10}{Arduino Wireless Communication}{subsection.12.3}% 72
-\BOOKMARK [3][-]{subsubsection.12.3.11}{The Current Wireless Communication System \(Server to Clients\)}{subsection.12.3}% 73
+\BOOKMARK [3][-]{subsubsection.12.3.7}{UART Communication - PSoC 6 to HUZZAH32 \(server\)}{subsection.12.3}% 69
+\BOOKMARK [3][-]{subsubsection.12.3.8}{The Original Plan for Wireless Communication}{subsection.12.3}% 70
+\BOOKMARK [3][-]{subsubsection.12.3.9}{Arduino Wireless Communication}{subsection.12.3}% 71
+\BOOKMARK [3][-]{subsubsection.12.3.10}{The Current Wireless Communication System \(Server to Clients\)}{subsection.12.3}% 72
+\BOOKMARK [3][-]{subsubsection.12.3.11}{Square\137Detection.C Algorithm}{subsection.12.3}% 73
 \BOOKMARK [3][-]{subsubsection.12.3.12}{Serpentine.C Algorithm}{subsection.12.3}% 74
 \BOOKMARK [3][-]{subsubsection.12.3.13}{Stepper Motor Movement}{subsection.12.3}% 75
 \BOOKMARK [2][-]{subsection.12.4}{Hardware}{section.12}% 76
@@ -78,17 +78,17 @@
 \BOOKMARK [3][-]{subsubsection.12.4.2}{Testing with the Arduino and Arducam}{subsection.12.4}% 78
 \BOOKMARK [3][-]{subsubsection.12.4.3}{Stepper Motor and Driver Connections}{subsection.12.4}% 79
 \BOOKMARK [3][-]{subsubsection.12.4.4}{Power Parameters}{subsection.12.4}% 80
-\BOOKMARK [2][-]{subsection.12.5}{Project Prototype - Planning}{section.12}% 81
-\BOOKMARK [3][-]{subsubsection.12.5.1}{Initial Prototype Design}{subsection.12.5}% 82
-\BOOKMARK [3][-]{subsubsection.12.5.2}{Final Prototype Design}{subsection.12.5}% 83
-\BOOKMARK [3][-]{subsubsection.12.5.3}{Dimensions}{subsection.12.5}% 84
+\BOOKMARK [3][-]{subsubsection.12.4.5}{PCBs}{subsection.12.4}% 81
+\BOOKMARK [2][-]{subsection.12.5}{Project Prototype - Planning}{section.12}% 82
+\BOOKMARK [3][-]{subsubsection.12.5.1}{Initial Prototype Design}{subsection.12.5}% 83
+\BOOKMARK [3][-]{subsubsection.12.5.2}{Final Prototype Design and Dimensions}{subsection.12.5}% 84
 \BOOKMARK [2][-]{subsection.12.6}{Project Prototype - Building}{section.12}% 85
-\BOOKMARK [3][-]{subsubsection.12.6.1}{Component Mounting Order}{subsection.12.6}% 86
+\BOOKMARK [3][-]{subsubsection.12.6.1}{Component Mounting Steps}{subsection.12.6}% 86
 \BOOKMARK [3][-]{subsubsection.12.6.2}{Final Product}{subsection.12.6}% 87
 \BOOKMARK [1][-]{section.13}{Stakeholder List}{}% 88
 \BOOKMARK [1][-]{section.14}{Project Approval Requirements}{}% 89
 \BOOKMARK [1][-]{section.15}{Approvals}{}% 90
-\BOOKMARK [1][-]{section*.71}{References}{}% 91
+\BOOKMARK [1][-]{section*.85}{References}{}% 91
 \BOOKMARK [1][-]{section.16}{Appendices}{}% 92
 \BOOKMARK [2][-]{subsection.16.1}{Appendix 1 - transmitter\137xy.ino}{section.16}% 93
 \BOOKMARK [2][-]{subsection.16.2}{Appendix 2 - receiver\137x.ino}{section.16}% 94
@@ -103,3 +103,9 @@
 \BOOKMARK [2][-]{subsection.16.11}{Appendix 11 - Improc.h}{section.16}% 103
 \BOOKMARK [2][-]{subsection.16.12}{Appendix 12 - interface.h}{section.16}% 104
 \BOOKMARK [2][-]{subsection.16.13}{Appendix 13 - square\137detection.c}{section.16}% 105
+\BOOKMARK [2][-]{subsection.16.14}{Appendix 14 - serpentine.c}{section.16}% 106
+\BOOKMARK [2][-]{subsection.16.15}{Appendix 15 - stepper\137motors.py}{section.16}% 107
+\BOOKMARK [2][-]{subsection.16.16}{Appendix 16 - SMserver.py}{section.16}% 108
+\BOOKMARK [2][-]{subsection.16.17}{Appendix 17 - SMclient.py}{section.16}% 109
+\BOOKMARK [2][-]{subsection.16.18}{Appendix 18 - ultrasonic.py}{section.16}% 110
+\BOOKMARK [2][-]{subsection.16.19}{Appendix 19 - np\137lights.py}{section.16}% 111

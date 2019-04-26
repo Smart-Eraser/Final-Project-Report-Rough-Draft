@@ -108,6 +108,11 @@ H.~to~Mechatronics, ``{Arduino Wireless Communication – NRF24L01 Tutorial},''
 Bob5421, ``{which pins should i take for i2c on arduino uno},''
   \url{https://stackoverflow.com/questions/42022000/which-pins-should-i-take-for-i2c-on-arduino-uno/42022566}.
 
+\bibitem{smdataD}
+STEPPERONLINE, ``{STEPPERONLINE CNC Stepper Motor Driver 1.0-4.2A 20-50VDC
+  1/128 Micro-step Resolutions for Nema 17 and 23 Stepper Motor },''
+  \url{https://www.amazon.com/dp/B06Y5VPSFN/?coliid=I1R941FDJ72L0R\&colid=22YAOKWOJAKA9\&psc=0\&ref\_=lv\_ov\_lig\_dp\_it}.
+
 \bibitem{wifiStandards}
 I.~S. Association, ``{IEEE 802.15.3e-2017 - IEEE Standard for High Data Rate
   Wireless Multi-Media Networks--Amendment 1: High-Rate Close Proximity
