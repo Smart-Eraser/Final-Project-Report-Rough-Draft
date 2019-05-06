@@ -67,26 +67,28 @@
 \contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}5}Sobel Edge Detection}{42}{subsubsection.12.3.5}
 \contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}6}Results of Sobel Edge Detection}{45}{subsubsection.12.3.6}
 \contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}7}UART Communication - PSoC 6 to HUZZAH32 (server)}{46}{subsubsection.12.3.7}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}8}The Original Plan for Wireless Communication}{47}{subsubsection.12.3.8}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}9}Arduino Wireless Communication}{47}{subsubsection.12.3.9}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}10}The Current Wireless Communication System (Server to Clients)}{50}{subsubsection.12.3.10}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}11}Square\_Detection.C Algorithm}{51}{subsubsection.12.3.11}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}12}Serpentine.C Algorithm}{52}{subsubsection.12.3.12}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-C}13}Stepper Motor Movement}{53}{subsubsection.12.3.13}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}}Hardware}{54}{subsection.12.4}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}1}Using the Logic Analyzer}{54}{subsubsection.12.4.1}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}2}Testing with the Arduino and Arducam}{54}{subsubsection.12.4.2}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}3}Stepper Motor and Driver Connections}{54}{subsubsection.12.4.3}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}4}Power Parameters}{55}{subsubsection.12.4.4}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}5}PCBs}{56}{subsubsection.12.4.5}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}}Project Prototype - Planning}{56}{subsection.12.5}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}1}Initial Prototype Design}{56}{subsubsection.12.5.1}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}2}Final Prototype Design and Dimensions}{57}{subsubsection.12.5.2}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}}Project Prototype - Building}{59}{subsection.12.6}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}1}Component Mounting Steps}{59}{subsubsection.12.6.1}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}2}Final Product}{60}{subsubsection.12.6.2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}}The Original Plan for Wireless Communication}{47}{subsection.12.4}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-D}1}Arduino Wireless Communication}{47}{subsubsection.12.4.1}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}}The Current Wireless Communication System}{50}{subsection.12.5}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}1}Server}{51}{subsubsection.12.5.1}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}2}Clients}{51}{subsubsection.12.5.2}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}3}Square\_Detection.C Algorithm}{51}{subsubsection.12.5.3}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}4}Serpentine.C Algorithm}{53}{subsubsection.12.5.4}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-E}5}Stepper Motor Movement}{53}{subsubsection.12.5.5}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}}Hardware}{54}{subsection.12.6}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}1}Using the Logic Analyzer}{54}{subsubsection.12.6.1}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}2}Testing with the Arduino and Arducam}{54}{subsubsection.12.6.2}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}3}Stepper Motor and Driver Connections}{54}{subsubsection.12.6.3}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}4}Power Parameters}{55}{subsubsection.12.6.4}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-F}5}PCBs}{56}{subsubsection.12.6.5}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-G}}Project Prototype - Planning}{56}{subsection.12.7}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-G}1}Initial Prototype Design}{56}{subsubsection.12.7.1}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-G}2}Final Prototype Design and Dimensions}{57}{subsubsection.12.7.2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {XII-H}}Project Prototype - Building}{60}{subsection.12.8}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-H}1}Component Mounting Steps}{60}{subsubsection.12.8.1}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {XII-H}2}Final Product}{60}{subsubsection.12.8.2}
 \contentsline {section}{\numberline {XIII}Stakeholder List}{61}{section.13}
-\contentsline {section}{\numberline {XIV}Project Approval Requirements}{61}{section.14}
+\contentsline {section}{\numberline {XIV}Project Approval Requirements}{62}{section.14}
 \contentsline {section}{\numberline {XV}Approvals}{63}{section.15}
 \contentsline {section}{References}{64}{section*.85}
 \contentsline {section}{\numberline {XVI}Appendices}{65}{section.16}
